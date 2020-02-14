@@ -20,7 +20,7 @@ class Main extends React.Component{
         return(
             <Wrapper>
         <TransitionGroup >
-            <CSSTransition key={location.key} timeout={300} classNames={'fade'}>
+            <CSSTransition key={location.key} timeout={400} classNames={'fade'}>
             <section className="route-section">
                 <Switch location={location}>
                     <Route  path="/aboutme" component={AboutMe} />
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 }
 .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 300ms ease-in;
+    transition: opacity 400ms ease-in;
 }
 .fade-exit {
     opacity: 1;
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   
 .fade-exit.fade-exit-active {
     opacity: 0.01;
-    transition: opacity 300ms ease-in;
+    transition: opacity 400ms ease-in;
 }
 div.transition-group {
     position: relative;
