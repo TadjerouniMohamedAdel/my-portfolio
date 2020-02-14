@@ -5,7 +5,7 @@ import Main from './components/Main';
 import { Link } from 'react-router-dom'
 
 
-function App() {
+function App({location}) {
   return (
     <div className="demo-big-content">
     <Layout>
@@ -14,7 +14,6 @@ function App() {
                 <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/projects">Projects</Link>
-                <Link to="/aboutme">About me</Link>
                 <Link to="/contacts">Contacts</Link>
             </Navigation>
         </Header>
@@ -23,7 +22,6 @@ function App() {
                 <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/projects">Projects</Link>
-                <Link to="/aboutme">About me</Link>
                 <Link to="/contacts">Contacts</Link>
             </Navigation>
         </Drawer>
