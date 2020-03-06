@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Grid,Cell,List,ListItem,ListItemContent} from 'react-mdl'
+import { prof } from '../Images/Images'
 export default class Contacts extends Component {
     render() {
         return (
@@ -7,9 +8,9 @@ export default class Contacts extends Component {
                 <Grid className="contact-grid">
                     <Cell col={6}>
                         <h2>Adel Mohamed Tadjerouni</h2>
-                        <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+                        <img src={prof}
                              alt="avatar"
-                             style={{height:'250px'}}
+                             style={{height:'350px',width:'400px'}}
                         />
                         <p style={{width:"75%",margin:'auto',paddingTop:'1em'}}>
                             Ut ea consectetur culpa ipsum laboris enim deserunt eu esse eiusmod anim do ex. Consequat est adipisicing commodo magna magna velit cupidatat irure esse officia do anim consectetur. Dolor sunt fugiat consectetur in laborum occaecat culpa incididunt elit. Ipsum irure magna qui velit sit laboris ut et tempor aute.

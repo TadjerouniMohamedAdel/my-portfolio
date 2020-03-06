@@ -1,0 +1,7 @@
+export const logoBea = require('./src/bea_logo.png')
+export const logoBuileo = require('./src/buileo.png')
+export const logoEp = require('./src/ep.png')
+export const logoKhedemni = require('./src/khedemi.webp')
+export const logoUalger = require('./src/ualger1.png')
+export const user2= require('./src/arondi-2.png')
+export const prof= require('./src/prof.png')

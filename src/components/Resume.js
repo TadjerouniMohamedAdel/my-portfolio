@@ -3,6 +3,40 @@ import {Grid,Cell} from 'react-mdl'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
+import { logoUalger, logoEp, logoBuileo, logoBea, user2 } from '../Images/Images'
+
+
+const experiences = [
+    {
+        startYear:2018,
+        endYear:2020,
+        jobName:"Développeur Web/Mobile Full Stack",
+        jobDescription:"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
+        img:logoEp,
+        imgWidth:80,
+        imgHeight:90,
+    },
+    {
+        startYear:2019,
+        endYear:2019,
+        jobName:"Developpeur web Full Stack (freelance)",
+        jobDescription:"Développer des solutions logicielles pour les clients de buileo principalement des solutions CRM",
+        img:logoBuileo,
+        imgWidth:120,
+        imgHeight:40
+    },
+    {
+        startYear:2018,
+        endYear:2018,
+        jobName:"Stagiaire Développeur web full stack",
+        jobDescription:"Développement d’une application web pour a gestion des œuvres sociales pour la banque d’extérieur d ‘Algérie .",
+        img:logoBea,
+        imgWidth:90,
+        imgHeight:70
+    }
+]
+
+
 
 export default class Resume extends Component {
     render() {
@@ -11,7 +45,7 @@ export default class Resume extends Component {
                 <Grid>
                     <Cell col={4}>
                         <div style={{textAlign:'center'}}>
-                            <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
+                            <img src={user2}
                                  alt="avatar"
                                  style={{height:'200px'}}
                             />
@@ -38,33 +72,33 @@ export default class Resume extends Component {
                     <Cell className="resume-right-col" col={8}>
                       <h2>Education</h2>
                       <Education
-                        startYear={2002}
-                        endYear={2006}
-                        schoolName="My University"
-                        schoolDescription="Officia incididunt tempor proident sit deserunt labore pariatur ipsum ipsum nostrud non tempor laborum magna. Laboris ipsum eu non proident ad. Qui ea nisi et ut. Nulla tempor nulla ipsum cillum sit incididunt aute Lorem elit amet. Sit pariatur culpa excepteur anim veniam mollit reprehenderit exercitation ex est proident sunt minim cupidatat. Culpa exercitation non nisi et in nulla occaecat minim non sunt adipisicing. Eiusmod ad dolore labore magna id sint nostrud aliqua voluptate esse."
-                      />
-                      <Education
-                        startYear={2002}
-                        endYear={2006}
-                        schoolName="My 2nd University"
-                        schoolDescription="Officia incididunt tempor proident sit deserunt labore pariatur ipsum ipsum nostrud non tempor laborum magna. Laboris ipsum eu non proident ad. Qui ea nisi et ut. Nulla tempor nulla ipsum cillum sit incididunt aute Lorem elit amet. Sit pariatur culpa excepteur anim veniam mollit reprehenderit exercitation ex est proident sunt minim cupidatat. Culpa exercitation non nisi et in nulla occaecat minim non sunt adipisicing. Eiusmod ad dolore labore magna id sint nostrud aliqua voluptate esse."
+                        startYear={2015}
+                        endYear={2018}
+                        img={logoUalger}
+                        schoolName="Université d’Alger 1"
+                        schoolDescription="licence en système d’information et génie
+                        logiciel Université d’Alger 1 ."
                       />
                       
                       <hr style={{borderTop:'3px solid #e22947'}}/>
-                      <Experience 
-                        startYear={2012}
-                        endYear={2016}
-                        jobName="First job"
-                        jobDescription="Officia incididunt tempor proident sit deserunt labore pariatur ipsum ipsum nostrud non tempor laborum magna. Laboris ipsum eu non proident ad. Qui ea nisi et ut. Nulla tempor nulla ipsum cillum sit incididunt aute Lorem elit amet. Sit pariatur culpa excepteur anim veniam mollit reprehenderit exercitation ex est proident sunt minim cupidatat. Culpa exercitation non nisi et in nulla occaecat minim non sunt adipisicing. Eiusmod ad dolore labore magna id sint nostrud aliqua voluptate esse."
                       
-                      />
-                      <Experience 
-                        startYear={2016}
-                        endYear={2020}
-                        jobName="Second job"
-                        jobDescription="Officia incididunt tempor proident sit deserunt labore pariatur ipsum ipsum nostrud non tempor laborum magna. Laboris ipsum eu non proident ad. Qui ea nisi et ut. Nulla tempor nulla ipsum cillum sit incididunt aute Lorem elit amet. Sit pariatur culpa excepteur anim veniam mollit reprehenderit exercitation ex est proident sunt minim cupidatat. Culpa exercitation non nisi et in nulla occaecat minim non sunt adipisicing. Eiusmod ad dolore labore magna id sint nostrud aliqua voluptate esse."
-                      
-                      />
+                      {
+                          experiences.map((item,index)=>{
+                              return(
+                                  <Experience
+                                    key={index} 
+                                    startYear={item.startYear}
+                                    endYear={item.endYear}
+                                    jobName={item.jobName}
+                                    jobDescription={item.jobDescription}
+                                    img={item.img}
+                                    imgWidth={item.imgWidth}
+                                    imgHeight={item.imgHeight}
+                                  />
+
+                              )
+                          })
+                      }
                         <hr style={{borderTop:'3px solid #e22947'}}/>
                         <h2>Skills</h2>
                         <Skills 

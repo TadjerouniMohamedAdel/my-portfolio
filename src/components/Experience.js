@@ -6,7 +6,18 @@ export default class Experience extends Component {
         return (
            <Grid>
                <Cell col={4}>
-                    <p>{this.props.startYear} - {this.props.endYear}</p>
+                    <Grid>
+                    <Cell col={6}>
+                            <div style={{marginTop:15}}>
+                               {this.props.startYear} - {this.props.endYear}
+                            </div>
+                        </Cell>
+                        <Cell col={6}>
+                            <div>
+                                <img style={{width:this.props.imgWidth,height:this.props.imgHeight}} src={this.props.img} alt="company_logo" />
+                            </div>
+                        </Cell>
+                    </Grid>
                </Cell>
                <Cell col={8}>
                     <h4 style={{marginTop:'0px'}}>{this.props.jobName}</h4>

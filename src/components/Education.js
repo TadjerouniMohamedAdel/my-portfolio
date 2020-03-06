@@ -6,10 +6,21 @@ export default class Education extends Component {
         return (
             <Grid>
                 <Cell col={4}>
-                    <p>{this.props.startYear} - {this.props.endYear}</p>
+                    <Grid>
+                        <Cell col={6}>
+                            <div style={{marginTop:15}}>
+                               {this.props.startYear} - {this.props.endYear}
+                            </div>
+                        </Cell>
+                        <Cell col={6}>
+                            <div>
+                                <img style={{width:100,height:100}} src={this.props.img} alt="university_logo" />
+                            </div>
+                        </Cell>
+                    </Grid>
                 </Cell>
                 <Cell col={8}>
-                    <h4 style={{marginTop:'0px'}}>
+                    <h4 >
                         {this.props.schoolName}
                     </h4>
                     <p>
