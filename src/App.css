@@ -103,3 +103,12 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
   color:white;
   padding:2em;
 }
+.skill-grid{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skill-item{
+  margin: 5px;
+}

@@ -66,12 +66,7 @@ export default class Projects extends Component {
             case 1:
                     return(<div><h1>this is angular</h1></div>) 
             break;
-            case 2:
-                    return(<div><h1>this is vuejs</h1></div>) 
-            break;
-            case 3:
-                    return(<div><h1>this is MangoDB</h1></div>) 
-            break;
+            
         
         }
     }
@@ -80,10 +75,9 @@ export default class Projects extends Component {
         return (
             <div className="category-taba">
                     <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
-                        <Tab>React</Tab>
-                        <Tab>Angular</Tab>
-                        <Tab>VueJs</Tab>
-                        <Tab>MangoDB</Tab>
+                        <Tab>Personel</Tab>
+                        <Tab>Profesionelle</Tab>
+                        
                     </Tabs>
                     <section > 
                         <Grid >
