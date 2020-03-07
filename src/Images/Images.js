@@ -20,3 +20,11 @@ export const php_logo=require('./src/php_logo.png')
 export const codeigniter_logo=require('./src/codeigniter_logo.png')
 export const api_logo=require('./src/api_logo.png')
 
+
+export const docker_logo=require('./src/docker_logo.png')
+export const webpack_logo=require('./src/webpack_logo.png')
+export const mysql_logo=require('./src/mysql_logo.png')
+export const arch_logo=require('./src/arch_logo.png')
+export const git_logo=require('./src/git_logo.png')
+
+

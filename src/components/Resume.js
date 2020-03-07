@@ -3,7 +3,7 @@ import {Grid,Cell} from 'react-mdl'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
-import { logoUalger, logoEp, logoBuileo, logoBea, user2, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo } from '../Images/Images'
+import { logoUalger, logoEp, logoBuileo, logoBea, user2, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo } from '../Images/Images'
 import SkillItem from './Skills/SkillItem'
 import {Tabs , Tab,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
 
@@ -47,6 +47,82 @@ export default class Resume extends Component {
         this.state = { activeTab:0 }
         
     }
+
+    renderMobile = ()=>{
+        return (
+            <div className="skill-grid">
+                <div className="skill-item">
+                <SkillItem 
+                        skillName="React"
+                        skillImage={react_logo}
+                        color="#449ccf"
+                        imageWidth={120}
+                        imageHeight={80}
+                        percent="85"
+                    />
+                </div>
+            </div>
+        )
+    }
+
+    renderDevops  = ()=>{
+        return (
+            <div className="skill-grid">
+                <div className="skill-item">
+                    <SkillItem 
+                        skillName="React"
+                        skillImage={docker_logo}
+                        color="#449ccf"
+                        imageWidth={90}
+                        imageHeight={80}
+                        percent="85"
+                        />
+                </div>
+                <div className="skill-item">
+                    <SkillItem 
+                        skillName="React"
+                        skillImage={git_logo}
+                        color="#DE4C35"
+                        imageWidth={90}
+                        imageHeight={80}
+                        percent="85"
+                    />
+
+                </div>
+                <div className="skill-item">
+                    <SkillItem 
+                        skillName="React"
+                        skillImage={webpack_logo}
+                        color="#449ccf"
+                        imageWidth={90}
+                        imageHeight={80}
+                        percent="85"
+                    />
+                </div>
+                <div className="skill-item">
+                    <SkillItem 
+                        skillName="React"
+                        skillImage={mysql_logo}
+                        color="#FD972E"
+                        imageWidth={90}
+                        imageHeight={80}
+                        percent="85"
+                    />
+                </div>
+                <div className="skill-item">
+                    <SkillItem 
+                        skillName="React"
+                        skillImage={arch_logo}
+                        color="#1694D1"
+                        imageWidth={90}
+                        imageHeight={80}
+                        percent="85"
+                    />
+                </div>
+            </div>
+        )
+    }
+
     renderBackEnd = ()=>{
         return(
             <div className="skill-grid">
@@ -54,7 +130,7 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillName="React"
                         skillImage={php_logo}
-                        color="#449ccf"
+                        color="#767BB3"
                         imageWidth={90}
                         imageHeight={80}
                         percent="85"
@@ -64,7 +140,7 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillName="React"
                         skillImage={codeigniter_logo}
-                        color="#449ccf"
+                        color="#EE4423"
                         imageWidth={90}
                         imageHeight={80}
                         percent="85"
@@ -74,7 +150,7 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillName="React"
                         skillImage={symfony_logo}
-                        color="#449ccf"
+                        color="#fff"
                         imageWidth={80}
                         imageHeight={90}
                         percent="85"
@@ -84,7 +160,7 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillName="React"
                         skillImage={api_logo}
-                        color="#449ccf"
+                        color="#BA1C1B"
                         imageWidth={100}
                         imageHeight={90}
                         percent="85"
@@ -143,7 +219,7 @@ export default class Resume extends Component {
                         percent="100" 
                         skillName="React"
                         skillImage={bootstrap_logo}
-                        color="#943ab8"
+                        color="#62478A"
                         imageWidth={110}
                         imageHeight={100}
                     />
@@ -163,7 +239,7 @@ export default class Resume extends Component {
                         percent="95" 
                         skillName="React"
                         skillImage={html_logo}
-                        color="#ff8d0a"
+                        color="#E54D26"
                         imageWidth={80}
                         imageHeight={100}
                     />
@@ -181,10 +257,10 @@ export default class Resume extends Component {
                    return this.renderBackEnd()
             break;
             case 2:
-                    
+                return this.renderMobile()
             break;
             case 3:
-             
+                return this.renderDevops()
             break;
         
         }
