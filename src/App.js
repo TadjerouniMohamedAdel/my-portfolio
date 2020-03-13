@@ -12,8 +12,8 @@ class App extends React.Component {
     }
     render(){
         return (
-            <div className="demo-big-content">
-                <Layout>
+            <div className="demo-big-content" >
+                <Layout >
                     <Header className="header-color" title={<Link to="/" style={{textDecoration:'none',color:'white'}}>My Portfolio</Link> } scroll>
                         <Navigation>
                             <Link to="/">Home</Link>
@@ -30,7 +30,7 @@ class App extends React.Component {
                             <Link  onClick={() => this.hideToggle()} to="/contacts">Contacts</Link>
                         </Navigation>
                     </Drawer>
-                    <Content>
+                    <Content className="section">
                         <div className="page-content" />
                         <Main/>
                     </Content>

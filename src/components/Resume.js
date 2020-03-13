@@ -3,7 +3,7 @@ import {Grid,Cell} from 'react-mdl'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
-import { logoUalger, logoEp, logoBuileo, logoBea, user2, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo } from '../Images/Images'
+import { logoUalger, logoEp, logoBuileo, logoBea, user2, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo } from '../Images/Images'
 import SkillItem from './Skills/SkillItem'
 import {Tabs , Tab,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
 
@@ -51,13 +51,13 @@ export default class Resume extends Component {
     renderMobile = ()=>{
         return (
             <div className="skill-grid">
-                <div className="skill-item">
+                <div className="skill-item" key={1}>
                 <SkillItem 
                         skillName="React"
-                        skillImage={react_logo}
+                        skillImage={rn_logo}
                         color="#449ccf"
-                        imageWidth={120}
-                        imageHeight={80}
+                        imageWidth={130}
+                        imageHeight={100}
                         percent="85"
                     />
                 </div>
@@ -68,38 +68,38 @@ export default class Resume extends Component {
     renderDevops  = ()=>{
         return (
             <div className="skill-grid">
-                <div className="skill-item">
+                <div className="skill-item" key={2}>
                     <SkillItem 
                         skillName="React"
                         skillImage={docker_logo}
                         color="#449ccf"
-                        imageWidth={90}
-                        imageHeight={80}
+                        imageWidth={100}
+                        imageHeight={110}
                         percent="85"
                         />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={3}>
                     <SkillItem 
                         skillName="React"
                         skillImage={git_logo}
                         color="#DE4C35"
                         imageWidth={90}
-                        imageHeight={80}
+                        imageHeight={50}
                         percent="85"
                     />
 
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={4}>
                     <SkillItem 
                         skillName="React"
                         skillImage={webpack_logo}
                         color="#449ccf"
-                        imageWidth={90}
-                        imageHeight={80}
+                        imageWidth={110}
+                        imageHeight={110}
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={5}>
                     <SkillItem 
                         skillName="React"
                         skillImage={mysql_logo}
@@ -109,7 +109,7 @@ export default class Resume extends Component {
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={6}>
                     <SkillItem 
                         skillName="React"
                         skillImage={arch_logo}
@@ -126,7 +126,7 @@ export default class Resume extends Component {
     renderBackEnd = ()=>{
         return(
             <div className="skill-grid">
-                <div className="skill-item">
+                <div className="skill-item" key={7}>
                     <SkillItem 
                         skillName="React"
                         skillImage={php_logo}
@@ -136,7 +136,7 @@ export default class Resume extends Component {
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={8}>
                     <SkillItem 
                         skillName="React"
                         skillImage={codeigniter_logo}
@@ -146,7 +146,7 @@ export default class Resume extends Component {
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={9}>
                     <SkillItem 
                         skillName="React"
                         skillImage={symfony_logo}
@@ -156,7 +156,7 @@ export default class Resume extends Component {
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={10}>
                     <SkillItem 
                         skillName="React"
                         skillImage={api_logo}
@@ -174,27 +174,27 @@ export default class Resume extends Component {
     renderFrontEnd = ()=>{
         return(
             <div className="skill-grid">
-                <div className="skill-item">
+                <div className="skill-item" key={11}>
                     <SkillItem 
                         skillName="React"
                         skillImage={react_logo}
                         color="#449ccf"
-                        imageWidth={120}
-                        imageHeight={80}
+                        imageWidth={90}
+                        imageHeight={90}
                         percent="85"
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={12}>
                     <SkillItem
                         percent="80" 
                         skillName="Redux"
                         skillImage={redux_logo}
                         color="#943ab8"
-                        imageWidth={80}
-                        imageHeight={70}
+                        imageWidth={130}
+                        imageHeight={100}
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={13}>
                     <SkillItem
                         percent="90" 
                         skillName="JS"
@@ -204,17 +204,17 @@ export default class Resume extends Component {
                         imageHeight={80}
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={14}>
                     <SkillItem
                         percent="90" 
                         skillName="React"
                         skillImage={jquery_logo}
                         color="#449ccf"
-                        imageWidth={120}
-                        imageHeight={110}
+                        imageWidth={130}
+                        imageHeight={140}
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={15}>
                     <SkillItem
                         percent="100" 
                         skillName="React"
@@ -224,7 +224,7 @@ export default class Resume extends Component {
                         imageHeight={100}
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={16}>
                     <SkillItem
                         percent="75" 
                         skillName="React"
@@ -234,7 +234,7 @@ export default class Resume extends Component {
                         imageHeight={100}
                     />
                 </div>
-                <div className="skill-item">
+                <div className="skill-item" key={17}>
                     <SkillItem
                         percent="95" 
                         skillName="React"
