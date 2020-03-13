@@ -4,6 +4,8 @@ export const logoEp = require('./src/ep.png')
 export const logoKhedemni = require('./src/khedemi.webp')
 export const logoUalger = require('./src/ualger1.png')
 export const user2= require('./src/arondi-2.png')
+export const user= require('./src/v5.png')
+
 export const prof= require('./src/prof.png')
 export const react_logo= require('./src/react.png')
 export const html_logo=require('./src/html-logo.png')
