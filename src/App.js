@@ -12,7 +12,7 @@ class App extends React.Component {
     }
     render(){
         return (
-            <div className="demo-big-content" >
+            <div className="demo-big-content">
                 <Layout >
                     <Header className="header-color" title={<Link to="/" style={{textDecoration:'none',color:'white'}}>My Portfolio</Link> } scroll>
                         <Navigation>
