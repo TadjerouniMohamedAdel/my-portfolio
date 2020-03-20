@@ -231,8 +231,10 @@ export default class Resume extends Component {
         return (
             <div>
                 <Grid>
-                    <Cell col={5}>
-                        
+                    <Cell col={6}>
+                    <div className="skills-block">
+                   
+
                         <h2 style={{paddingTop:'2em',textAlign:"center"}}>Skills</h2>
                         <div className="category-taba">
                     <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
@@ -251,38 +253,43 @@ export default class Resume extends Component {
                         </Grid>
                     </section>
             </div>
-            <hr style={{borderTop:'3px solid #e22947'}}/>
-                        <h2>Skills</h2>
-                        <Skills 
-                            skill="javascript"
-                            progress="90"
-                        />
-                        <Skills 
-                            skill="Reactjs"
-                            progress="90"
-                        />
-                        <Skills 
-                            skill="React Native"
-                            progress="78"
-                        />
-                        <Skills 
-                            skill="php"
-                            progress="90"
-                        />
-                        <Skills 
-                            skill="Symfony"
-                            progress="90"
-                        />
-                       
+                        
+            </div>              
         </Cell>
-        <Cell col={1}></Cell>
                     <Cell  col={6}> 
+                    <div className="experiences-block">
+
                       <h2 style={{paddingTop:'2em',textAlign:"center"}}>Experience</h2>
                       
                          <Timeline />
+                    </div>
                       
-                      <h2 style={{paddingTop:'2em'}}>Education</h2>
-                        <Education
+                     
+                       
+
+                    </Cell>
+                </Grid>
+                
+                <Grid>
+                    <Cell col={5}>
+                    <h2 style={{textAlign:"center"}}>Languages</h2>
+                        <Skills 
+                            skill="Arabic"
+                            progress="90"
+                        />
+                        <Skills 
+                            skill="English"
+                            progress="70"
+                        />
+                        <Skills 
+                            skill="Franch"
+                            progress="80"
+                        />
+                    </Cell>
+                    <Cell col={1}></Cell>
+                    <Cell col={5}>
+                    <h2 style={{textAlign:"center"}}>Education</h2>
+                    <Education
                             startYear={2015}
                             endYear={2018}
                             img={logoUalger}
@@ -290,7 +297,6 @@ export default class Resume extends Component {
                             schoolDescription="licence en système d’information et génie
                             logiciel Université d’Alger 1 ."
                         />
-
                     </Cell>
                 </Grid>
             </div>

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 .timeline{
     font-family:  'Montserrat', sans-serif;  
-    position: relative;
-    /* margin: 50px auto; */
     width:100%;
     padding: 40px 0;
     box-sizing: border-box;
@@ -11,9 +9,8 @@
 .timeline:before{
     content:'';
     position: absolute;
-    left:20%;
     width:1px;
-    height:95%;
+    height:60%;
     background:#c5c5c5;
 }
 
@@ -23,39 +20,46 @@
 }
 
 .timeline ul li {
-    position: relative;
-    width: 50%;
+    /* position: relative; */
+    width: 95%;
     padding: 20px 40px;
     list-style: none;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .timeline ul li{
-    float: right;
-    text-align: left;
+    
     clear: both;
+    display: flex;
+    flex-wrap: wrap;    
 }
 
 .timeline-content{
     padding-bottom: 20px;
     position: relative;
-    left: -70%;
-    width:500px;
+    left: 5%;
+    width:100%;
     word-wrap: break-word;
+    ;
 }
 
 
 
 .timeline ul li:before{
     content:'';
-    position: absolute;
-    top:24px;
-    left:-61%;
+    /* position: absolute; */
+    /* top:24px; */
+    /* left:-61%; */
+    position: relative;
+    left:-45px;
     width:10px;
     height: 10px;
     background: rgba(233,33,99,1);
     border-radius:50%;
-    box-shadow: 0 0 0 3px rgba(233,33,99,.2)
+    box-shadow: 0 0 0 3px rgba(233,33,99,.2);
+    z-index: 1000;
 }
 .timeline ul li h3{
     margin:0;
@@ -76,14 +80,17 @@
 
 
 .timeline ul li .timeline-time{
-    position: absolute;
-    top:12px;
-    left:-110%;
-    margin: 0;
+    position: relative;
+    top:-20px;
+    margin: 10px;   
     padding:5px 14px;
     background: rgba(233,33,99,1);
     color:#fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(233, 33, 150, 0.3)
 }
-  
+@media(max-width:839px){
+    .timeline:before{
+        height: 35%;
+    }
+}

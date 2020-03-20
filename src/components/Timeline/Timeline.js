@@ -39,6 +39,9 @@ export default class Timeline extends Component {
            experiences.map((item,index) =>{
               return(
                   <li key={index}>
+                      <div className="timeline-time">
+           <h4>{item.startDate} - {item.endDate}</h4>
+                      </div>
                       <div className="timeline-content">
                           <h3>{item.jobName}</h3>
                           <p>
@@ -59,9 +62,6 @@ export default class Timeline extends Component {
                               ))
                             }
                           </div>
-                      </div>
-                      <div className="timeline-time">
-           <h4>{item.startDate} - {item.endDate}</h4>
                       </div>
                     </li>
 

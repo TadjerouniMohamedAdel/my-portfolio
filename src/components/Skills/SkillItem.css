@@ -1,8 +1,8 @@
 svg circle {
     width:100%;
     height: 100%;
-    fill:   rgba(255, 255, 255);
-    stroke: rgb(255, 255, 255);
+    fill:   transparent;
+    stroke: transparent;
     stroke-width:5;
     stroke-linecap: round;
     transform: translate(5px,5px);
@@ -56,17 +56,14 @@ svg circle:nth-child(2){
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: inset 0 0 50px #fff;
+    box-shadow: inset 0 0 50px transparent;
     z-index:1000;
-    background: #fff;
+    background: transparent;
     z-index: 1000;
     /* -webkit-animation:spin 1s linear ;
     -moz-animation:spin 1s linear ;
     animation:spin 1s linear ; */
 }
-/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
 .percent .number{
     position: absolute;
     top:0;
