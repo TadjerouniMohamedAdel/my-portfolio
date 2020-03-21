@@ -225,81 +225,64 @@ export default class Resume extends Component {
         }
     }
     
-    
-    
-    render() {
-        return (
-            <div>
-                <Grid>
-                    <Cell col={6}>
-                    <div className="skills-block">
-                   
-
+    render(){
+        return(
+            <div className="resume-container">
+                <div className="experiences-block" style={{paddingTop:'2em'}}>
+                                 
+                                 <Timeline />
+                </div>
+                <div className="other-blocks">
+                    <div className="skills-block card-gogo">
                         <h2 style={{paddingTop:'2em',textAlign:"center"}}>Skills</h2>
-                        <div className="category-taba">
-                    <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
-                        <Tab>Front End</Tab>
-                        <Tab>Back End</Tab>
-                        <Tab>Mobile</Tab>
-                        <Tab>Deveops & Tools</Tab>
-                    </Tabs>
-                    <section > 
-                        <Grid >
-                            <Cell col={12}>
+                        <div className="category-tab">
+                            <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
+                                <Tab>Front End</Tab>
+                                <Tab>Back End</Tab>
+                                <Tab>Mobile</Tab>
+                                <Tab>Deveops & Tools</Tab>
+                            </Tabs>
+                            <section > 
                                 <div className="content">
                                     {this.toggleCategories()}
                                 </div>
-                            </Cell>
-                        </Grid>
-                    </section>
-            </div>
-                        
-            </div>              
-        </Cell>
-                    <Cell  col={6}> 
-                    <div className="experiences-block">
-
-                      <h2 style={{paddingTop:'2em',textAlign:"center"}}>Experience</h2>
-                      
-                         <Timeline />
+                            </section>
+                        </div>
                     </div>
-                      
-                     
-                       
-
-                    </Cell>
-                </Grid>
+                    <div className="language-block card-gogo">
+                        <h2 style={{textAlign:"center"}}>Languages</h2>
+                            <Skills 
+                                skill="Arabic"
+                                progress="90"
+                                />
+                            <Skills 
+                                skill="English"
+                                progress="70"
+                                />
+                            <Skills 
+                                skill="Franch"
+                                progress="80"
+                                        />
+                    </div>
+                    <div className="education-block card-gogo">
+                        <h2 style={{textAlign:"center"}}>Education</h2>
+                        <Education
+                                startYear={2015}
+                                endYear={2018}
+                                img={logoUalger}
+                                schoolName="Université d’Alger 1"
+                                schoolDescription="licence en système d’information et génie
+                                logiciel Université d’Alger 1 ."
+                            />
+                    </div>
+                    
+                </div>  
                 
-                <Grid>
-                    <Cell col={5}>
-                    <h2 style={{textAlign:"center"}}>Languages</h2>
-                        <Skills 
-                            skill="Arabic"
-                            progress="90"
-                        />
-                        <Skills 
-                            skill="English"
-                            progress="70"
-                        />
-                        <Skills 
-                            skill="Franch"
-                            progress="80"
-                        />
-                    </Cell>
-                    <Cell col={1}></Cell>
-                    <Cell col={5}>
-                    <h2 style={{textAlign:"center"}}>Education</h2>
-                    <Education
-                            startYear={2015}
-                            endYear={2018}
-                            img={logoUalger}
-                            schoolName="Université d’Alger 1"
-                            schoolDescription="licence en système d’information et génie
-                            logiciel Université d’Alger 1 ."
-                        />
-                    </Cell>
-                </Grid>
+                  
             </div>
+
         )
     }
+    
+
 }

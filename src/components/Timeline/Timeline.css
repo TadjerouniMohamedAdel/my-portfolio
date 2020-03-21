@@ -8,9 +8,10 @@
 
 .timeline:before{
     content:'';
+    margin-left:10px; 
     position: absolute;
     width:1px;
-    height:60%;
+    height:70%;
     background:#c5c5c5;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .timeline ul li{
-    
+    margin-top: 30px;
     clear: both;
     display: flex;
     flex-wrap: wrap;    
@@ -52,6 +53,7 @@
     /* position: absolute; */
     /* top:24px; */
     /* left:-61%; */
+        margin-left:10px; 
     position: relative;
     left:-45px;
     width:10px;
@@ -94,3 +96,4 @@
         height: 35%;
     }
 }
+

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap');
 .header-color{
     background: #8A2387;  /* fallback for old browsers */
@@ -127,6 +128,7 @@
 .skill-grid{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -140,10 +142,55 @@
   to   { opacity: 1; }
 }
 .skill-item{
-  margin: 5px;
+  margin: 1px;
   
 }
+/* @media(min-width:840px){
+  .experiences-block{
+    margin-left: 100px;
+  }
 
+} */
+.skills-block{
+  min-height: 600px;
+}
+
+.language-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+  font-size: 20px;
+}
+
+.resume-container{
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  font-family:  'Montserrat', sans-serif; 
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
 .experiences-block{
-  margin-left: 100px;
+  flex:1;
+  margin-left:20px;
+  margin-right:25px;
+}
+.other-blocks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  flex:1
+}
+.language-block{
+  flex:1;
+}
+.card-gogo{
+        border: initial;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+        margin:20px;
 }
