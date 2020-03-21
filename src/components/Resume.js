@@ -232,9 +232,9 @@ export default class Resume extends Component {
                                  
                                  <Timeline />
                 </div>
-                <div className="other-blocks">
+                <div className="other-blocks" style={{paddingTop:'2em'}}>
                     <div className="skills-block card-gogo">
-                        <h2 style={{paddingTop:'2em',textAlign:"center"}}>Skills</h2>
+                        <h2 style={{textAlign:"center"}}>Skills</h2>
                         <div className="category-tab">
                             <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
                                 <Tab>Front End</Tab>
@@ -249,31 +249,34 @@ export default class Resume extends Component {
                             </section>
                         </div>
                     </div>
-                    <div className="language-block card-gogo">
-                        <h2 style={{textAlign:"center"}}>Languages</h2>
-                            <Skills 
-                                skill="Arabic"
-                                progress="90"
+                    <div className="language-education-block">
+                        <div className="language-block card-gogo">
+                            <h2 style={{textAlign:"center"}}>Languages</h2>
+                                <Skills 
+                                    skill="Arabic"
+                                    progress={5}
+                                    />
+                                <Skills 
+                                    skill="English"
+                                    progress={4}
+                                    />
+                                <Skills 
+                                    skill="Franch"
+                                    progress={4}
+                                            />
+                        </div>
+                        <div className="education-block card-gogo">
+                            <h2 style={{textAlign:"center"}}>Education</h2>
+                            <Education
+                                    startYear={2015}
+                                    endYear={2018}
+                                    img={logoUalger}
+                                    schoolName="Université d’Alger 1"
+                                    schoolDescription="licence en système d’information et génie
+                                    logiciel Université d’Alger 1 ."
                                 />
-                            <Skills 
-                                skill="English"
-                                progress="70"
-                                />
-                            <Skills 
-                                skill="Franch"
-                                progress="80"
-                                        />
-                    </div>
-                    <div className="education-block card-gogo">
-                        <h2 style={{textAlign:"center"}}>Education</h2>
-                        <Education
-                                startYear={2015}
-                                endYear={2018}
-                                img={logoUalger}
-                                schoolName="Université d’Alger 1"
-                                schoolDescription="licence en système d’information et génie
-                                logiciel Université d’Alger 1 ."
-                            />
+                        </div>
+
                     </div>
                     
                 </div>  

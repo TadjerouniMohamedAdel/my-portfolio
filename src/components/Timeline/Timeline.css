@@ -8,9 +8,10 @@
 
 .timeline:before{
     content:'';
+    margin-top: 100px;
     margin-left:10px; 
     position: absolute;
-    width:1px;
+    width:0.5px;
     height:70%;
     background:#c5c5c5;
 }

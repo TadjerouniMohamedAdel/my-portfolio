@@ -145,14 +145,10 @@
   margin: 1px;
   
 }
-/* @media(min-width:840px){
-  .experiences-block{
-    margin-left: 100px;
-  }
 
-} */
 .skills-block{
   min-height: 600px;
+  padding: 40px 0;
 }
 
 .language-item{
@@ -160,7 +156,7 @@
   flex-direction: row;
   justify-content: center;
   padding:10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .resume-container{
@@ -185,12 +181,22 @@
   flex:1
 }
 .language-block{
-  flex:1;
+  flex:0.8;
 }
 .card-gogo{
         border: initial;
         background: white;
         border-radius: 15px;
         box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
-        margin:20px;
+        margin-bottom:20px;
+        margin-left:5px;
+        margin-right: 5px;;
+}
+.language-education-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.education-block{
+  flex:1
 }
