@@ -34,7 +34,7 @@ export default class Timeline extends Component {
     render() {
         return (
             <div className="timeline card-gogo">
-              <h2 style={{textAlign:"center"}}>Experience</h2>
+              <h2 className="section-title-resume" style={{textAlign:"center"}}>Experience</h2>
         <ul>
          {
            experiences.map((item,index) =>{

@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
 .profile-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width:65%;
-    margin: 75px auto 0;
+    margin: 130px auto 0;
     background-color: #fff;
     box-shadow: 0 3px 30px rgba(0,0,0,.14);
     color:white;

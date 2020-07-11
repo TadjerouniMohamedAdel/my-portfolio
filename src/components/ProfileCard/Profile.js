@@ -12,7 +12,6 @@ export default class Profile extends Component {
             </div>
                 <div className="profile-card-body">
                     <p className="full-name">Adel Mohamed Tadjerouni</p>
-                    <p className="username">@TMA</p>
                     <p className="city">Alger Algerie</p>
                     <p className="desc">Full Stack Web & Mobile Developer</p>
                     <div className="social-links" >

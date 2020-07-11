@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
+
 .header-color{
     background: #8A2387;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,14 +20,7 @@
 
 
 .landing-grid{
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     text-align: center;
-    top: 0;
-    bottom:0;
-    position:fixed;
     display: flex;
     padding:20px;
     flex-direction: row;
@@ -107,7 +102,7 @@
 }
 
 .contact-grid h2{
-  font-family:'Anton',sans-serif;
+  font-family:'Lobster',sans-serif;
   font-weight: bold;
 }
 .contact-grid hr{
@@ -169,12 +164,14 @@
   flex-wrap: wrap;
 }
 .experiences-block{
-  flex:1;
+  flex:1.2;
   margin-left:20px;
   margin-right:25px;
 }
 .other-blocks{
   display: flex;
+  margin-left:20px;
+  margin-right:25px;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
@@ -199,4 +196,7 @@
 }
 .education-block{
   flex:1
+}
+.section-title-resume{
+  font-family: "Lobster";
 }

@@ -234,7 +234,7 @@ export default class Resume extends Component {
                 </div>
                 <div className="other-blocks" style={{paddingTop:'2em'}}>
                     <div className="skills-block card-gogo">
-                        <h2 style={{textAlign:"center"}}>Skills</h2>
+                        <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
                         <div className="category-tab">
                             <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
                                 <Tab>Front End</Tab>
@@ -251,7 +251,7 @@ export default class Resume extends Component {
                     </div>
                     <div className="language-education-block">
                         <div className="language-block card-gogo">
-                            <h2 style={{textAlign:"center"}}>Languages</h2>
+                            <h2 className="section-title-resume" style={{textAlign:"center"}}>Languages</h2>
                                 <Skills 
                                     skill="Arabic"
                                     progress={5}
@@ -266,7 +266,7 @@ export default class Resume extends Component {
                                             />
                         </div>
                         <div className="education-block card-gogo">
-                            <h2 style={{textAlign:"center"}}>Education</h2>
+                            <h2 className="section-title-resume" style={{textAlign:"center"}}>Education</h2>
                             <Education
                                     startYear={2015}
                                     endYear={2018}
