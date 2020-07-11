@@ -3,10 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
 
 .header-color{
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #3586ff !important;
 
 }
 
@@ -22,7 +19,7 @@
 .landing-grid{
     text-align: center;
     display: flex;
-    padding:20px;
+    /* padding:20px; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -199,4 +196,68 @@
 }
 .section-title-resume{
   font-family: "Lobster";
+}
+
+.wave-section{
+  position:relative;
+  width: 100%;
+  height:100vh;
+  background:#3586ff;
+  overflow: hidden;
+}
+
+.wave-section .wave{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100px;
+  background:url(./Images/src/wave.png);
+  background-size: 1000px 100px;
+
+}
+
+.wave-section .wave.wave1{
+  z-index: 1000;
+  animation:animate 30s linear infinite;
+  opacity: 1;
+  animation-delay:0s;
+  bottom:0
+}
+.wave-section .wave.wave2{
+  z-index: 999;
+  animation:animate2 15s linear infinite;
+  opacity: 0.5;
+  animation-delay:-5s;
+  bottom:10px;
+}
+.wave-section .wave.wave3{
+  z-index: 998;
+  animation:animate 30s linear infinite;
+  opacity: 0.2;
+  animation-delay:-2s;
+  bottom:15;
+}
+.wave-section .wave.wave4{
+  z-index: 997;
+  animation:animate2 5s linear infinite;
+  opacity: 0.7;
+  animation-delay:-5s;
+  bottom:20px;
+}
+@keyframes animate{
+  0%{
+      background-position-x:0
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+@keyframes animate2{
+  0%{
+      background-position-x:0
+  }
+  100%{
+      background-position-x: -1000px;
+  }
 }

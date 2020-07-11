@@ -9,6 +9,7 @@ export const prof= require('./src/prof.png')
 export const react_logo= require('./src/react_logo.png')
 export const react= require('./src/react.svg')
 export const html_logo=require('./src/html-logo.png')
+export const wave=require('./src/wave.png')
 
 export const rn_logo=require('./src/rn_logo.png')
 

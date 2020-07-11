@@ -6,7 +6,16 @@ export default class LandingPage extends Component {
     render() {
         return (
                 <div className="landing-grid">
-                    <Profile />
+                    <div className="wave-section">
+                        <div className="wave wave1"></div>
+                        <div className="wave wave2"></div>
+                        <div className="wave wave3"></div>
+                        <div className="wave wave4"></div>
+                        <Profile />
+                    </div>
+                    <div>
+                        
+                    </div>
                     <div>
                         Deserunt qui qui sit amet laboris nulla elit. Excepteur consequat non consequat reprehenderit adipisicing sint nulla pariatur dolore id. Laboris pariatur deserunt sit laborum eu sint incididunt do aute. Enim incididunt commodo qui qui sint consequat tempor exercitation reprehenderit. Occaecat commodo ad voluptate magna officia exercitation tempor dolor.
 
