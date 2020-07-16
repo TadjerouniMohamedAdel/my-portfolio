@@ -62,18 +62,7 @@
   font-size:20px;
   padding:1em;
 }
-.social-links{
-  display: flex;
-  justify-content: space-between;
-  width:50%;
-  flex-wrap: wrap;
-  margin:auto;
-}
-.social-links a{
-  color:white;
-  font-size: 5em;
-  padding:8px;
-}
+
 
 .projects-grid{
   display: flex;
@@ -260,4 +249,15 @@
   100%{
       background-position-x: -1000px;
   }
+}
+
+.landing-projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-projects{
+  display: flex;
+  flex-direction: row;
 }

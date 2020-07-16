@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { user } from '../../Images/Images'
 import './Profile.css';
+import SocialMenu from './SocialMenu';
 
 
 export default class Profile extends Component {
@@ -14,24 +15,7 @@ export default class Profile extends Component {
                     <p className="full-name">Adel Mohamed Tadjerouni</p>
                     <p className="city">Alger Algerie</p>
                     <p className="desc">Full Stack Web & Mobile Developer</p>
-                    <div className="social-links" >
-                        <a  href="https://www.google.dz" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-linkedin-square"  aria-hidden="true"></i>
-                        </a>
-                        
-                        
-                        <a  href="https://www.google.dz" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-github-square"  aria-hidden="true"></i>
-                        </a>
-                        
-                        
-                        <a  href="https://www.google.dz" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-facebook-square"  aria-hidden="true" ></i>
-                        </a>
-                        <a  href="https://www.google.dz" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-skype"  aria-hidden="true"></i>
-                        </a>
-                    </div>
+                   <SocialMenu />
                 </div>
         </div>
         )

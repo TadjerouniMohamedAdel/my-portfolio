@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import Profile from './ProfileCard/Profile'
+import ProjectCard from './ProjectCard/ProjectCard'
+import { logoKhedemni, logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase } from '../Images/Images'
 
 export default class LandingPage extends Component {
     render() {
@@ -13,30 +15,61 @@ export default class LandingPage extends Component {
                         <div className="wave wave4"></div>
                         <Profile />
                     </div>
-                    <div>
+                   
+                    <div className="landing-projects-container">
+                        <h3>
+                            Last Projects
+                        </h3>
+                        <div className="landing-projects">
+                            <ProjectCard 
+                                title="Khedemni Mobile"
+                                type="Professional Project"
+                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                logo={logoKhedemni}
+                                tech={[
+                                    {name:"Java Script",logo:js_logo},
+                                    {name:"React Native",logo:react},
+                                    {name:"PHP",logo:php},
+                                    {name:"Symfony 4",logo:symfony},
+                                    {name:"Api Platform",logo:api_logo},
+                                    {name:"Firebase",logo:firebase}
+                                ]}
+                            />
+                            <ProjectCard 
+                                title="Buileo CRM"
+                                type="Professional Project"
+                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                logo={logoBuileo}
+                                classes="buileo"
+                                tech={[
+                                    {name:"PHP",logo:php},
+                                    {name:"Symfony 2",logo:symfony},
+                                    {name:"HTML 5",logo:html_logo},
+                                    {name:"CSS 3",logo:css_logo},
+                                    {name:"Bootstrap",logo:bootstrap},
+                                    {name:"Java Script",logo:js_logo},
+                                    {name:"Vuejs",logo:vue},
+                                    {name:"JQuery",logo:jquery},
+                                ]}
+                            />
+                        </div>
+                        <div>
+                                Laborum aliquip dolor do ad commodo anim Lorem mollit voluptate. Aliquip commodo nisi laboris nulla voluptate amet ex ea fugiat dolore nulla tempor. Officia sunt velit laboris ea labore consequat commodo do. Labore minim fugiat ea eu deserunt culpa qui tempor. Reprehenderit deserunt enim est dolore eu ut nisi.
+
+Non enim elit dolor quis reprehenderit reprehenderit cupidatat ea dolore. Est reprehenderit Lorem amet adipisicing commodo aute sint nisi. Irure reprehenderit sunt quis incididunt elit pariatur labore.
+
+Magna excepteur commodo Lorem exercitation. Sit nisi ipsum ea sint dolor anim culpa. Exercitation sint aliquip sit et eu esse irure duis adipisicing pariatur ullamco consequat anim et. Lorem cillum laborum duis nulla tempor cupidatat magna velit dolore sit ex qui ullamco exercitation.
+
+Incididunt aliquip elit et in consequat sit aliquip. Lorem amet aliqua excepteur aute adipisicing pariatur dolore esse nostrud excepteur in. Eu adipisicing proident ex quis adipisicing enim veniam laboris tempor mollit cupidatat. Ullamco est sint incididunt nulla laboris nostrud labore laboris Lorem. Dolor fugiat velit magna culpa Lorem consequat enim qui adipisicing duis aliqua ipsum laboris. Voluptate et exercitation nostrud dolore velit adipisicing incididunt ullamco et.
+
+Cupidatat laborum aliqua sunt et reprehenderit nostrud irure consectetur consequat officia. Sint incididunt nisi minim velit cupidatat esse officia et. Sint tempor cillum non velit pariatur ea non ullamco culpa do ut adipisicing ullamco ipsum. Aute eu officia et aute exercitation commodo ipsum. Ipsum deserunt officia irure cupidatat duis ullamco incididunt aliqua non laborum.
+
+Ut ea non occaecat amet fugiat sint. Anim fugiat dolore amet ex quis labore voluptate voluptate magna. Incididunt veniam esse dolore aliquip eiusmod.Ipsum aute voluptate incididunt mollit laborum officia consequat labore ut sit nisi. Ad culpa dolor laborum reprehenderit tempor culpa incididunt. Sint veniam non nulla exercitation Lorem enim elit consectetur sunt voluptate amet.
+
+Et ipsum tempor consectetur nisi consequat. Id cupidatat dolore ut incididunt ad cillum tempor non consectetur duis. Non fugiat nulla et pariatur labore aliquip dolore laboris.
+                        </div>    
+                    </div>
                         
-                    </div>
-                    <div>
-                        Deserunt qui qui sit amet laboris nulla elit. Excepteur consequat non consequat reprehenderit adipisicing sint nulla pariatur dolore id. Laboris pariatur deserunt sit laborum eu sint incididunt do aute. Enim incididunt commodo qui qui sint consequat tempor exercitation reprehenderit. Occaecat commodo ad voluptate magna officia exercitation tempor dolor.
-
-Magna est cillum duis cillum excepteur adipisicing sunt. Nostrud enim occaecat excepteur esse ipsum ipsum amet. Aute proident pariatur et labore proident.
-
-Sit excepteur ullamco nulla id consectetur magna non consequat qui. Occaecat Lorem est cupidatat voluptate laboris elit consectetur ad anim laboris dolore aliquip. Irure ad sint nulla deserunt consequat laborum elit anim commodo velit non. Qui magna sunt voluptate adipisicing culpa commodo amet. Dolor deserunt eiusmod laborum qui aute aliqua in voluptate mollit.
-
-Ex dolore reprehenderit exercitation eu culpa officia qui adipisicing mollit quis eu eu in culpa. Fugiat anim ipsum magna anim est do laboris. Qui et sunt ex ut. In consectetur elit id labore nulla exercitation ut. Et do fugiat sint sit magna est consequat sunt duis consequat commodo adipisicing tempor occaecat.
-
-Ut do irure ex reprehenderit voluptate fugiat duis aute occaecat et labore ut ipsum duis. Minim elit do aliqua ad elit reprehenderit qui est voluptate consectetur officia ea est cillum. Dolore pariatur qui ullamco minim sint incididunt nulla sint nisi voluptate. Cillum veniam pariatur officia cupidatat ipsum consectetur nulla labore proident minim enim id. Dolore velit nulla cupidatat excepteur tempor anim incididunt ipsum ea culpa consequat do.
-
-Ullamco laborum consectetur mollit elit pariatur nostrud nostrud exercitation consectetur ullamco. Tempor nisi anim et ea commodo. Mollit nisi sint Lorem ad eiusmod duis magna ipsum laborum sint.
-
-Nulla veniam proident consequat tempor. Amet irure laborum voluptate duis. Voluptate id aute velit commodo voluptate. Ullamco velit non aliqua proident qui mollit tempor minim dolor aliqua nostrud enim veniam. Esse ipsum laborum ea ut enim quis exercitation minim eu ut laboris. Incididunt sint irure est in anim dolor adipisicing fugiat magna eu veniam exercitation aute. Voluptate sunt ullamco duis nisi non pariatur aliquip occaecat aliqua aute.
-
-Esse enim sit ea labore Lorem minim Lorem ea enim labore anim magna. Aliquip excepteur cupidatat esse voluptate in ipsum ipsum ipsum aute cupidatat id tempor anim. Proident ea culpa adipisicing consectetur dolore.
-
-Quis mollit ex do ut est exercitation laboris est quis sunt cupidatat commodo. Sit ut ad veniam nisi mollit incididunt sint deserunt quis officia ullamco. Cillum ex ea officia ullamco aute esse reprehenderit excepteur consequat.
-
-Duis elit ex adipisicing veniam anim occaecat eu magna sit adipisicing. Esse ipsum amet id tempor qui. Quis veniam commodo voluptate reprehenderit.
-                    </div>
                 </div>
                 
         )

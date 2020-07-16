@@ -41,5 +41,6 @@ export const mysql_logo=require('./src/mysql_logo.png')
 export const arch_logo=require('./src/arch_logo.png')
 export const git_logo=require('./src/git_logo.png')
 export const git=require('./src/git.png')
-
+export const vue=require('./src/vue.png')
+export const firebase= require('./src/firebase.png')
 

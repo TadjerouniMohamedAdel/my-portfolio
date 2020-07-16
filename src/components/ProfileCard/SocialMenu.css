@@ -1,0 +1,69 @@
+
+
+.list-social1{
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+
+.list-social1 li {
+    list-style: none;
+    margin: 0 5px;
+}
+.list-social1 li .social-link1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color:#000;
+    transition: 0.5s;
+}
+.list-social1 li .social-link1:hover{
+    color:#fff;
+}
+.list-social1 li .social-link1:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    color:#fff;
+    right: 0;
+    bottom: 0;
+    background:#000;
+    z-index:  0;
+
+    border-radius:50%;
+    transform:scale(0);
+    transition:0.5s cubic-bezier(.95,.32,.37,1.31);
+}
+
+.list-social1 li .social-link1 .fa{
+    z-index: 1000;
+}
+.list-social1 li .social-link1:hover:before{
+    transform: scale(1);
+}
+.list-social1 .li-facebook .social-link1:hover:before{
+    background-color: #3b5999;
+}
+.list-social1 .li-skype .social-link1:hover:before{
+    background-color: #00AFF0;
+}
+
+.list-social1 .li-google .social-link1:hover:before{
+    background-color: #dd4b39;
+}
+.list-social1 .li-linkedin .social-link1:hover:before{
+    background-color: #0077B5;
+}
+.list-social1 .li-github .social-link1:hover:before{
+    background-color: #474747;
+}
+
+
+
