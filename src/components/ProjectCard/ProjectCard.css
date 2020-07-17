@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
  .card-project{
     transition: 0.5s;
@@ -16,6 +13,13 @@
 }
  .card-project.buileo:hover{
     background-color: rgb(116, 196, 44);
+}
+.card-project.ep:hover{
+    background-color: rgb(252, 188, 28);
+}
+
+.card-project.artelyes:hover{
+    background-color: rgb(212, 180, 52);
 }
  .card-project:hover{
     background: rgba(232, 60, 76,1);
@@ -64,6 +68,10 @@
  .card-project .contentBx p.description{
     color:#0f0f0f;
     height: 70px;
+}
+.card-project .contentBx p{
+    font-family: 'Oxygen';
+
 }
  .card-project .contentBx a{
     display: inline-block;

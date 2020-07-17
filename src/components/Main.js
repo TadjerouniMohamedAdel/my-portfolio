@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 import Resume from './Resume'
 import Projects from './Projects'
-import Contacts from './Contacts'
 import {TransitionGroup,CSSTransition} from 'react-transition-group'
 
 class Main extends React.Component{
@@ -26,7 +25,6 @@ class Main extends React.Component{
                     <Route  path="/aboutme" component={AboutMe} />
                     <Route  path="/resume" component={Resume} />
                     <Route  path="/projects" component={Projects} />
-                    <Route  path="/contacts" component={Contacts} />
                     <Route exect path="/" component={LandingPage} />
                 </Switch>
                 </section>
@@ -59,7 +57,7 @@ div.transition-group {
     position: relative;
 }
 section.route-section {
- position: absolute;
+ position: relative;
  width: 100%;
  top: 0;
  left: 0;

@@ -43,4 +43,7 @@ export const git_logo=require('./src/git_logo.png')
 export const git=require('./src/git.png')
 export const vue=require('./src/vue.png')
 export const firebase= require('./src/firebase.png')
+export const node= require('./src/node.png')
+export const artelyes= require('./src/artelyes.png')
+export const material= require('./src/material.png')
 

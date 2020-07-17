@@ -19,7 +19,6 @@ class App extends React.Component {
                             <Link to="/">Home</Link>
                             <Link to="/resume">Resume</Link>
                             <Link to="/projects">Projects</Link>
-                            <Link to="/contacts">Contacts</Link>
                         </Navigation>
                     </Header>
                     <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black'}}>My Portfolio</Link> }>
@@ -27,12 +26,16 @@ class App extends React.Component {
                             <Link  onClick={() => this.hideToggle()} to="/">Home</Link>
                             <Link  onClick={() => this.hideToggle()} to="/resume">Resume</Link>
                             <Link  onClick={() => this.hideToggle()} to="/projects">Projects</Link>
-                            <Link  onClick={() => this.hideToggle()} to="/contacts">Contacts</Link>
                         </Navigation>
                     </Drawer>
                     <Content className="section">
-                        <div className="page-content" />
-                        <Main/>
+                        <section className="section-app-content">
+                            <div className="page-content" />
+                            <Main/>
+                        </section>
+                        <footer>
+                                <h1 align="center">footer</h1>
+                        </footer>
                     </Content>
                 </Layout>
             </div>

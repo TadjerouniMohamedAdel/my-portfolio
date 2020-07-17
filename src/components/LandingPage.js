@@ -2,7 +2,23 @@ import React, { Component } from 'react'
 
 import Profile from './ProfileCard/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
-import { logoKhedemni, logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase } from '../Images/Images'
+import { logoKhedemni, node,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo } from '../Images/Images'
+import Tooltip from 'react-mdl/lib/Tooltip'
+import WaveButton from './WaveButton/WaveButton'
+
+
+const mainSkills = [
+    {name:"JavaScript",logo:js_logo},
+    {name:"NodeJs",logo:node},
+    {name:"React",logo:react_logo},
+    {name:"PHP",logo:php_logo},
+    {name:"Symfony",logo:symfony_logo},
+    {name:"Css",logo:css_logo},
+    {name:"HTML",logo:html_logo},
+    {name:"React Native",logo:rn_logo},
+
+]
+
 
 export default class LandingPage extends Component {
     render() {
@@ -15,7 +31,30 @@ export default class LandingPage extends Component {
                         <div className="wave wave4"></div>
                         <Profile />
                     </div>
-                   
+                    <div className="landing-skills-container">
+                        <h3>
+                            Main Skills
+                        </h3>
+                        <div className="landing-skills-card">
+                            <div className="landing-skills">
+                                {
+                                    mainSkills.map((item,index)=>{
+                                        return(
+                                            <div className="skill-landing-item">
+                                                <Tooltip label={item.name}>
+                                                    <img src={item.logo} width={110} height={100}/>
+                                                </Tooltip>
+                                            </div>
+                                        )
+                                    })
+                                }
+
+                            </div>
+                            <WaveButton 
+                                label="View all skills"
+                            />
+                        </div>
+                    </div>
                     <div className="landing-projects-container">
                         <h3>
                             Last Projects
@@ -53,24 +92,16 @@ export default class LandingPage extends Component {
                                 ]}
                             />
                         </div>
-                        <div>
-                                Laborum aliquip dolor do ad commodo anim Lorem mollit voluptate. Aliquip commodo nisi laboris nulla voluptate amet ex ea fugiat dolore nulla tempor. Officia sunt velit laboris ea labore consequat commodo do. Labore minim fugiat ea eu deserunt culpa qui tempor. Reprehenderit deserunt enim est dolore eu ut nisi.
-
-Non enim elit dolor quis reprehenderit reprehenderit cupidatat ea dolore. Est reprehenderit Lorem amet adipisicing commodo aute sint nisi. Irure reprehenderit sunt quis incididunt elit pariatur labore.
-
-Magna excepteur commodo Lorem exercitation. Sit nisi ipsum ea sint dolor anim culpa. Exercitation sint aliquip sit et eu esse irure duis adipisicing pariatur ullamco consequat anim et. Lorem cillum laborum duis nulla tempor cupidatat magna velit dolore sit ex qui ullamco exercitation.
-
-Incididunt aliquip elit et in consequat sit aliquip. Lorem amet aliqua excepteur aute adipisicing pariatur dolore esse nostrud excepteur in. Eu adipisicing proident ex quis adipisicing enim veniam laboris tempor mollit cupidatat. Ullamco est sint incididunt nulla laboris nostrud labore laboris Lorem. Dolor fugiat velit magna culpa Lorem consequat enim qui adipisicing duis aliqua ipsum laboris. Voluptate et exercitation nostrud dolore velit adipisicing incididunt ullamco et.
-
-Cupidatat laborum aliqua sunt et reprehenderit nostrud irure consectetur consequat officia. Sint incididunt nisi minim velit cupidatat esse officia et. Sint tempor cillum non velit pariatur ea non ullamco culpa do ut adipisicing ullamco ipsum. Aute eu officia et aute exercitation commodo ipsum. Ipsum deserunt officia irure cupidatat duis ullamco incididunt aliqua non laborum.
-
-Ut ea non occaecat amet fugiat sint. Anim fugiat dolore amet ex quis labore voluptate voluptate magna. Incididunt veniam esse dolore aliquip eiusmod.Ipsum aute voluptate incididunt mollit laborum officia consequat labore ut sit nisi. Ad culpa dolor laborum reprehenderit tempor culpa incididunt. Sint veniam non nulla exercitation Lorem enim elit consectetur sunt voluptate amet.
-
-Et ipsum tempor consectetur nisi consequat. Id cupidatat dolore ut incididunt ad cillum tempor non consectetur duis. Non fugiat nulla et pariatur labore aliquip dolore laboris.
-                        </div>    
+                        <WaveButton 
+                            label="View all projects"
+                        />
                     </div>
-                        
+                    <div className="landing-last-experience">
+                        <h3>Last Experience</h3>
+                    </div>            
+                 
                 </div>
+                        
                 
         )
     }
