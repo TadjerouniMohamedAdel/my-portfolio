@@ -6,9 +6,12 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop';
 ReactDOM.render(
                 <BrowserRouter>
-                    <App />
+                    <ScrollToTop>
+                        <App />
+                    </ScrollToTop>
                 </BrowserRouter>
                 , document.getElementById('root'));
 

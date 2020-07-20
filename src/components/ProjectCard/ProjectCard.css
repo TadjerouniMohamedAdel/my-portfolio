@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
  .card-project{
     transition: 0.5s;
     width:350px;
-    height:500px;
+    height:520px;
     margin:30px;
     padding:20px 20px;
     border-radius: 40px;
@@ -40,6 +41,9 @@
 }
 .card-project .contentBx .type{
     margin-top: -20px;
+    font-family: 'Comfortaa';
+    font-style: italic;
+    font-size: 14px;
 }
 .card-project:hover .contentBx a{
     background-color: #fff;
@@ -62,15 +66,15 @@
     color:#0f0f0f;
     font-weight:700;
     font-size: 1.4em;
-    letter-spacing: 2px;
 }
 
  .card-project .contentBx p.description{
     color:#0f0f0f;
-    height: 70px;
+    height: 90px;
 }
 .card-project .contentBx p{
-    font-family: 'Oxygen';
+    font-family: 'Comfortaa';
+    font-size: 16px;
 
 }
  .card-project .contentBx a{

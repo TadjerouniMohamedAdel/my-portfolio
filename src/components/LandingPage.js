@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 
 import Profile from './ProfileCard/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
-import { logoKhedemni, node,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo } from '../Images/Images'
+import { logoKhedemni, node,logoBuileo, react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp } from '../Images/Images'
 import Tooltip from 'react-mdl/lib/Tooltip'
 import WaveButton from './WaveButton/WaveButton'
+import { Chip } from 'react-mdl/lib/Chip'
+import DivWaves from './DivWaves/DivWaves'
 
 
 const mainSkills = [
@@ -19,6 +21,16 @@ const mainSkills = [
 
 ]
 
+const lastExperience ={
+    startDate:"Novembre 2018",
+    endDate:"En cours",
+    title:"Développeur Web/Mobile Full Stack",
+    description:"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
+    logo:logoEp,
+    imgWidth:80,
+    imgHeight:80,
+    tech:[{name:"Symfony",logo:symfony},{name:"PHP",logo:php},{name:"Api Platform",logo:api_logo},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"JQuery",logo:jquery},{name:"Bootstrap",logo:bootstrap},{name:"React",logo:react},{name:"React Native",logo:react},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
+}
 
 export default class LandingPage extends Component {
     render() {
@@ -52,6 +64,7 @@ export default class LandingPage extends Component {
                             </div>
                             <WaveButton 
                                 label="View all skills"
+                                path="/resume"
                             />
                         </div>
                     </div>
@@ -94,12 +107,32 @@ export default class LandingPage extends Component {
                         </div>
                         <WaveButton 
                             label="View all projects"
+                            path="/projects"
                         />
                     </div>
                     <div className="landing-last-experience">
                         <h3>Last Experience</h3>
-                    </div>            
-                 
+                        <div className="last-experience">
+                            <h4>{lastExperience.title}</h4>
+                            <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-10}}/>
+                            <p>{lastExperience.description}</p>
+                            <div style={{marginTop:10}}>
+                              <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
+                            {
+                              lastExperience.tech.map((tech,ind)=>(
+                                <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
+                                    <Chip>
+                                      <img src={tech.logo} width={23} height={25} style={{marginRight:3}}/>
+                                      {tech.name}
+                                    </Chip>
+                                  </div>
+
+                              ))
+                            }
+                          </div>
+                        </div>
+                    </div>
+                    <DivWaves />            
                 </div>
                         
                 
