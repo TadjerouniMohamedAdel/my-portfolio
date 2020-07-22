@@ -3,6 +3,7 @@ import './App.css';
 import {Header,Drawer,Navigation,Content,Layout} from 'react-mdl'
 import Main from './components/Main';
 import { Link } from 'react-router-dom'
+import Footer from './components/Footer';
 
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
                             <Link to="/">Home</Link>
                             <Link to="/resume">Resume</Link>
                             <Link to="/projects">Projects</Link>
+                            <Link to="/aboutme">About Me</Link>
                         </Navigation>
                     </Header>
                     <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black'}}>My Portfolio</Link> }>
@@ -26,6 +28,7 @@ class App extends React.Component {
                             <Link  onClick={() => this.hideToggle()} to="/">Home</Link>
                             <Link  onClick={() => this.hideToggle()} to="/resume">Resume</Link>
                             <Link  onClick={() => this.hideToggle()} to="/projects">Projects</Link>
+                            <Link  onClick={() => this.hideToggle()} to="/aboutme">About Me</Link>
                         </Navigation>
                     </Drawer>
                     <Content className="section">
@@ -34,7 +37,8 @@ class App extends React.Component {
                             <Main/>
                         </section>
                         <footer>
-                                <h1 align="center">footer</h1>
+                            <h1 align="center">footer</h1>
+                            <Footer />
                         </footer>
                     </Content>
                 </Layout>

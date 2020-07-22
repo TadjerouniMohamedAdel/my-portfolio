@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:80%;
+    align-items: center;
+}
+.footer-container > div{
+    margin:20px;
+    width:40%;
+    color: #000;
+    background: #fafafa;;
+    box-shadow: -6px -6px 20px rgba(255,255,255,.1), 6px 6px 20px rgba(10, 10, 10, 0.1);
+    border-radius:10px;
+    padding:20px;
+}
+.footer-container .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .contact-form .form-field{
+    margin-top: 10px;
+    width:100%
+}

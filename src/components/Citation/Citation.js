@@ -1,6 +1,6 @@
 import React from 'react'
-import './DivWaves.css'
-export default function DivWaves() {
+import './Citation.css'
+export default function Citation() {
     return (
         <div className="div-wave">
             <span></span>

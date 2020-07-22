@@ -6,20 +6,18 @@ import { logoKhedemni, node,logoBuileo, react,webpack,git,mysql_logo,docker, js_
 import Tooltip from 'react-mdl/lib/Tooltip'
 import WaveButton from './WaveButton/WaveButton'
 import { Chip } from 'react-mdl/lib/Chip'
-import DivWaves from './DivWaves/DivWaves'
+import Citation from './Citation/Citation'
+import DivWave from './DivWave/DivWave'
+import SkillSwiper from './SkillSwiper/SkillSwiper'
 
 
-const mainSkills = [
-    {name:"JavaScript",logo:js_logo},
-    {name:"NodeJs",logo:node},
-    {name:"React",logo:react_logo},
-    {name:"PHP",logo:php_logo},
-    {name:"Symfony",logo:symfony_logo},
-    {name:"Css",logo:css_logo},
-    {name:"HTML",logo:html_logo},
-    {name:"React Native",logo:rn_logo},
 
-]
+
+
+
+
+
+
 
 const lastExperience ={
     startDate:"Novembre 2018",
@@ -47,28 +45,16 @@ export default class LandingPage extends Component {
                         <h3>
                             Main Skills
                         </h3>
-                        <div className="landing-skills-card">
-                            <div className="landing-skills">
-                                {
-                                    mainSkills.map((item,index)=>{
-                                        return(
-                                            <div className="skill-landing-item">
-                                                <Tooltip label={item.name}>
-                                                    <img src={item.logo} width={110} height={100}/>
-                                                </Tooltip>
-                                            </div>
-                                        )
-                                    })
-                                }
+                        
+                            <SkillSwiper />
 
-                            </div>
                             <WaveButton 
                                 label="View all skills"
                                 path="/resume"
                             />
-                        </div>
                     </div>
                     <div className="landing-projects-container">
+                    <DivWave>
                         <h3>
                             Last Projects
                         </h3>
@@ -109,13 +95,20 @@ export default class LandingPage extends Component {
                             label="View all projects"
                             path="/projects"
                         />
+                    </DivWave>
                     </div>
+                    
                     <div className="landing-last-experience">
                         <h3>Last Experience</h3>
                         <div className="last-experience">
                             <h4>{lastExperience.title}</h4>
+                            <span className="time">
+                                {lastExperience.startDate } - {lastExperience.endDate}
+                            </span>
                             <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-10}}/>
-                            <p>{lastExperience.description}</p>
+                            <p className="description">
+                                {lastExperience.description}
+                            </p>
                             <div style={{marginTop:10}}>
                               <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
                             {
@@ -132,7 +125,10 @@ export default class LandingPage extends Component {
                           </div>
                         </div>
                     </div>
-                    <DivWaves />            
+                    <div className="about-me-landing">
+                        <h3>About Me</h3>
+                        <Citation />            
+                    </div>
                 </div>
                         
                 
