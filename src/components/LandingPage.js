@@ -103,7 +103,7 @@ export default class LandingPage extends Component {
                             <span className="time">
                                 {lastExperience.startDate } - {lastExperience.endDate}
                             </span>
-                            <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-10}}/>
+                            <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-5}}/>
                             <p className="description">
                                 {lastExperience.description}
                             </p>
