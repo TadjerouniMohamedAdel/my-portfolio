@@ -8,7 +8,7 @@ import WaveButton from './WaveButton/WaveButton'
 import { Chip } from 'react-mdl/lib/Chip'
 import Citation from './Citation/Citation'
 import DivWave from './DivWave/DivWave'
-import SkillSwiper from './SkillSwiper/SkillSwiper'
+import LandingSkill from './LandingSkills/LandingSkill'
 
 
 
@@ -46,8 +46,8 @@ export default class LandingPage extends Component {
                             Main Skills
                         </h3>
                         
-                            <SkillSwiper />
-
+                            <LandingSkill />
+                            <br/><br/>
                             <WaveButton 
                                 label="View all skills"
                                 path="/resume"

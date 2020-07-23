@@ -1,0 +1,23 @@
+.container-masonry{
+    width:90%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh;
+    grid-gap:5px;
+}
+.container-masonry .box{
+    position: relative;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-masonry .box.MRow{
+    grid-row:span 2;
+}
+
+
+.container-masonry .box.MColumn{
+    grid-column: span 2;
+}
