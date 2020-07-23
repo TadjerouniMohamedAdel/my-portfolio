@@ -3,7 +3,7 @@
     display: grid;
     grid-auto-flow: dense;
     grid-template: "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh;
-    grid-gap:5px;
+    grid-gap:25px;
 }
 .container-masonry .box{
     position: relative;
