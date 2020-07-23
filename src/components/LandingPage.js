@@ -43,11 +43,9 @@ export default class LandingPage extends Component {
                     </div>
                     <div className="landing-skills-container">
                         <h3>
-                            Main Skills
+                            Some Skills
                         </h3>
-                        
                             <LandingSkill />
-                            <br/><br/>
                             <WaveButton 
                                 label="View all skills"
                                 path="/resume"

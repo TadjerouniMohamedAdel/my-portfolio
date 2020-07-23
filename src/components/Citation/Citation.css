@@ -80,7 +80,6 @@
    text-align: center;
    transition:0.5s;
    z-index:100;
-
 }
 .div-wave .content a{
     position: relative;
@@ -98,8 +97,14 @@
 
 
 
-.div-wave .content p,.div-wave .content h2{
-    transition: 0.5s;
+.div-wave .content h2{
     color:#fff;
 
+}
+.div-wave .content p{
+    color: #000;
+}
+.div-wave .content p i{
+    margin-left: 10px;
+    margin-right: 10px;
 }
