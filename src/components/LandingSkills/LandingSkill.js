@@ -1,5 +1,5 @@
 import React from 'react'
-import { logoKhedemni, node,logoBuileo, react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, jquery_logo, jquery_logo2 } from '../../Images/Images'
+import { logoKhedemni, node,logoBuileo, react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, jquery_logo, jquery_logo2, git_logo } from '../../Images/Images'
 import './LandingSkill.css'
 const mainSkills = [
     {name:"JavaScript",logo:js_logo,class:"a"},
@@ -24,7 +24,7 @@ export default function LandingSkill() {
             <div className="box "> <img src={docker}  width={100} height={100}/></div>
             <div className="box "> <img src={symfony}  width={100} height={100}/></div>
             <div className="box MRow"> <img src={php_logo}  width={200} height={150}/></div>
-            <div className="box"> <img src={git}  width={100} height={100}/></div>
+            <div className="box"> <img src={git_logo}  width={200} height={100}/></div>
             <div className="box"> <img src={css_logo}  width={100} height={100}/></div>
             <div className="box "> <img src={html_logo}  width={100} height={100}/></div>
             <div className="box"> <img src={api_logo}  width={100} height={100}/></div>
