@@ -1,24 +1,70 @@
 .footer-container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width:80%;
+    width:100%;
+    justify-content: center;
     align-items: center;
 }
-.footer-container > div{
-    margin:20px;
-    width:40%;
-    color: #000;
-    background: #fafafa;;
-    box-shadow: -6px -6px 20px rgba(255,255,255,.1), 6px 6px 20px rgba(10, 10, 10, 0.1);
-    border-radius:10px;
-    padding:20px;
-}
+
 .footer-container .contact-form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    color: #000;
+    background: #fff;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.39), 6px 6px 20px rgba(10, 10, 10, 0.1);
+    border-radius:10px;
+    margin-top:30px;
+    padding:20px;
 }
 .footer-container .contact-form .form-field{
     margin-top: 10px;
-    width:100%
+    flex:1;
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Mui-focused fieldset{
+    border-color: #000 !important;
+    font-weight:600;
+}
+label.Mui-focused {
+    color:  #000 !important;
+    font-weight:600;
+}
+.MuiInputBase-input{
+    color: #000 !important;
+    font-weight:600;
+}
+.MuiInputLabel-formControl{
+    color:#000;
+    font-weight:600;
+}
+.MuiInputLabel-outlined {
+    color:#000 !important;
+    font-weight:600;
+}
+.MuiOutlinedInput-notchedOutline{
+    border-color: black !important;
+}
+.footer-container .social-contacts {
+    width:60%
+}
+.footer-container .social-contacts .social-links{
+    display: flex;
+    width:100%;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer-container .social-contacts .social-links span i{
+    font-size: 40px;
+}
+.social-contacts h4{
+    text-align: center;
 }

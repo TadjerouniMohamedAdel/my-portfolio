@@ -9,9 +9,9 @@ export default function Citation() {
             <div className="content">
                 <h2>Your Title</h2>
                 <p>
-                    <i className="fa fa-quote-left"></i>
+                    <i className="fab fa-quote-left"></i>
                     Pariatur sint magna Lorem irure mollit cupidatat laboris ullamco laborum aliquip incididunt nostrud consectetur occaecat. Minim duis in magna cupidatat ad voluptate commodo adipisicing in voluptate officia nostrud Lorem sit. 
-                    <i className="fa fa-quote-right"></i>
+                    <i className="fab fa-quote-right"></i>
                     </p>
                 <a href="#">Read More</a>
             </div>

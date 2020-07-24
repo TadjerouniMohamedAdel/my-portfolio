@@ -37,8 +37,7 @@ class App extends React.Component {
                             <Main/>
                         </section>
                         <footer>
-                            <h1 align="center">footer</h1>
-                            <Footer />
+                                <Footer />
                         </footer>
                     </Content>
                 </Layout>

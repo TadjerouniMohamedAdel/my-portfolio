@@ -5,7 +5,7 @@ export default function WaveButton(props) {
     return (
         <Link to={props.path} style={{textDecoration:'none'}}>
             <a href="#" class="wave-button">
-                <span><i className="fa fa-search"></i>{props.label}</span>
+                <span><i className="fas fa-search"></i>{props.label}</span>
                 <div class="wave"></div>
             </a>
         

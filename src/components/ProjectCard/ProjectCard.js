@@ -35,11 +35,11 @@ export default function ProjectCard(props) {
                 </div>
                 <div className="links">
                     <a href="#">
-                        <i className="fa fa-github"></i>
+                        <i className="fab fa-github"></i>
                         Read More
                     </a>
                     <a href="#">
-                        <i className="fa fa-play"></i>
+                        <i className="fab fa-play"></i>
                         Live Demo
                     </a>
                 </div>
