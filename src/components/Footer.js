@@ -4,9 +4,28 @@ import TextField from '@material-ui/core/TextField';
 import { Button } from '@material-ui/core';
 
 export default class Footer extends Component {
+
+    createBubble(){
+        console.log(window.width)
+        const section = document.querySelector('.bubbles-section')
+        const createElement = document.createElement('span')
+        createElement.setAttribute("class","bubble")
+        var size = Math.random() *60;
+        createElement.style.width = 20+ size + 'px'
+        createElement.style.height = 20+ size + 'px'
+        createElement.style.left = Math.random() * window.innerWidth + "px"
+        section.appendChild(createElement)
+        setTimeout(()=>{
+            createElement.remove()
+        },4000)
+    }
+
+    componentDidMount(){
+        setInterval(this.createBubble,200)
+    }
     render() {
         return (
-            <div className="footer-container">
+            <div className="footer-container bubbles-section">
                 <div className="contact-form">
                         <h3>Contact Me</h3>
                         <div className="form-field">
