@@ -2,8 +2,8 @@
 
 .div-wave{
     position: relative;
-    width: 400px;
-    height:400px;
+    width: 450px;
+    height:450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,4 +107,9 @@
 .div-wave .content p i{
     margin-left: 10px;
     margin-right: 10px;
+}
+.citation-header .profile-image{
+    width:100px;
+    height: 100px;
+    border-radius: 1000px;
 }

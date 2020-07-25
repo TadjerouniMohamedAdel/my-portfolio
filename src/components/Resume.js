@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Grid,Cell,Tabs , Tab} from 'react-mdl'
 import Education from './Education'
 import Skills from './Skills'
-import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo } from '../Images/Images'
+import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express } from '../Images/Images'
 import SkillItem from './Skills/SkillItem'
 import {} from 'react-mdl'
 import Timeline from './Timeline/Timeline'
@@ -128,6 +128,28 @@ export default class Resume extends Component {
                         percent="67"
                     />
                 </div>
+                <div className="skill-item" key={10}>
+                    <SkillItem 
+                        skillImage={node}
+                        color="#BA1C1B"
+                        imageWidth={100}
+                        imageHeight={90}
+                        percent="67"
+                    />
+                    
+                
+                </div>
+                <div className="skill-item" key={10}>
+                    <SkillItem 
+                        skillImage={express}
+                        color="#BA1C1B"
+                        imageWidth={100}
+                        imageHeight={70}
+                        percent="67"
+                    />
+                    
+                
+                </div>
             </div>
                 )
             }
@@ -232,25 +254,33 @@ export default class Resume extends Component {
                                  
                                  <Timeline />
                 </div>
-                <div className="other-blocks" style={{paddingTop:'2em'}}>
-                    <div className="skills-block card-gogo">
+                    <div className="skills-block ">
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
                         <div className="category-tab">
-                            <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
+                            {/* <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
                                 <Tab>Front End</Tab>
                                 <Tab>Back End</Tab>
                                 <Tab>Mobile</Tab>
                                 <Tab>Deveops & Tools</Tab>
-                            </Tabs>
+                            </Tabs> */}
                             <section > 
                                 <div className="content">
-                                    {this.toggleCategories()}
+                                    {this.renderBackEnd()}
+                                </div>
+                                <div className="content">
+                                    {this.renderFrontEnd()}
+                                </div>
+                                <div className="content">
+                                    {this.renderMobile()}
+                                </div>
+                                <div className="content">
+                                    {this.renderDevops()}
                                 </div>
                             </section>
                         </div>
                     </div>
                     <div className="language-education-block">
-                        <div className="language-block card-gogo">
+                        <div className="language-block ">
                             <h2 className="section-title-resume" style={{textAlign:"center"}}>Languages</h2>
                                 <Skills 
                                     skill="Arabic"
@@ -265,7 +295,7 @@ export default class Resume extends Component {
                                     progress={4}
                                             />
                         </div>
-                        <div className="education-block card-gogo">
+                        <div className="education-block ">
                             <h2 className="section-title-resume" style={{textAlign:"center"}}>Education</h2>
                             <Education
                                     startYear={2015}
@@ -282,7 +312,6 @@ export default class Resume extends Component {
                 </div>  
                 
                   
-            </div>
 
         )
     }

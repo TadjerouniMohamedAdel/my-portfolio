@@ -57,10 +57,10 @@ export default class LandingPage extends Component {
                             Last Projects
                         </h3>
                         <div className="landing-projects">
-                            <ProjectCard 
+                        <ProjectCard 
                                 title="Khedemni Mobile"
                                 type="Professional Project"
-                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
                                 logo={logoKhedemni}
                                 tech={[
                                     {name:"Java Script",logo:js_logo},
@@ -74,7 +74,7 @@ export default class LandingPage extends Component {
                             <ProjectCard 
                                 title="Buileo CRM"
                                 type="Professional Project"
-                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
                                 logo={logoBuileo}
                                 classes="buileo"
                                 tech={[
@@ -122,6 +122,12 @@ export default class LandingPage extends Component {
                             }
                           </div>
                         </div>
+                                  <div>
+                                      <WaveButton
+                                        label="View all experiences" 
+                                        path="/resume"
+                                      />
+                                  </div>
                     </div>
                     <div className="about-me-landing">
                         <h3>About Me</h3>

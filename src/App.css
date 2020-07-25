@@ -131,8 +131,9 @@
 }
 
 .skills-block{
-  min-height: 600px;
+  /* min-height: 600px; */
   padding: 40px 0;
+  width: 80%;
 }
 
 .language-item{
@@ -144,28 +145,19 @@
 }
 
 .resume-container{
-  background: #f8f8f8;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family:  'Montserrat', sans-serif; 
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
   flex-wrap: wrap;
 }
 .experiences-block{
-  flex:1.2;
+  width: 80%;;  
   margin-left:20px;
   margin-right:25px;
 }
-.other-blocks{
-  display: flex;
-  margin-left:20px;
-  margin-right:25px;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  flex:1
-}
+
 .language-block{
   flex:0.8;
 }
@@ -180,8 +172,11 @@
 }
 .language-education-block {
   display: flex;
+  width:80%;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .education-block{
   flex:1
@@ -343,4 +338,6 @@ footer{
 
 .about-me-landing{
   padding:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }

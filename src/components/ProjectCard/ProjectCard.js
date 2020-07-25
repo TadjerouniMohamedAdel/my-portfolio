@@ -39,7 +39,7 @@ export default function ProjectCard(props) {
                         Read More
                     </a>
                     <a href="#">
-                        <i className="fab fa-play"></i>
+                        <i className="fas fa-play"></i>
                         Live Demo
                     </a>
                 </div>

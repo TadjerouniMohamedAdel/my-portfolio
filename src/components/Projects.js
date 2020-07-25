@@ -16,7 +16,7 @@ export default class Projects extends Component {
                     <ProjectCard 
                                 title="Khedemni Mobile"
                                 type="Professional Project"
-                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
                                 logo={logoKhedemni}
                                 tech={[
                                     {name:"Java Script",logo:js_logo},
@@ -30,7 +30,7 @@ export default class Projects extends Component {
                             <ProjectCard 
                                 title="Buileo CRM"
                                 type="Professional Project"
-                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
                                 logo={logoBuileo}
                                 classes="buileo"
                                 tech={[
@@ -47,7 +47,7 @@ export default class Projects extends Component {
                             <ProjectCard 
                                 title="Emploipartner.com"
                                 type="Professional Project"
-                                description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                                description=" EmploiPartner est une site web de e-recrutement qui propose des solutions de Sourcing et de Recrutement innovantes pour accompagner les entreprises dans leurs projets de développement RH "
                                 logo={logoEp}
                                 classes="ep"
                                 tech={[
@@ -72,7 +72,7 @@ export default class Projects extends Component {
                 <ProjectCard 
                             title="Artelyes"
                             type="Personal Project"
-                            description="Amet reprehenderit sit Lorem nostrud proident amet aute do tempor consequat. Magna ex ex proident consectetur sunt. Dolor in laborum qui minim magna veniam cillum"
+                            description="Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine."
                             logo={artelyes}
                             classes="artelyes"
                             tech={[
@@ -91,10 +91,10 @@ export default class Projects extends Component {
 
     toggleCategories = ()=>{
         switch (this.state.activeTab) {
-            case 0:
+            case 1:
                    return this.renderPersonalProject()
             break;
-            case 1:
+            case 0:
                   return  this.renderProProject()
             break;
             
@@ -106,8 +106,8 @@ export default class Projects extends Component {
         return (
             <div className="category-taba">
                     <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
-                        <Tab>Personel</Tab>
                         <Tab>Profesionelle</Tab>
+                        <Tab>Personel</Tab>
                         
                     </Tabs>
                     <section > 

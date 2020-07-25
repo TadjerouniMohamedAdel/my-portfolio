@@ -33,7 +33,7 @@ const experiences = [
 export default class Timeline extends Component {
     render() {
         return (
-            <div className="timeline card-gogo">
+            <div className="timeline ">
               <h2 className="section-title-resume" style={{textAlign:"center"}}>Experience</h2>
         <ul>
          {

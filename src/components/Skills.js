@@ -9,7 +9,7 @@ export default class Skills extends Component {
         for (var i = 0; i < this.props.progress; i++) {
             // note: we add a key prop here to allow react to uniquely identify each
             // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
-            rows.push( <i style={{marginRight:5,color:"#e18709"}} className="fab fa-star-o" aria-hidden="true" key={i}></i>);
+            rows.push( <i style={{marginRight:5,color:"#e18709"}} className="fas fa-star" aria-hidden="true" key={i}></i>);
         }
         return rows;
     }
@@ -18,7 +18,7 @@ export default class Skills extends Component {
         for (var i = 0; i < 5 - this.props.progress; i++) {
             // note: we add a key prop here to allow react to uniquely identify each
             // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
-            rows.push( <i key={5-i} style={{marginRight:5}} className="fab fa-star-o" aria-hidden="true"></i>);
+            rows.push( <i key={5-i} style={{marginRight:5}} className="fas fa-star" aria-hidden="true"></i>);
         }
         return rows;
     

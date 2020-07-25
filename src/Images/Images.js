@@ -47,4 +47,5 @@ export const node= require('./src/node.png')
 export const artelyes= require('./src/artelyes.png')
 export const material= require('./src/material.png')
 export const jquery_logo2 = require('./src/jquery-logo-2.png')
+export const express = require('./src/express.png')
 
