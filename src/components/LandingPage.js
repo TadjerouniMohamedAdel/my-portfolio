@@ -46,10 +46,12 @@ export default class LandingPage extends Component {
                             Some Skills
                         </h3>
                             <LandingSkill />
-                            <WaveButton 
-                                label="View all skills"
-                                path="/resume"
-                            />
+                            <div style={{marginTop:30}}>
+                                <WaveButton 
+                                    label="View all skills"
+                                    path="/resume"
+                                />
+                            </div>
                     </div>
                     <div className="landing-projects-container">
                     <DivWave>

@@ -28,6 +28,11 @@
     width:100%;
     height:100%;
 }
+.landing-grid h3{
+  font-family: 'Roboto';
+  margin-bottom: 40px;
+  font-weight: lighter;
+}
 .avatar-img{
   height:450px;
   padding-top:5em;
@@ -182,7 +187,8 @@
   flex:1
 }
 .section-title-resume{
-  font-family: "Lobster";
+  font-family: "Roboto";
+  font-weight: lighter;
 }
 
 .wave-section{

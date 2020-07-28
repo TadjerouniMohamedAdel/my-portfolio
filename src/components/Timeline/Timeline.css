@@ -12,7 +12,7 @@
     margin-left:10px; 
     position: absolute;
     width:0.5px;
-    height:40%;
+    height:35%;
     background:#c5c5c5;
 }
 
@@ -68,12 +68,14 @@
     margin:0;
     padding:0;
     font-weight:600;
-    color:  #3586ff;
+    color:  #000;
     font-size:25px;
 } 
 .timeline ul li p{
     margin:10px 0 0 ;
     padding:0;
+    font-size: 16px;
+    font-family: 'Roboto';
 }
 .timeline ul li .timeline-time h4{
     margin: 0;
@@ -89,10 +91,10 @@
     top:-20px;
     margin: 10px;   
     padding:5px 14px;
-    background: rgba(0,0,0,1);
+    background: #3586ff;;
     color:#fff;
     border-radius: 18px;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 0 3px #3586ffa1;
 }
 @media(max-width:839px){
     .timeline:before{
