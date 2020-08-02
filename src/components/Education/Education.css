@@ -1,5 +1,5 @@
 
- .card-bio{
+ .card-edu{
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,14 +7,14 @@
     flex-wrap: wrap;
     margin: 100px 0;
 }
- .card-bio .imgBx{
+ .card-edu .imgBx{
     position: relative;
-    left:25px;
+    right:75px;
     z-index: 1;
     width: 500px;
     height: 400px;
 }
- .card-bio .imgBx img{
+ .card-edu .imgBx img{
     position: absolute;
     top: 0;
     left:0;
@@ -23,44 +23,41 @@
     object-fit: cover;
 
 }
- .card-bio .contentBx{
+ .card-edu .contentBx{
     position: relative;
     right: 25px;
     width: 500px;
     padding: 20px 60px 20px 100px;
     height: 400px;
-    background-color: #3586ff;
+    background: rgba(0,0,0,0.3);
     display: flex;
     justify-content: center;
     align-items: center;
 }
- .card-bio .contentBx:before{
+ .card-edu .contentBx:before{
     content: '';
     position: absolute;
     top:-50px;
     bottom: -50px;
     left: 0;
     right: 0;
-    background: #3586ff;
+    background: rgba(0,0,0,1);
     z-index:-1;
 }
- .card-bio .contentBx h2{
-    font-size: 30px;
+ 
+.card-edu .contentBx .content{
     text-align: center;
-    color:#fff;
-    font-family: 'Roboto',sans-serif;
 }
-
- .card-bio .contentBx p{
+ .card-edu .contentBx p{
     margin-top:10px;
-    text-align: center;
     color:#fff;
     font-size: 18px;
+    text-align: center;
     font-weight: 400;
     font-family: 'Roboto',sans-serif;
 }
 
- .card-bio .contentBx a{
+ .card-edu .contentBx a{
     display: inline-block;
     margin-top:15px;
     color:#fff;
@@ -69,23 +66,23 @@
     border:1px solid #fff;
 }
 @media(max-width:1000px){
-    .conrainer .card-bio{
+    .conrainer .card-edu{
         flex-direction: column;
         max-width: 350px;
     }
-     .card-bio .imgBx{
+     .card-edu .imgBx{
         width:100%;
         height: 250px;
         left:0;
     }
-     .card-bio .contentBx{
+     .card-edu .contentBx{
         width: 100%;
         height: auto;
         right: 0;
         padding:30px;
         text-align: center;
     }
-     .card-bio .contentBx:before{
+     .card-edu .contentBx:before{
         top:0;
         bottom: 0;
     }

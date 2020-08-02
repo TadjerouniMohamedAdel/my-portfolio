@@ -3,6 +3,7 @@ import './AboutMe.css'
 import InterestItem from './InterestItem/InterestItem'
 import { manga, user, prof } from '../Images/Images'
 import Biography from './Biography/Biography'
+import Education from './Education/Education'
 export default class AboutMe extends Component {
     render() {
         return (
@@ -18,7 +19,7 @@ export default class AboutMe extends Component {
                     <h3 className="about-section-title">
                         Education
                     </h3>
-                    
+                    <Education />
                 </div>
                 <div className="about-section">
                     <h3 className="about-section-title">
