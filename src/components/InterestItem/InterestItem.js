@@ -10,7 +10,7 @@ export default function InterestItem(props) {
             </div>
             <div className="content">
                 <div>
-                    <h2>Your Title</h2>
+                    <h2>{props.title}</h2>
                     <p>
                         Voluptate sunt nulla reprehenderit incididunt id anim irure cillum enim nostrud ut et cupidatat mollit.
                     </p>
