@@ -2,26 +2,22 @@ import React, { Component } from 'react'
 import './AboutMe.css'
 import InterestItem from './InterestItem/InterestItem'
 import { manga, user, prof } from '../Images/Images'
+import Biography from './Biography/Biography'
 export default class AboutMe extends Component {
     render() {
         return (
             <div className="about-container">
                  <div className="about-section">
                     <h3 className="about-section-title">
-                        Adel Mohamed Tadjerouni
+                        Full Stack Developer
                     </h3>
-                    <div className="author-section">
-                        <div class="author-section-content">
-                            <p>
-                                Voluptate sint Lorem aliquip consequat. Sunt Lorem laboris reprehenderit sit. Irure ex laboris excepteur ut ipsum nulla amet. Amet sint ullamco sit dolor ea in do ullamco nulla enim officia. Aliquip cupidatat ex dolore tempor. Id ex aute commodo mollit.Anim ex in tempo 
-                                Voluptate sint Lorem aliquip consequat. Sunt Lorem laboris reprehenderit sit. Irure ex laboris excepteur ut ipsum nulla amet. Amet sint ullamco sit dolor ea in do ullamco nulla enim officia. Aliquip cupidatat ex dolore tempor. Id ex aute commodo mollit.Anim ex in tempo 
-                                
-                            </p>
-                        </div>
-                        <div className="author-image">
-                            <img src={prof} />
-                        </div>
-                    </div>
+                    <Biography />
+                    
+                </div>
+                <div className="about-section">
+                    <h3 className="about-section-title">
+                        Education
+                    </h3>
                     
                 </div>
                 <div className="about-section">
