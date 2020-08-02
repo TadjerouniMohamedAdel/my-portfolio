@@ -179,13 +179,13 @@
   display: flex;
   width:80%;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.education-block{
-  flex:1
-}
+
 .section-title-resume{
   font-family: "Roboto";
   font-weight: lighter;

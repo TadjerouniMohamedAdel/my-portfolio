@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Grid,Cell,Tabs , Tab} from 'react-mdl'
-import Education from './Education'
 import Skills from './Skills'
 import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express } from '../Images/Images'
 import SkillItem from './Skills/SkillItem'
@@ -278,35 +277,6 @@ export default class Resume extends Component {
                                 </div>
                             </section>
                         </div>
-                    </div>
-                    <div className="language-education-block">
-                        <div className="language-block ">
-                            <h2 className="section-title-resume" style={{textAlign:"center"}}>Languages</h2>
-                                <Skills 
-                                    skill="Arabic"
-                                    progress={5}
-                                    />
-                                <Skills 
-                                    skill="English"
-                                    progress={4}
-                                    />
-                                <Skills 
-                                    skill="Franch"
-                                    progress={4}
-                                            />
-                        </div>
-                        <div className="education-block ">
-                            <h2 className="section-title-resume" style={{textAlign:"center"}}>Education</h2>
-                            <Education
-                                    startYear={2015}
-                                    endYear={2018}
-                                    img={logoUalger}
-                                    schoolName="Université d’Alger 1"
-                                    schoolDescription="licence en système d’information et génie
-                                    logiciel Université d’Alger 1 ."
-                                />
-                        </div>
-
                     </div>
                     
                 </div>  

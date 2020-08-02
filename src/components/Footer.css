@@ -28,11 +28,9 @@
 }
 .Mui-focused fieldset{
     border-color: #000 !important;
-    font-weight:600;
 }
 label.Mui-focused {
     color:  #000 !important;
-    font-weight:600;
 }
 .MuiInputBase-input{
     color: #000 !important;
@@ -40,11 +38,9 @@ label.Mui-focused {
 }
 .MuiInputLabel-formControl{
     color:#000;
-    font-weight:600;
 }
 .MuiInputLabel-outlined {
     color:#000 !important;
-    font-weight:600;
 }
 .MuiOutlinedInput-notchedOutline{
     border-color: black !important;
