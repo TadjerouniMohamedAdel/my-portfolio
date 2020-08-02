@@ -7,6 +7,9 @@ export default function Education() {
             <div className="contentBx">
                 <div className="content">
                     <img src={logoUalger} width={200} height={200} />
+                    <h3>
+                        2015 - 2018
+                    </h3>
                     <p>
                         I have a bachlor's degree in information systen and software enginner at university of algeries ,why i dont continue my stadies it's big story .
                         they are many personal reasons but i think that i mad the best decision and choose my the path that i like. 

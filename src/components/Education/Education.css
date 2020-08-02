@@ -44,7 +44,12 @@
     background: rgba(0,0,0,1);
     z-index:-1;
 }
- 
+.card-edu .contentBx .content h3{
+    color:#fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
 .card-edu .contentBx .content{
     text-align: center;
 }
