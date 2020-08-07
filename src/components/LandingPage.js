@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Profile from './ProfileCard/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
-import { logoKhedemni, node,logoBuileo, react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp } from '../Images/Images'
+import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill } from '../Images/Images'
 import Tooltip from 'react-mdl/lib/Tooltip'
 import WaveButton from './WaveButton/WaveButton'
 import { Chip } from 'react-mdl/lib/Chip'
@@ -39,19 +39,37 @@ export default class LandingPage extends Component {
                         <div className="wave wave2"></div>
                         <div className="wave wave3"></div>
                         <div className="wave wave4"></div>
-                        <Profile />
+                        {/* <Profile /> */}
+                        <div className="profil-landing">
+                            <div className="profil-info">
+                                <h1>Hi , I'm Adel</h1>
+                                <h2>Full Stack Developer</h2>
+                            </div>
+                            <div className="js-stack-img">
+                                <img src={js_dev} />
+                            </div>
+                        </div>
                     </div>
-                    <div className="landing-skills-container">
+                    <div className="landing-skills">
                         <h3>
                             Some Skills
                         </h3>
-                            <LandingSkill />
-                            <div style={{marginTop:30}}>
-                                <WaveButton 
-                                    label="View all skills"
-                                    path="/resume"
-                                />
+                        <div className="landing-skills-container">
+                        
+                            <div className="div-landing-skill">
+                                <LandingSkill />
                             </div>
+                            <div className="img-landing-skill">
+                                <img src={dev_skill}  />
+                            </div>
+                        </div>
+
+                        <div style={{marginTop:30}}>
+                            <WaveButton 
+                                label="View all skills"
+                                path="/resume"
+                            />
+                        </div>
                     </div>
                     <div className="landing-projects-container">
                     <DivWave>

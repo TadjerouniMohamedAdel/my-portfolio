@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import {Grid,Cell,Tabs , Tab} from 'react-mdl'
 import Skills from './Skills'
-import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express } from '../Images/Images'
+import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express, firebase } from '../Images/Images'
 import SkillItem from './Skills/SkillItem'
 import {} from 'react-mdl'
 import Timeline from './Timeline/Timeline'
+import Card2 from './Card2/Card2'
 
 
 
@@ -21,15 +22,21 @@ export default class Resume extends Component {
     renderMobile = ()=>{
         return (
             <div className="skill-grid">
-                <div className="skill-item" key="mobile">
+                <div className="skill-item" key="rn">
                 <SkillItem 
                         skillImage={rn_logo}
                         color="#449ccf"
-                        imageWidth={130}
-                        imageHeight={100}
                         percent="75"
                     />
                 </div>
+                <div className="skill-item" key="fb">
+                <SkillItem 
+                        skillImage={firebase}
+                        color="#449ccf"
+                        percent="75"
+                    />
+                </div>
+                
             </div>
         )
     }
@@ -41,8 +48,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={docker_logo}
                         color="#449ccf"
-                        imageWidth={100}
-                        imageHeight={110}
                         percent="65"
                         />
                 </div>
@@ -50,8 +55,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={git_logo}
                         color="#DE4C35"
-                        imageWidth={90}
-                        imageHeight={50}
                         percent="85"
                     />
 
@@ -60,8 +63,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={webpack_logo}
                         color="#449ccf"
-                        imageWidth={110}
-                        imageHeight={110}
                         percent="73"
                     />
                 </div>
@@ -69,8 +70,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={mysql_logo}
                         color="#FD972E"
-                        imageWidth={90}
-                        imageHeight={80}
                         percent="80"
                     />
                 </div>
@@ -78,8 +77,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={arch_logo}
                         color="#1694D1"
-                        imageWidth={90}
-                        imageHeight={80}
                         percent="65"
                     />
                 </div>
@@ -94,8 +91,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={php_logo}
                         color="#767BB3"
-                        imageWidth={90}
-                        imageHeight={80}
                         percent="87"
                     />
                 </div>
@@ -104,8 +99,6 @@ export default class Resume extends Component {
                         skillName="React"
                         skillImage={codeigniter_logo}
                         color="#EE4423"
-                        imageWidth={90}
-                        imageHeight={80}
                         percent="75"
                     />
                 </div>
@@ -113,8 +106,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={symfony_logo}
                         color="#000"
-                        imageWidth={80}
-                        imageHeight={90}
                         percent="79"
                     />
                 </div>
@@ -122,8 +113,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={api_logo}
                         color="#BA1C1B"
-                        imageWidth={100}
-                        imageHeight={90}
                         percent="67"
                     />
                 </div>
@@ -131,8 +120,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={node}
                         color="#BA1C1B"
-                        imageWidth={100}
-                        imageHeight={90}
                         percent="67"
                     />
                     
@@ -142,8 +129,6 @@ export default class Resume extends Component {
                     <SkillItem 
                         skillImage={express}
                         color="#BA1C1B"
-                        imageWidth={100}
-                        imageHeight={70}
                         percent="67"
                     />
                     
@@ -162,8 +147,6 @@ export default class Resume extends Component {
                         skillName="React"
                         skillImage={react_logo}
                         color="#449ccf"
-                        imageWidth={90}
-                        imageHeight={90}
                         percent="85"
                     />
                 </div>
@@ -173,8 +156,6 @@ export default class Resume extends Component {
                         skillName="Redux"
                         skillImage={redux_logo}
                         color="#943ab8"
-                        imageWidth={130}
-                        imageHeight={100}
                     />
                 </div>
                 <div className="skill-item" key={13}>
@@ -183,27 +164,21 @@ export default class Resume extends Component {
                         skillName="JS"
                         skillImage={js_logo}
                         color="#cab818"
-                        imageWidth={90}
-                        imageHeight={80}
                     />
                 </div>
                 <div className="skill-item" key={14}>
                     <SkillItem
-                        percent="90" 
+                        percent="70" 
                         skillImage={jquery_logo}
                         color="#449ccf"
-                        imageWidth={130}
-                        imageHeight={140}
                     />
                 </div>
                 <div className="skill-item" key={15}>
                     <SkillItem
-                        percent="90" 
+                        percent="70" 
                         skillName="React"
                         skillImage={bootstrap_logo}
                         color="#62478A"
-                        imageWidth={110}
-                        imageHeight={100}
                     />
                 </div>
                 <div className="skill-item" key={16}>
@@ -211,8 +186,6 @@ export default class Resume extends Component {
                         percent="80" 
                         skillImage={css_logo}
                         color="#449ccf"
-                        imageWidth={80}
-                        imageHeight={100}
                     />
                 </div>
                 <div className="skill-item" key={17}>
@@ -220,8 +193,6 @@ export default class Resume extends Component {
                         percent="85" 
                         skillImage={html_logo}
                         color="#E54D26"
-                        imageWidth={80}
-                        imageHeight={100}
                     />
                 </div>
             </div>
@@ -255,27 +226,29 @@ export default class Resume extends Component {
                 </div>
                     <div className="skills-block ">
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
-                        <div className="category-tab">
-                            {/* <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple >
-                                <Tab>Front End</Tab>
-                                <Tab>Back End</Tab>
-                                <Tab>Mobile</Tab>
-                                <Tab>Deveops & Tools</Tab>
-                            </Tabs> */}
-                            <section > 
-                                <div className="content">
-                                    {this.renderBackEnd()}
-                                </div>
-                                <div className="content">
-                                    {this.renderFrontEnd()}
-                                </div>
-                                <div className="content">
-                                    {this.renderMobile()}
-                                </div>
-                                <div className="content">
-                                    {this.renderDevops()}
-                                </div>
-                            </section>
+                        <div  style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'row',width:"100%",flexWrap:"wrap"}}>
+                            
+                                <Card2 
+                                    content={this.renderBackEnd()}
+                                    icon="fas fa-cogs"
+                                    title="Back End"
+                                />
+                                <Card2 
+                                    content={this.renderFrontEnd()}
+                                    icon="fas fa-desktop"
+                                    title="Front End"    
+                                />
+                                <Card2 
+                                    content={this.renderMobile()}
+                                    icon="fas fa-mobile-alt"
+                                    title="Mobile Developement"
+                                />
+                                <Card2 
+                                    title="Tools & Devops"
+                                    icon="fas fa-tools"
+                                    content={this.renderDevops()}
+                                />
+                            
                         </div>
                     </div>
                     

@@ -1,5 +1,5 @@
 .container-masonry{
-    width:90%;
+    width:40%;
     display: grid;
     grid-auto-flow: dense;
     grid-template: "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh;

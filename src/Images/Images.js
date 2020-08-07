@@ -50,4 +50,6 @@ export const jquery_logo2 = require('./src/jquery-logo-2.png')
 export const express = require('./src/express.png')
 
 export const manga = require('./src/manga.jpg')
-
+export const js_dev = require('./src/js-dev.png')
+export const dev_skill = require('./src/dev-skill.png')
+export const contact = require('./src/contact.png')

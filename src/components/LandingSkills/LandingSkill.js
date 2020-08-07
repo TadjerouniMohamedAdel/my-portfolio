@@ -17,17 +17,17 @@ export default function LandingSkill() {
     
     return (
         <div className="container-masonry">
-            <div className="box MRow"><img src={react}  width={200} height={200}/></div>
-            <div className="box"> <img src={js_logo}  width={100} height={100}/></div>
-            <div className="box MColumn"> <img src={node}  width={300} height={200}/></div>
+            <div className="box MRow"><img src={react}  width={180} height={180}/></div>
+            <div className="box"> <img src={js_logo}  width={80} height={80}/></div>
+            <div className="box MColumn"> <img src={node}  width={280} height={180}/></div>
             <div className="box MColumn"> <img src={jquery_logo2}  width={400} height={180}/></div>
-            <div className="box "> <img src={docker}  width={100} height={100}/></div>
-            <div className="box "> <img src={symfony}  width={100} height={100}/></div>
-            <div className="box MRow"> <img src={php_logo}  width={200} height={150}/></div>
-            <div className="box"> <img src={git_logo}  width={200} height={100}/></div>
-            <div className="box"> <img src={css_logo}  width={100} height={100}/></div>
-            <div className="box "> <img src={html_logo}  width={100} height={100}/></div>
-            <div className="box"> <img src={api_logo}  width={100} height={100}/></div>
+            <div className="box"> <img src={docker}  width={80} height={80}/></div>
+            <div className="box"> <img src={symfony}  width={80} height={80}/></div>
+            <div className="box MRow"> <img src={php_logo}  width={180} height={130}/></div>
+            <div className="box"> <img src={git_logo}  width={180} height={80}/></div>
+            <div className="box"> <img src={css_logo}  width={80} height={80}/></div>
+            <div className="box"> <img src={html_logo}  width={80} height={80}/></div>
+            <div className="box"> <img src={api_logo}  width={80} height={80}/></div>
           
         </div>
     )

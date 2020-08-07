@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:40%;
+    width: 600px;
     color: #000;
     background: #fff;
     border-radius:10px;
@@ -71,6 +71,14 @@ label.Mui-focused {
     transform: scale(0.25) translate(-70%,-70%);
     background: radial-gradient(#fff,transparent);
     border-radius: 50%;
+}
+
+.contact-img img{
+    height: 700px;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: contain;
 }
 .bubbles-section .bubble{
     position: absolute;
