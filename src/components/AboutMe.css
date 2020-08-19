@@ -1,6 +1,7 @@
 .about-container{
     display: flex;
     flex-direction: column;
+    background-image: url(../Images/src/back.png);
 }
 .about-section{
     width:100%;

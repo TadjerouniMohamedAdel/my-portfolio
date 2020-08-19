@@ -3,11 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
 
 
-.header-color{
-    background-color: #3586ff !important;
-
+.mdl-layout__drawer-button{
+  color:rgba(0,0,0) !important;
 }
-
 
 @media(max-width: 763px) {
   .landing-grid{
@@ -71,6 +69,7 @@
 
 
 .projects-grid{
+  background-image: url(./Images/src/back.png);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -146,6 +145,7 @@
 }
 
 .resume-container{
+  background-image: url(./Images/src/back.png);
   display: flex;
   flex-direction: column;
   font-family:  'Montserrat', sans-serif; 
@@ -314,15 +314,25 @@ footer{
 .mdl-layout{
   position: relative !important;
 }
+.last-section-landing{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
 .landing-last-experience{
   display: flex;
+  width: 40%;
   flex-direction: column;
   align-items: center;
   margin-top: -80px;
   z-index: 10000;
 }
 .last-experience{
-  width:50%;
+  width:100%;
   padding: 20px 40px;
   margin:30px;
   border-radius: 20px;
@@ -344,9 +354,14 @@ footer{
 }
 
 .about-me-landing{
+  width: 40%;
   padding:20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -150px;
+  z-index: 10000;
 }
 
 .profil-landing{

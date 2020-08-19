@@ -73,33 +73,33 @@ export default class LandingPage extends Component {
                         </div>
                     </div>
                     <LandingProject />
-                    
+                    <div className="last-section-landing">
                     <div className="landing-last-experience">
-                        <h3>Last Experience</h3>
-                        <div className="last-experience">
-                            <h4>{lastExperience.title}</h4>
-                            <span className="time">
-                                {lastExperience.startDate } - {lastExperience.endDate}
-                            </span>
-                            <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-5}}/>
-                            <p className="description">
-                                {lastExperience.description}
-                            </p>
-                            <div style={{marginTop:10}}>
-                              <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
-                            {
-                              lastExperience.tech.map((tech,ind)=>(
-                                <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
-                                    <Chip>
-                                      <img src={tech.logo} width={23} height={25} style={{marginRight:3}}/>
-                                      {tech.name}
-                                    </Chip>
-                                  </div>
+                                <h3>Last Experience</h3>
+                                <div className="last-experience">
+                                    <h4>{lastExperience.title}</h4>
+                                    <span className="time">
+                                        {lastExperience.startDate } - {lastExperience.endDate}
+                                    </span>
+                                    <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-5}}/>
+                                    <p className="description">
+                                        {lastExperience.description}
+                                    </p>
+                                    <div style={{marginTop:10}}>
+                                        <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
+                                        {
+                                        lastExperience.tech.map((tech,ind)=>(
+                                            <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
+                                                <Chip>
+                                                <img src={tech.logo} width={23} height={25} style={{marginRight:3}}/>
+                                                {tech.name}
+                                                </Chip>
+                                            </div>
 
-                              ))
-                            }
-                          </div>
-                        </div>
+                                        ))
+                                        }
+                                    </div>
+                                </div>
                                   <div>
                                       <WaveButton
                                         label="View all experiences" 
@@ -110,6 +110,7 @@ export default class LandingPage extends Component {
                     <div className="about-me-landing">
                         <h3>About Me</h3>
                         <Citation />            
+                    </div>
                     </div>
                 </div>
                         
