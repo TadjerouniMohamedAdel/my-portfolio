@@ -9,6 +9,7 @@ import { Chip } from 'react-mdl/lib/Chip'
 import Citation from './Citation/Citation'
 import DivWave from './DivWave/DivWave'
 import LandingSkill from './LandingSkills/LandingSkill'
+import LandingProject from './LandingProject/LandingProject'
 
 
 
@@ -71,50 +72,7 @@ export default class LandingPage extends Component {
                             />
                         </div>
                     </div>
-                    <div className="landing-projects-container">
-                    <DivWave>
-                        <h3>
-                            Last Projects
-                        </h3>
-                        <div className="landing-projects">
-                        <ProjectCard 
-                                title="Khedemni Mobile"
-                                type="Professional Project"
-                                description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
-                                logo={logoKhedemni}
-                                tech={[
-                                    {name:"Java Script",logo:js_logo},
-                                    {name:"React Native",logo:react},
-                                    {name:"PHP",logo:php},
-                                    {name:"Symfony 4",logo:symfony},
-                                    {name:"Api Platform",logo:api_logo},
-                                    {name:"Firebase",logo:firebase}
-                                ]}
-                            />
-                            <ProjectCard 
-                                title="Buileo CRM"
-                                type="Professional Project"
-                                description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
-                                logo={logoBuileo}
-                                classes="buileo"
-                                tech={[
-                                    {name:"PHP",logo:php},
-                                    {name:"Symfony 2",logo:symfony},
-                                    {name:"HTML 5",logo:html_logo},
-                                    {name:"CSS 3",logo:css_logo},
-                                    {name:"Bootstrap",logo:bootstrap},
-                                    {name:"Java Script",logo:js_logo},
-                                    {name:"Vuejs",logo:vue},
-                                    {name:"JQuery",logo:jquery},
-                                ]}
-                            />
-                        </div>
-                        <WaveButton 
-                            label="View all projects"
-                            path="/projects"
-                        />
-                    </DivWave>
-                    </div>
+                    <LandingProject />
                     
                     <div className="landing-last-experience">
                         <h3>Last Experience</h3>

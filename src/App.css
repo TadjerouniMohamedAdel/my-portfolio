@@ -251,16 +251,7 @@
   }
 }
 
-.landing-projects-container{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
- 
-}
-.landing-projects{
-  display: flex;
-  flex-direction: row;
-}
+
 .landing-skills{
   display: flex;
   flex-direction: column;
