@@ -1,5 +1,6 @@
 .footer-container{
     display: flex;
+    margin-top:-50px;
     flex-direction: row;
     width:100%;
     justify-content: center;
@@ -16,7 +17,7 @@
     background: #fff;
     border-radius:10px;
     margin-top:30px;
-    padding:20px;
+    padding:10px;
 }
 .footer-container .contact-form .form-field{
     margin-top: 10px;

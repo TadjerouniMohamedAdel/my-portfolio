@@ -19,7 +19,7 @@ const  App = ()=> {
             <div className="demo-big-content">
                 <Layout >
                     <Header style ={{
-                                backgroundColor:location.pathname=="/" ?"#3586ff":"transparent",transition:"0.8s"
+                                backgroundColor:location.pathname=="/" ?"#3586ff":"#fff",transition:"0.8s"
                             }} 
                             className="header-color" 
                             title={<Link to="/" 
@@ -34,8 +34,9 @@ const  App = ()=> {
                         </Navigation>
                     </Header>
                     <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black',marginLeft:20}}>My Portfolio</Link> }>
-                        <div style={{display:"flex",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
+                        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
                             <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
+                            <span style={{textAlign:"center",fontWeight:"800"}}>v-1.0.0</span>
                         </div>
                         <Navigation>
                             <Link  onClick={() => hideToggle()} to="/">Home</Link>
