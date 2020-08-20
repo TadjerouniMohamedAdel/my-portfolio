@@ -224,7 +224,7 @@ export default class Resume extends Component {
                                  
                                  <Timeline />
                 </div>
-                    <div className="skills-block ">
+                    <div className="skills-block">
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
                         <div  style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'row',width:"100%",flexWrap:"wrap"}}>
                             

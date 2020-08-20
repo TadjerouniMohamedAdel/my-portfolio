@@ -5,6 +5,7 @@ import Main from './components/Main';
 import { Link } from 'react-router-dom'
 import Footer from './components/Footer';
 import { useLocation } from 'react-router-dom'
+import { amt2 } from './Images/Images';
 
 
 const  App = ()=> {
@@ -32,7 +33,10 @@ const  App = ()=> {
                             <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/aboutme">About Me</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black'}}>My Portfolio</Link> }>
+                    <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black',marginLeft:20}}>My Portfolio</Link> }>
+                        <div style={{display:"flex",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
+                            <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
+                        </div>
                         <Navigation>
                             <Link  onClick={() => hideToggle()} to="/">Home</Link>
                             <Link  onClick={() => hideToggle()} to="/resume">Resume</Link>

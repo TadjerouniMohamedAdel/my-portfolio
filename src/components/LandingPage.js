@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Profile from './ProfileCard/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
-import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill } from '../Images/Images'
+import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2 } from '../Images/Images'
 import Tooltip from 'react-mdl/lib/Tooltip'
 import WaveButton from './WaveButton/WaveButton'
 import { Chip } from 'react-mdl/lib/Chip'
@@ -44,7 +44,10 @@ export default class LandingPage extends Component {
                         <div className="profil-landing">
                             <div className="profil-info">
                                 <h1>Hi , I'm Adel</h1>
-                                <h2>Full Stack Developer</h2>
+                                <h2>Full Stack web & mobile Developer</h2>
+                                <div style={{display:"flex",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
+                                 <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
+                                </div>
                             </div>
                             <div className="js-stack-img">
                                 <img src={js_dev} />
