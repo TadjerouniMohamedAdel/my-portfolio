@@ -57,3 +57,4 @@ export const projects = `${process.env.PUBLIC_URL}/src/projects.png`
 export const amt2 = `${process.env.PUBLIC_URL}/src/amt2.png`
 export const freePik = `${process.env.PUBLIC_URL}/src/freepik.svg`
 export const bachlor = `${process.env.PUBLIC_URL}/src/bachlor.jpeg`
+export const redux_i = `${process.env.PUBLIC_URL}/src/redux_i.png`

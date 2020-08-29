@@ -221,7 +221,7 @@ export default class Resume extends Component {
                 </div>
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
                     <div className="skills-block">
-                        <div  style={{display:"flex",marginBottom:10,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
+                        <div  style={{display:"flex",marginBottom:100,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
                                 <Card2 
                                     content={this.renderBackEnd()}
