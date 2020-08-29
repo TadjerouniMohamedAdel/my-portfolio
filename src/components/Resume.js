@@ -6,6 +6,7 @@ import SkillItem from './Skills/SkillItem'
 import {} from 'react-mdl'
 import Timeline from './Timeline/Timeline'
 import Card2 from './Card2/Card2'
+import WaveButton from './WaveButton/WaveButton'
 
 
 
@@ -220,7 +221,7 @@ export default class Resume extends Component {
                 </div>
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
                     <div className="skills-block">
-                        <div  style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
+                        <div  style={{display:"flex",marginBottom:10,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
                                 <Card2 
                                     content={this.renderBackEnd()}
@@ -244,6 +245,11 @@ export default class Resume extends Component {
                                 />
                             
                         </div>
+                        <WaveButton 
+                            label="Get mi resume"
+                            path="/cv_3.3.pdf"
+                            file
+                        />
                     </div>
                     
                 </div>  
