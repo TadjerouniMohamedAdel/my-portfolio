@@ -16,6 +16,7 @@ export default class Projects extends Component {
                     <ProjectCard 
                                 title="Khedemni Mobile"
                                 type="Professional Project"
+                                live="https://play.google.com/store/apps/details?id=com.khedemni&hl=fr"
                                 description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
                                 logo={logoKhedemni}
                                 tech={[
@@ -33,6 +34,7 @@ export default class Projects extends Component {
                                 type="Professional Project"
                                 description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
                                 logo={logoBuileo}
+                                live="https://www.buileo.com/"
                                 classes="buileo"
                                 tech={[
                                     {name:"PHP",logo:php},
@@ -49,6 +51,7 @@ export default class Projects extends Component {
                                 title="Emploipartner.com"
                                 type="Professional Project"
                                 description=" EmploiPartner est une site web de e-recrutement qui propose des solutions de Sourcing et de Recrutement innovantes pour accompagner les entreprises dans leurs projets de développement RH "
+                                live="https://www.emploipartner.com/fr/"
                                 logo={logoEp}
                                 classes="ep"
                                 tech={[
@@ -73,6 +76,7 @@ export default class Projects extends Component {
                 <ProjectCard 
                             title="Artelyes"
                             type="Personal Project"
+                            live="https://artelyes.netlify.app/"
                             description="Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine."
                             logo={artelyes}
                             classes="artelyes"

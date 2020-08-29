@@ -38,7 +38,7 @@ export default function ProjectCard(props) {
                         <i className="fab fa-github"></i>
                         Read More
                     </a>
-                    <a href="#">
+                    <a href={props.live} target="_blank">
                         <i className="fas fa-play"></i>
                         Live Demo
                     </a>
