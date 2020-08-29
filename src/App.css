@@ -126,13 +126,16 @@
   to   { opacity: 1; }
 }
 .skill-item{
-  margin: 1px;
+  margin: 10px;
   
 }
 
 .skills-block{
   /* min-height: 600px; */
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 

@@ -188,13 +188,7 @@ export default class Resume extends Component {
                         color="#449ccf"
                     />
                 </div>
-                <div className="skill-item" key={17}>
-                    <SkillItem
-                        percent="85" 
-                        skillImage={html_logo}
-                        color="#E54D26"
-                    />
-                </div>
+               
             </div>
         )
     }
@@ -224,9 +218,9 @@ export default class Resume extends Component {
                                  
                                  <Timeline />
                 </div>
-                    <div className="skills-block">
                         <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
-                        <div  style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'row',width:"100%",flexWrap:"wrap"}}>
+                    <div className="skills-block">
+                        <div  style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
                                 <Card2 
                                     content={this.renderBackEnd()}

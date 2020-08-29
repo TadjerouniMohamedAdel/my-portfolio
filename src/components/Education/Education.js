@@ -1,5 +1,5 @@
 import React from 'react'
-import { prof, logoUalger } from '../../Images/Images'
+import { prof, logoUalger, bachlor } from '../../Images/Images'
 import  './Education.css'
 export default function Education() {
     return (
@@ -17,7 +17,7 @@ export default function Education() {
                 </div>
             </div>
             <div className="imgBx">
-                <img src={prof} />
+                <img src={bachlor} />
             </div>
         </div>
     )
