@@ -25,12 +25,12 @@ const  App = ()=> {
                             title={<Link to="/" 
                             style={{textDecoration:'none',color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}}
                             >
-                                My Portfolio</Link> } scroll>
+                                Mon Portfolio</Link> } scroll>
                         <Navigation>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/">Home</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/resume">Resume</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/projects">Projects</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/aboutme">About Me</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/">Accueil</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/resume">Cursus</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/projects">Projets</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}} to="/aboutme">À propos</Link>
                         </Navigation>
                     </Header>
                     <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black',marginLeft:20}}>My Portfolio</Link> }>
@@ -39,10 +39,10 @@ const  App = ()=> {
                             <span style={{textAlign:"center",fontWeight:"800"}}>v-1.0.0</span>
                         </div>
                         <Navigation>
-                            <Link  onClick={() => hideToggle()} to="/">Home</Link>
-                            <Link  onClick={() => hideToggle()} to="/resume">Resume</Link>
-                            <Link  onClick={() => hideToggle()} to="/projects">Projects</Link>
-                            <Link  onClick={() => hideToggle()} to="/aboutme">About Me</Link>
+                            <Link  onClick={() => hideToggle()} to="/">Accueil</Link>
+                            <Link  onClick={() => hideToggle()} to="/resume">Cursus</Link>
+                            <Link  onClick={() => hideToggle()} to="/projects">Projets</Link>
+                            <Link  onClick={() => hideToggle()} to="/aboutme">À propos</Link>
                         </Navigation>
                     </Drawer>
                     <Content className="section">

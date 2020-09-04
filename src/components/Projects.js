@@ -77,6 +77,7 @@ export default class Projects extends Component {
                             title="Artelyes"
                             type="Personal Project"
                             live="https://artelyes.netlify.app/"
+                            github="https://github.com/TadjerouniMohamedAdel/artelyes"
                             description="Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine."
                             logo={artelyes}
                             classes="artelyes"

@@ -33,8 +33,9 @@ export default function ProjectCard(props) {
                         ))
                     }
                 </div>
+                
                 <div className="links">
-                    <a href="#">
+                    <a href={props.github} target="_blanck">
                         <i className="fab fa-github"></i>
                         Read More
                     </a>
