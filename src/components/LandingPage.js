@@ -55,7 +55,7 @@ export default class LandingPage extends Component {
                     </div>
                     <div className="landing-skills">
                         <h3>
-                            Some Skills
+                        Compétences Principales
                         </h3>
                         <div className="landing-skills-container">
                         
@@ -69,7 +69,7 @@ export default class LandingPage extends Component {
 
                         <div style={{marginTop:30}}>
                             <WaveButton 
-                                label="View all skills"
+                                label="Voir toutes les compétences"
                                 path="/resume"
                             />
                         </div>
@@ -77,7 +77,7 @@ export default class LandingPage extends Component {
                     <LandingProject />
                     <div className="last-section-landing">
                     <div className="landing-last-experience">
-                                <h3>Last Experience</h3>
+                                <h3>Dernière Expérience</h3>
                                 <div className="last-experience">
                                     <h4>{lastExperience.title}</h4>
                                     <span className="time">
@@ -104,7 +104,7 @@ export default class LandingPage extends Component {
                                 </div>
                                   <div>
                                       <WaveButton
-                                        label="View all experiences" 
+                                        label="Voir toutes les expériences" 
                                         path="/resume"
                                       />
                                   </div>

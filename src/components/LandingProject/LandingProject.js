@@ -10,7 +10,7 @@ export default function LandingProject() {
         <div className="landing-projects-container">
         <DivWave>
             <h3>
-                Last Projects
+                Derniers projets
             </h3>
             <div className="landing-projects">
             <ProjectCard 
@@ -52,7 +52,7 @@ export default function LandingProject() {
                 />
             </div>
             <WaveButton 
-                label="View all projects"
+                label="Voir tous les projets"
                 path="/projects"
             />
         </DivWave>

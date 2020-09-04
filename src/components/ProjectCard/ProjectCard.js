@@ -18,7 +18,8 @@ export default function ProjectCard(props) {
                     {props.description}
                 </p><br/>
                 <p>
-                    this project was mainly build with :
+                ce projet a été développée principalement avec :
+
                 </p>
                 <div className="tech">
                     {
@@ -37,11 +38,11 @@ export default function ProjectCard(props) {
                 <div className="links">
                     <a href={props.github} target="_blanck">
                         <i className="fab fa-github"></i>
-                        Read More
+                        Code Source
                     </a>
                     <a href={props.live} target="_blank">
                         <i className="fas fa-play"></i>
-                        Live Demo
+                        Démo en direct
                     </a>
                 </div>
             </div>

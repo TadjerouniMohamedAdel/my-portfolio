@@ -34,7 +34,7 @@ export default class Footer extends Component {
                     </div>
                     <div>
                         <div className="contact-form">
-                                <h3>Contact Me</h3>
+                                <h3>Contactez moi</h3>
                                 <div className="form-field">
                                     <TextField
                                         style={{color:"white",width:"100%"}} 
@@ -71,7 +71,7 @@ export default class Footer extends Component {
                                 </div>
                                 
                                 <div className="social-contacts">
-                                    <h4>Find me in</h4>
+                                    <h4>Trouvez-moi sur</h4>
                                     <div className="social-links">
                                         <span><i className="fab fa-linkedin" style={{color:"#0077B5"}}></i></span>
                                         <span><i className="fab fa-facebook" style={{color:"#3b5999"}}></i></span>
@@ -88,7 +88,7 @@ export default class Footer extends Component {
                 <div style={{display:"flex",marginTop:-90,flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
                     <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
                     <a style={{textDecoration:"none",textAlign:"center",fontSize:16,color:"#000",fontWeight:"800"}} href="https://stories.freepik.com/education">
-                            Illustration by Freepik Stories<br/>
+                            Illustration par Freepik Stories<br/>
                             <img src={freePik} width={190} />
                     </a>
                 </div>
