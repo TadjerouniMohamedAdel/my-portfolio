@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './AboutMe.css'
 import InterestItem from './InterestItem/InterestItem'
-import { manga, user, prof } from '../Images/Images'
+import { manga, user, prof, programming, reading, music, football, chess } from '../Images/Images'
 import Biography from './Biography/Biography'
 import Education from './Education/Education'
 export default class AboutMe extends Component {
@@ -23,32 +23,32 @@ export default class AboutMe extends Component {
                 </div>
                 <div className="about-section">
                     <h3 className="about-section-title">
-                        Interest
+                    Passion
                     </h3>
                     <div className="interest-section">
                         <InterestItem 
-                            title="Chess"
-                            logo="https://images.unsplash.com/photo-1543092587-d8b8feaf362b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                            title="Le jeu d'échecs"
+                            logo={chess}
                         />
                         <InterestItem 
                             title="Football"
-                            logo="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                            logo={football}
                         />
                         <InterestItem
-                            title="Reading Book"
-                            logo="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                            title="La lecture"
+                            logo={reading}
                         />
                         <InterestItem
-                            title="Music"
-                            logo="https://i.skyrock.net/5505/23285505/pics/675433143_small.jpg"
+                            title="La Musique"
+                            logo={music}
                         />
                         <InterestItem
                             title="Manga"
                             logo={manga}
                         /> 
                         <InterestItem
-                            title="Programming"
-                            logo="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                            title="La programmation"
+                            logo={programming}
                         /> 
                     </div>
                 </div>

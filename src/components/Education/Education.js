@@ -11,8 +11,9 @@ export default function Education() {
                         2015 - 2018
                     </h3>
                     <p>
-                        I have a bachlor's degree in information systen and software enginner at university of algeries ,why i dont continue my stadies it's big story .
-                        they are many personal reasons but i think that i mad the best decision and choose my the path that i like. 
+                    J'ai une licence en système d'information et genie logiciel à l'université d'Alger.
+                    pourquoi je n'ai pas continué mes études y a pas mal de raisons mais je pense que j'ai pris la meilleure décision et j'ai choisi mon propre chemin, 
+                    le chemin de ma passion. 
                     </p>
                 </div>
             </div>

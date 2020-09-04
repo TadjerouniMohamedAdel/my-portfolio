@@ -34,7 +34,7 @@ export default class Timeline extends Component {
     render() {
         return (
             <div className="timeline ">
-              <h2 className="section-title-resume" style={{textAlign:"center"}}>Experience</h2>
+              <h2 className="section-title-resume" style={{textAlign:"center"}}>Expériences</h2>
         <ul>
          {
            experiences.map((item,index) =>{

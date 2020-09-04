@@ -219,7 +219,7 @@ export default class Resume extends Component {
                                  
                                  <Timeline />
                 </div>
-                        <h2 className="section-title-resume" style={{textAlign:"center"}}>Skills</h2>
+                        <h2 className="section-title-resume" style={{textAlign:"center"}}>Compétences</h2>
                     <div className="skills-block">
                         <div  style={{display:"flex",marginBottom:100,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
@@ -236,17 +236,17 @@ export default class Resume extends Component {
                                 <Card2 
                                     content={this.renderMobile()}
                                     icon="fas fa-mobile-alt"
-                                    title="Mobile Developement"
+                                    title="Développement mobile"
                                 />
                                 <Card2 
-                                    title="Tools & Devops"
+                                    title="Outils & Devops"
                                     icon="fas fa-tools"
                                     content={this.renderDevops()}
                                 />
                             
                         </div>
                         <WaveButton 
-                            label="Get mi resume"
+                            label="Obtenir mon cv"
                             path="/cv_3.3.pdf"
                             file
                         />

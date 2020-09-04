@@ -17,7 +17,7 @@ export default function Citation() {
                 </div>
             </div>
                 <a className="readmore" href="#">Apprendre plus</a>
-                <a className="getcv" href="#">obtenir mom cv</a>
+                <a className="getcv" href="/cv_3.3.pdf" target="_blank">Obtenir mon cv</a>
                 
                <SocialMenu />
                     
