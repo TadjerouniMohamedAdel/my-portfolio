@@ -42,15 +42,14 @@ export default class LandingPage extends Component {
                         <div className="wave wave4"></div>
                         {/* <Profile /> */}
                         <div className="profil-landing">
-                            <div className="profil-info">
-                                <h1>Hi , I'm Adel</h1>
-                                <h2>Full Stack web & mobile Developer</h2>
-                                <div style={{display:"flex",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
-                                 <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
+                            <div className="profil-landing-content">
+                                <div className="profil-info">
+                                    <Citation />
                                 </div>
-                            </div>
-                            <div className="js-stack-img">
-                                <img src={js_dev} />
+                                <div className="js-stack-img">
+                                    <img src={js_dev} />
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -109,10 +108,6 @@ export default class LandingPage extends Component {
                                         path="/resume"
                                       />
                                   </div>
-                    </div>
-                    <div className="about-me-landing">
-                        <h3>About Me</h3>
-                        <Citation />            
                     </div>
                     </div>
                 </div>

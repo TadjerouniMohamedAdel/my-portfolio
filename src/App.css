@@ -376,7 +376,19 @@ footer{
   height: 70%;
   width: 100%;
 }
+.profil-landing-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+}
 .profil-landing .profil-info{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
   flex: 0.6;
 }
 .profil-landing .profil-info h1{

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Citation.css'
-import { user } from '../../Images/Images'
+import { user, mini_ep } from '../../Images/Images'
+import SocialMenu from '../ProfileCard/SocialMenu'
 export default function Citation() {
     return (
         <div className="div-wave">
@@ -10,17 +11,16 @@ export default function Citation() {
             <div className="content">
             <div className="citation-header">
                 <img src={user} alt="profile-image" className="profile-image" />
+                <div className="content-info">
+                    <h2>Hi,I'm Adel<br/>Full Stack Developer web & mobile</h2>
+                    <h3>at Emploipatner.com <img src={mini_ep} /></h3>
+                </div>
             </div>
-                <p>
-                    <i className="fas fa-quote-left"></i>
-                        Il n y a rien de plus insperant pour moi plus que l'apprentissage ,
-                        la situation dans laquelle on a besoin de realiser une chose mais on ignore comment,
-                        on cherche ,on apprend et on le fait , 
-                        c est magique.
-                        l'apprentissage est pratiquement  la competance ultime. mais je pense que ca nessaicite un autre element cle la curiosite 
-                    <i className="fas fa-quote-right"></i>
-                    </p>
-                <a href="#">Read More</a>
+                <a className="readmore" href="#">Apprendre plus</a>
+                <a className="getcv" href="#">obtenir mom cv</a>
+                
+               <SocialMenu />
+                    
             </div>
         </div>
     )
