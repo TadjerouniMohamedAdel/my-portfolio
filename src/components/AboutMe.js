@@ -10,14 +10,14 @@ export default class AboutMe extends Component {
             <div className="about-container">
                  <div className="about-section">
                     <h3 className="about-section-title">
-                        Full Stack Developer
+                        Développeur Full Stack
                     </h3>
                     <Biography />
                     
                 </div>
                 <div className="about-section">
                     <h3 className="about-section-title">
-                        Education
+                        Formation
                     </h3>
                     <Education />
                 </div>

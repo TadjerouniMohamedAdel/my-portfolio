@@ -33,7 +33,7 @@ const  App = ()=> {
                             <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} to="/aboutme">À propos</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black',marginLeft:20}}>My Portfolio</Link> }>
+                    <Drawer title={<Link to="/" style={{textDecoration:'none',color:'black',marginLeft:20}}>Mon Portfolio</Link> }>
                         <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
                             <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
                             <span style={{textAlign:"center",fontWeight:"800"}}>v-1.0.0</span>
