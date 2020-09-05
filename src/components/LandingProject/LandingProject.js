@@ -9,7 +9,7 @@ export default function LandingProject() {
     return (
         <div className="landing-projects-container">
         <DivWave>
-            <h3>
+            <h3 className="landing-projects-title">
                 Derniers Projets
             </h3>
             <div className="landing-projects">

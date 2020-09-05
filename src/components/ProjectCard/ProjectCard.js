@@ -26,7 +26,7 @@ export default function ProjectCard(props) {
                         props.tech.map((tech,ind)=>(
                         <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
                             <Chip>
-                                <img src={tech.logo} width={23} height={25} style={{marginRight:3}}/>
+                                <img src={tech.logo} className="chip-image"  style={{marginRight:3}}/>
                                 {tech.name}
                             </Chip>
                             </div>

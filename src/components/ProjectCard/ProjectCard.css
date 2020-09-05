@@ -12,6 +12,10 @@
                 6px 6px 20px rgba(0,0,0,.1)    
         ;
 }
+.chip-image{
+    width:23px;
+    height:25px;
+}
  .card-project.buileo:hover{
     background-color: rgb(116, 196, 44);
 }
