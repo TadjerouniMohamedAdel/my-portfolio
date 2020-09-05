@@ -1,12 +1,11 @@
 .container-masonry{
-    width:40%;
     display: grid;
     grid-auto-flow: dense;
-    grid-template: "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh;
-    grid-gap:25px;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh;
+    grid-gap:5px;
 }
 .container-masonry .box{
-    position: relative;
+    /* position: relative; */
     /* background-color: #ccc; */
     display: flex;
     justify-content: center;
@@ -20,4 +19,168 @@
 
 .container-masonry .box.MColumn{
     grid-column: span 2;
+}
+
+.item210{
+    width: 210px;
+    height: 210px;
+}
+.item100{
+    width: 100px;
+    height: 100px;
+}
+.item180x80{
+    width: 180px;
+    height: 80px;
+}
+.item180x130{
+    width: 180px;
+    height: 130px;
+}
+.item400x210{
+    width: 400px;
+    height: 210px;
+}
+
+@media(max-width:1500px){
+    .container-masonry{
+        display: grid;
+        max-width: 100%;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh;
+        grid-gap:3px;
+    }
+    .item210{
+        width: 180px;
+        height: 180px;
+    }
+    .item100{
+        width: 70px;
+        height: 70px;
+    }
+    .item180x80{
+        width: 150px;
+        height: 50px;
+    }
+    .item180x130{
+        width: 150px;
+        height: 100px;
+    }
+    .item400x210{
+        width: 370px;
+        height: 180px;
+    }
+}
+@media(max-width:1340px){
+    .container-masonry{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh "1fr 1fr 1fr 1fr 1fr" 20vh;
+        grid-gap:0px;
+    }
+    .item210{
+        width: 150px;
+        height: 150px;
+    }
+    .item100{
+        width: 70px;
+        height: 70px;
+    }
+    .item180x80{
+        width: 120px;
+        height: 50px;
+    }
+    .item180x130{
+        width: 120px;
+        height: 70px;
+    }
+    .item400x210{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media(max-width:1030px){
+    .container-masonry{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh "1fr 1fr 1fr 1fr 1fr" 15vh;
+        grid-gap:0px;
+    }
+    .item210{
+        width: 140px;
+        height: 140px;
+    }
+    .item100{
+        width: 65px;
+        height: 65px;
+    }
+    .item180x80{
+        width: 100px;
+        height: 50px;
+    }
+    .item180x130{
+        width: 100px;
+        height: 70px;
+    }
+    .item400x210{
+        width: 200px;
+        height: 120px;
+    }
+}
+@media(max-width:860px){
+    .container-masonry{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr 1fr 1fr" 13vh "1fr 1fr 1fr 1fr 1fr" 13vh "1fr 1fr 1fr 1fr 1fr" 13vh;
+        grid-gap:0px;
+    }
+    .item210{
+        width: 100px;
+        height: 100px;
+    }
+    .item100{
+        width: 50px;
+        height: 50px;
+    }
+    .item180x80{
+        width: 90px;
+        height: 40px;
+    }
+    .item180x130{
+        width: 90px;
+        height: 60px;
+    }
+    .item400x210{
+        width: 180px;
+        height: 100px;
+    }
+}
+@media(max-width:450px){
+    .container-masonry{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr 1fr 1fr" 10vh "1fr 1fr 1fr 1fr 1fr" 10vh "1fr 1fr 1fr 1fr 1fr" 10vh;
+        grid-gap:0px;
+    }
+    .item210{
+        width: 80px;
+        height: 80px;
+    }
+    .item100{
+        width: 30px;
+        height: 30px;
+    }
+    .item180x80{
+        width: 70px;
+        height: 30px;
+    }
+    .item180x130{
+        width: 60px;
+        height: 45px;
+    }
+    .item400x210{
+        width: 150px;
+        height: 70px;
+    }
 }

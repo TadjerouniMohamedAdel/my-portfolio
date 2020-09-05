@@ -17,17 +17,17 @@ export default function LandingSkill() {
     
     return (
         <div className="container-masonry">
-            <div className="box MRow"><img src={react}  width={180} height={180}/></div>
-            <div className="box"> <img src={js_logo}  width={80} height={80}/></div>
-            <div className="box MColumn"> <img src={node}  width={280} height={180}/></div>
-            <div className="box MColumn"> <img src={jquery_logo2}  width={400} height={180}/></div>
-            <div className="box"> <img src={docker}  width={80} height={80}/></div>
-            <div className="box"> <img src={symfony}  width={80} height={80}/></div>
-            <div className="box MRow"> <img src={php_logo}  width={180} height={130}/></div>
-            <div className="box"> <img src={git_logo}  width={180} height={80}/></div>
-            <div className="box"> <img src={css_logo}  width={80} height={80}/></div>
-            <div className="box"> <img src={html_logo}  width={80} height={80}/></div>
-            <div className="box"> <img src={api_logo}  width={80} height={80}/></div>
+            <div className="box MRow"><img src={react} className="item210"/></div>
+            <div className="box"> <img src={js_logo}  className="item100"/></div>
+            <div className="box MColumn"> <img src={node}  className="item400x210"/></div>
+            <div className="box MColumn"> <img src={jquery_logo2}  className="item400x210"/></div>
+            <div className="box"> <img src={docker}  className="item100"/></div>
+            <div className="box"> <img src={symfony}  className="item100"/></div>
+            <div className="box MRow"> <img src={php_logo}  className="item180x130"/></div>
+            <div className="box"> <img src={git_logo}  className="item180x80"/></div>
+            <div className="box"> <img src={css_logo}  className="item100"/></div>
+            <div className="box"> <img src={html_logo}  className="item100"/></div>
+            <div className="box"> <img src={api_logo}  className="item100"/></div>
           
         </div>
     )
