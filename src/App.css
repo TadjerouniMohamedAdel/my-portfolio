@@ -372,4 +372,79 @@ footer{
     display: none !important;
   }
 }
+@media(max-width:1000px){
+  .wave-section .wave{
+    
+    height:100px;
+    background:url(/src/wave.png);
+    background-size: 800px 100px;
+  
+  }
+  @keyframes animate{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: 800px;
+    }
+  }
+  @keyframes animate2{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: -800px;
+    }
+  }
+}
+@media(max-width:945px){
+  .wave-section .wave{
+    
+    height:100px;
+    background:url(/src/wave.png);
+    background-size: 700px 100px;
+  
+  }
+  @keyframes animate{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: 700px;
+    }
+  }
+  @keyframes animate2{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: -700px;
+    }
+  }
+}
+@media(max-width:780px){
+  .wave-section .wave{
+    
+    height:100px;
+    background:url(/src/wave.png);
+    background-size: 600px 100px;
+  
+  }
+  @keyframes animate{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: 600px;
+    }
+  }
+  @keyframes animate2{
+    0%{
+        background-position-x:0
+    }
+    100%{
+        background-position-x: -600px;
+    }
+  }
 
+}
