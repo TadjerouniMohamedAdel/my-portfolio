@@ -367,54 +367,9 @@ footer{
   margin-top: -150px;
   z-index: 10000;
 }
+@media(max-width:700px){
+  .app-bar-navigation{
+    display: none !important;
+  }
+}
 
-.profil-landing{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 100%;
-}
-.profil-landing-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 90%;
-}
-.profil-landing .profil-info{
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
-  flex: 0.6;
-}
-.profil-landing .profil-info h1{
-  font-family: 'Roboto',sans-serif;
-  font-size: 168px;
-  font-weight: 100;
-  text-align: center;
-  color:#fff;
-}
-.profil-landing .profil-info h2{
-  font-family: 'Roboto',sans-serif;
-  font-size: 28px;
-  font-weight: 100;
-  margin-top: -30px;
-  color:#fff;
-}
-.js-stack-img{
-  flex:0.4;
-  margin-top: 60px;
-  width:100%;
-  height:700px;
-}
-.js-stack-img img{
-  left:0;
-  top:0;
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-}

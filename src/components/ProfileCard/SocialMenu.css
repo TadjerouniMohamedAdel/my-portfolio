@@ -3,6 +3,7 @@
 .list-social1{
     margin: 0;
     padding:0;
+    justify-content: center;
     display: flex;
 }
 
@@ -63,6 +64,30 @@
 }
 .list-social1 .li-github .social-link1:hover:before{
     background-color: #474747;
+}
+
+@media(max-width:1204px){
+    .list-social1 li .social-link1 {
+        font-size: 25px;
+        width:40px;
+        height:40px;
+       
+    }
+}
+@media(max-width:945px){
+    .list-social1 li .social-link1 {
+        
+        font-size: 23px;
+       
+    }
+}
+@media(max-width:780px){
+    .list-social1 li .social-link1 {
+        width:30px;
+        height:30px;
+        font-size: 20px;
+       
+    }
 }
 
 

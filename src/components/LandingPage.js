@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Profile from './ProfileCard/Profile'
+import Profile from './Profile/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
 import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2 } from '../Images/Images'
 import Tooltip from 'react-mdl/lib/Tooltip'
@@ -40,18 +40,8 @@ export default class LandingPage extends Component {
                         <div className="wave wave2"></div>
                         <div className="wave wave3"></div>
                         <div className="wave wave4"></div>
-                        {/* <Profile /> */}
-                        <div className="profil-landing">
-                            <div className="profil-landing-content">
-                                <div className="profil-info">
-                                    <Citation />
-                                </div>
-                                <div className="js-stack-img">
-                                    <img src={js_dev} />
-                                </div>
-
-                            </div>
-                        </div>
+                        <Profile />
+                        
                     </div>
                     <div className="landing-skills">
                         <h3>

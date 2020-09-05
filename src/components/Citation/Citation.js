@@ -16,8 +16,8 @@ export default function Citation() {
                     <h3>chez Emploipatner.com <img src={mini_ep} /></h3>
                 </div>
             </div>
-                <a className="readmore" href="#">Apprendre plus</a>
-                <a className="getcv" href="/cv_3.3.pdf" target="_blank">Obtenir mon cv</a>
+                <a className="link readmore" href="#">Apprendre plus</a>
+                <a className="link getcv" href="/cv_3.3.pdf" target="_blank">Obtenir mon cv</a>
                 
                <SocialMenu />
                     
