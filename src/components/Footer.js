@@ -26,9 +26,12 @@ export default class Footer extends Component {
     // }
     render() {
         return (
-            <div>
+            
                 
                 <div className="footer-container bubbles-section">
+                    <div className="footer-main">
+                        
+                    
                     <div className="contact-img">
                         <img src={contact} />
                     </div>
@@ -84,15 +87,16 @@ export default class Footer extends Component {
                                 </div>
                         </div>
                     </div>
+                    </div>
+                    <div className="footer-logo-section">
+                        <img src={amt2} className="footer-logo-img"/>
+                        <a className="footer-logo-link"  href="https://stories.freepik.com/education">
+                                Illustration par Freepik Stories<br/>
+                                <img src={freePik} width={150} />
+                        </a>
+                    </div>
+                
                 </div>
-                <div style={{display:"flex",marginTop:-90,flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
-                    <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
-                    <a style={{textDecoration:"none",textAlign:"center",fontSize:16,color:"#000",fontWeight:"800"}} href="https://stories.freepik.com/education">
-                            Illustration par Freepik Stories<br/>
-                            <img src={freePik} width={190} />
-                    </a>
-                </div>
-            </div>
         )
     }
 }
