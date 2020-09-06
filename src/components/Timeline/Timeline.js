@@ -55,7 +55,7 @@ export default class Timeline extends Component {
                               item.tech.map((tech,ind)=>(
                                 <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
                                     <Chip>
-                                      <img src={tech.logo} width={23} height={25} style={{marginRight:3}}/>
+                                      <img className="tech-chip" src={tech.logo} />
                                       {tech.name}
                                     </Chip>
                                   </div>

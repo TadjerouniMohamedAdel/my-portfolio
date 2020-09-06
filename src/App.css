@@ -158,9 +158,14 @@
   flex-wrap: wrap;
 }
 .experiences-block{
-  width: 80%;;  
+  width: 80%;  
   margin-left:20px;
   margin-right:25px;
+}
+@media(max-width:900px){
+  .experiences-block{
+    width: 100%;;
+  }
 }
 
 .language-block{

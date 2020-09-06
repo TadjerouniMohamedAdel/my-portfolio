@@ -96,9 +96,30 @@
     border-radius: 18px;
     box-shadow: 0 0 0 3px #3586ffa1;
 }
+.timeline-content .tech-chip{
+    width:23px; 
+    height:25px; 
+    margin-right:3px
+}  
 @media(max-width:839px){
     .timeline:before{
         height: 35%;
     }
 }
 
+@media(max-width:615px){
+    .timeline:before{
+        height: 40%;
+    }
+    .timeline-content h3{
+        font-size:18px !important;
+    }
+    .timeline-content p{
+            font-size:15px !important;
+    }
+    .timeline-content .tech-chip{
+        width: 20px;
+        height: 22px;
+        margin-right: 3px;
+    }
+}
