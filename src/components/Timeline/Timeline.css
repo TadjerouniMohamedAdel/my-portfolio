@@ -23,7 +23,7 @@
 
 .timeline ul li {
     /* position: relative; */
-    width: 80%;
+    width: 90%;
     padding: 20px 40px;
     list-style: none;
     box-sizing: border-box;
@@ -100,7 +100,15 @@
     width:23px; 
     height:25px; 
     margin-right:3px
-}  
+}
+.timeline .img80x80{
+    width: 80px;
+    height:80px;
+}
+.timeline .img90x70{
+    width: 90px;
+    height:70px;
+}    
 @media(max-width:839px){
     .timeline:before{
         height: 35%;
@@ -109,17 +117,28 @@
 
 @media(max-width:615px){
     .timeline:before{
-        height: 40%;
+        height: 45%;
     }
     .timeline-content h3{
         font-size:18px !important;
     }
     .timeline-content p{
-            font-size:15px !important;
+            font-size:12px !important;
     }
     .timeline-content .tech-chip{
-        width: 20px;
-        height: 22px;
+        width: 18px;
+        height: 20px;
         margin-right: 3px;
+    }
+    .timeline .img80x80{
+        width: 65px;
+        height:65px;
+    }
+    .timeline .img90x70{
+        width: 75px;
+        height:55px;
+    }
+    .timeline ul li{
+        width: 100%;
     }
 }

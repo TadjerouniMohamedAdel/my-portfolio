@@ -195,6 +195,19 @@
   font-family: "Roboto";
   font-weight: lighter;
 }
+@media(max-width:839px){
+    
+  .section-title-resume{
+      font-size: 35px;
+  }
+}
+@media(max-width:615px){
+  .section-title-resume{
+    font-size: 30px;
+  }
+}
+
+
 
 .wave-section{
   position:relative;
