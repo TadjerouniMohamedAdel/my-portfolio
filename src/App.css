@@ -68,13 +68,7 @@
 }
 
 
-.projects-grid{
-  background-image: url(/src/back.png);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 
 .contact-body{
   margin: auto;

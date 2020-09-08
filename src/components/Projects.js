@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Tabs , Tab,Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
 import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp } from '../Images/Images'
 import ProjectCard from './ProjectCard/ProjectCard';
+import './Projects.css'
 export default class Projects extends Component {
     constructor(props){
         super(props);

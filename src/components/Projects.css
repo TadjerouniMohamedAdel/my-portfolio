@@ -1,0 +1,47 @@
+.projects-grid{
+    background-image: url(/src/back.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+@media(max-width:450px){
+    .projects-grid .card-project{
+        min-width: 280px;
+        transition: 0.2s;
+        height:540px;
+    }
+
+    .projects-grid .card-project .contentBx .type{
+        font-size: 12.5px ;
+    }
+    .projects-grid .card-project .imgBx img{
+        width: 100px;
+        height: 80px;
+    }
+    .projects-grid .card-project .contentBx h2{
+        color:#0f0f0f;
+        font-weight:700;
+        font-size: 1.2em;
+    }
+    .projects-grid .card-project .contentBx p{
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 12px;
+    
+    }
+    .projects-grid .chip-image{
+        width:19px;
+        height:21px;
+    }
+    .projects-grid .card-project .contentBx .links{
+        position: relative;
+        top:30px;
+    }
+    .projects-grid .card-project .contentBx .links a{
+        transition: 0.5s;
+        font-size: 12px;
+    }
+    
+}
