@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom'
 import Footer from './components/Footer';
 import { useLocation } from 'react-router-dom'
 import { amt2 } from './Images/Images';
-
+import emailjs from 'emailjs-com';
 
 const  App = ()=> {
+    emailjs.init(process.env.REACT_APP_EMAIL_USER_ID);
     const hideToggle= (event) =>{
         var selectorId = document.querySelector('.mdl-layout');
         selectorId.MaterialLayout.toggleDrawer();
