@@ -26,6 +26,9 @@
 .card-project.artelyes:hover{
     background-color: rgb(212, 180, 52);
 }
+.card-project.lyric-boot:hover{
+    background-color: #590904;
+}
  .card-project:hover{
     background: rgba(232, 60, 76,1);
     transition: 0.5s;

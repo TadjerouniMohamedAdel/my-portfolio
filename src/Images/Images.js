@@ -45,6 +45,7 @@ export const vue=`${process.env.PUBLIC_URL}/src/vue.png`
 export const firebase= `${process.env.PUBLIC_URL}/src/firebase.png`
 export const node= `${process.env.PUBLIC_URL}/src/node.png`
 export const artelyes= `${process.env.PUBLIC_URL}/src/artelyes.png`
+export const lyricBoot= `${process.env.PUBLIC_URL}/src/lyric-boot.png`
 export const material= `${process.env.PUBLIC_URL}/src/material.png`
 export const jquery_logo2 = `${process.env.PUBLIC_URL}/src/jquery-logo-2.png`
 export const express = `${process.env.PUBLIC_URL}/src/express.png`

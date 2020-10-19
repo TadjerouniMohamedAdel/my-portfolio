@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Tabs , Tab,Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
-import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp } from '../Images/Images'
+import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp, lyricBoot } from '../Images/Images'
 import ProjectCard from './ProjectCard/ProjectCard';
 import './Projects.css'
 export default class Projects extends Component {
@@ -75,6 +75,7 @@ export default class Projects extends Component {
         return(
             <div className="projects-grid">
                 <ProjectCard 
+                            key="prs-artelyes"
                             title="Artelyes"
                             type="Personal Project"
                             live="https://artelyes.netlify.app/"
@@ -82,6 +83,25 @@ export default class Projects extends Component {
                             description="Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine."
                             logo={artelyes}
                             classes="artelyes"
+                            tech={[
+                                {name:"Java Script",logo:js_logo},
+                                {name:"React",logo:react},
+                                {name:"Material UI",logo:material},
+                                {name:"HTML 5",logo:html_logo},
+                                {name:"CSS 3",logo:css_logo},
+                               
+                            ]}
+                        />
+            
+            <ProjectCard
+                            key="prs-lyric-boot" 
+                            title="Lyric Boot"
+                            type="Personal Project"
+                            live="https://lyric-boot.netlify.app/"
+                            github="https://github.com/TadjerouniMohamedAdel/lyric-boot"
+                            description="Lyric Boot est une application web qui sert à récupérer lyric de vos chansons préfère."
+                            logo={lyricBoot}
+                            classes="lyric-boot"
                             tech={[
                                 {name:"Java Script",logo:js_logo},
                                 {name:"React",logo:react},
