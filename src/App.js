@@ -27,7 +27,7 @@ const  App = ()=> {
                             title={<Link to="/" 
                             style={{textDecoration:'none',color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}}
                             >
-                                Mon Portfolio</Link> } scroll>
+                                Nagatodev</Link> } scroll>
                         <Navigation className="app-bar-navigation">
                             <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} to="/">Accueil</Link>
                             <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} to="/resume">Cursus</Link>
