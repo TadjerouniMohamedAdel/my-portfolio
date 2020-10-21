@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
-import {Tabs , Tab,Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
+import {Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
 import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp, lyricBoot } from '../Images/Images'
 import ProjectCard from './ProjectCard/ProjectCard';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import PersonIcon from '@material-ui/icons/Person';
+import WorkIcon from '@material-ui/icons/Work';
 import './Projects.css'
 export default class Projects extends Component {
     constructor(props){
@@ -130,13 +134,29 @@ export default class Projects extends Component {
     }
 
     render() {
+        console.log("activeTab",this.state.activeTab)
         return (
-            <div className="category-taba">
-                    <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
+            <div >
+                    {/* <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
                         <Tab>Profesionelle</Tab>
                         <Tab>Personel</Tab>
                         
-                    </Tabs>
+                    </Tabs> */}
+                    <div className="category-taba">
+                    <Tabs
+                    className="tabs"
+                    value={this.state.activeTab}
+                    onChange={(e,tabId) => this.setState({activeTab:tabId})}
+                    variant="fullWidth"
+                    indicatorColor="secondary"
+                    textColor="secondary"
+                    aria-label="icon label tabs example"
+                >
+                    <Tab icon={<WorkIcon />} label="Profesionelle" />
+                    <Tab icon={<PersonIcon />} label="Personel" />
+                </Tabs>
+
+                    </div>
                     <section > 
                         <Grid >
                             <Cell col={12}>

@@ -5,8 +5,25 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-
+  .category-taba{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+  .category-taba .tabs{
+      width:40%;
+  }
+  @media(max-width:719px){
+    .category-taba .tabs{
+        width:90%;
+    }
+  }
 @media(max-width:450px){
+    
+  
     .projects-grid .card-project{
         min-width: 280px;
         transition: 0.2s;
