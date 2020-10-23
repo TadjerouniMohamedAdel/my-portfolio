@@ -11,6 +11,7 @@
     /* text-transform: uppercase; */
     font-size: 18px;
     color:#fff;
+    width:200px;
     font-weight: 600;
     text-decoration: none;
     overflow: hidden;
@@ -57,5 +58,20 @@
     }
     100%{
         background-position-x: 118px;
+    }
+}
+
+@media(max-width:750px){
+    .wave-button{
+        font-size: 16px;
+        padding:15px 10px;   
+        width:200px
+    }
+}
+@media(max-width:400px){
+    .wave-button{
+        font-size: 14px;
+        padding:15px 10px;
+        width:150px;  
     }
 }

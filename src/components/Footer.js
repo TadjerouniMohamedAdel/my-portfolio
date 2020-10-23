@@ -205,12 +205,12 @@ export default class Footer extends Component {
                                 <div className="social-contacts">
                                     <h4>Trouvez-moi sur</h4>
                                     <div className="social-links">
-                                        <span><i className="fab fa-linkedin" style={{color:"#0077B5"}}></i></span>
-                                        <span><i className="fab fa-facebook" style={{color:"#3b5999"}}></i></span>
-                                        <span><i className="fab fa-skype" style={{color:"#00AFF0"}}></i></span>
-                                        <span><i className="fab fa-google" style={{color:"#dd4b39"}}></i></span>
-                                        <span><i className="fab fa-viber" style={{color:"#7c3cac"}}></i></span>
-                                        <span><i className="fab fa-whatsapp" style={{color:"#25D366"}}></i></span>
+                                        <span><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/" style={{textDecoration:"none"}}><i className="fab fa-linkedin" style={{color:"#0077B5"}}></i></a></span>
+                                        <span><a target="_blank" href="https://web.facebook.com/adelnagato.tadj" style={{textDecoration:"none"}}><i className="fab fa-facebook" style={{color:"#3b5999"}}></i></a></span>
+                                        <span><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr" style={{textDecoration:"none"}}><i className="fab fa-skype" style={{color:"#00AFF0"}}></i></a></span>
+                                        <span><a target="_blank" href="mailto:mohnagato@gmail.com" style={{textDecoration:"none"}}><i className="fab fa-google" style={{color:"#dd4b39"}}></i></a></span>
+                                        <span><a target="_blank" href="#" style={{textDecoration:"none"}}><i className="fab fa-viber" style={{color:"#7c3cac"}}></i></a></span>
+                                        <span><a target="_blank" href="#" style={{textDecoration:"none"}}><i className="fab fa-whatsapp" style={{color:"#25D366"}}></i></a></span>
 
                                     </div>
                                 </div>
