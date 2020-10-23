@@ -36,10 +36,15 @@ export default function ProjectCard(props) {
                 </div>
                 
                 <div className="links">
-                    <a href={props.github} target="_blanck">
-                        <i className="fab fa-github"></i>
-                        Code Source
-                    </a>
+                    {
+                        props.github && (
+                            <a href={props.github} target="_blanck">
+                                <i className="fab fa-github"></i>
+                                Code Source
+                            </a>
+
+                        )
+                    }
                     <a href={props.live} target="_blank">
                         <i className="fas fa-play"></i>
                         Démo en direct
