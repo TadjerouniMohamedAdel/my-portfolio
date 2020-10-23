@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import {Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
 import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp, lyricBoot } from '../Images/Images'
 import ProjectCard from './ProjectCard/ProjectCard';
@@ -7,15 +7,13 @@ import Tab from '@material-ui/core/Tab';
 import PersonIcon from '@material-ui/icons/Person';
 import WorkIcon from '@material-ui/icons/Work';
 import './Projects.css'
-export default class Projects extends Component {
-    constructor(props){
-        super(props);
-        this.state = { activeTab:0 }
+const  Projects = (props)=> {
+       
+        const [activeTab,setActiveTab] = useState(0)
         
-    }
 
 
-    renderProProject= ()=>{
+    const renderProProject= ()=>{
         return(
             <div className="projects-grid">
                     <ProjectCard 
@@ -75,7 +73,7 @@ export default class Projects extends Component {
         )
     }
 
-    renderPersonalProject= ()=>{
+    const renderPersonalProject= ()=>{
         return(
             <div className="projects-grid">
                 <ProjectCard 
@@ -120,24 +118,22 @@ export default class Projects extends Component {
         )
     }
 
-    toggleCategories = ()=>{
-        switch (this.state.activeTab) {
+    const toggleCategories = ()=>{
+        switch (activeTab) {
             case 1:
-                   return this.renderPersonalProject()
+                   return renderPersonalProject()
             break;
             case 0:
-                  return  this.renderProProject()
+                  return  renderProProject()
             break;
             
         
         }
     }
 
-    render() {
-        console.log("activeTab",this.state.activeTab)
         return (
             <div >
-                    {/* <Tabs activeTab={this.state.activeTab}onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
+                    {/* <Tabs activeTab={activeTab}onChange={(tabId) => setState({activeTab:tabId})} ripple>
                         <Tab>Profesionelle</Tab>
                         <Tab>Personel</Tab>
                         
@@ -145,8 +141,8 @@ export default class Projects extends Component {
                     <div className="category-taba">
                     <Tabs
                     className="tabs"
-                    value={this.state.activeTab}
-                    onChange={(e,tabId) => this.setState({activeTab:tabId})}
+                    value={activeTab}
+                    onChange={(e,tabId) => setActiveTab(tabId)}
                     variant="fullWidth"
                     indicatorColor="secondary"
                     textColor="secondary"
@@ -161,12 +157,13 @@ export default class Projects extends Component {
                         <Grid >
                             <Cell col={12}>
                                 <div className="content">
-                                    {this.toggleCategories()}
+                                    {toggleCategories()}
                                 </div>
                             </Cell>
                         </Grid>
                     </section>
             </div>
         )
-    }
+    
 }
+export default Projects;
