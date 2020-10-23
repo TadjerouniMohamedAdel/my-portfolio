@@ -2,6 +2,7 @@ import React from 'react'
 import './Citation.css'
 import { user, mini_ep } from '../../Images/Images'
 import SocialMenu from '../ProfileCard/SocialMenu'
+import { Link } from 'react-router-dom'
 export default function Citation() {
     return (
         <div className="div-wave">
@@ -16,7 +17,9 @@ export default function Citation() {
                     <h3>chez Emploipatner.com <img src={mini_ep} /></h3>
                 </div>
             </div>
+                <Link to="aboutme" style={{textDecoration:"none"}}>
                 <a className="link readmore" href="#">Apprendre plus</a>
+                </Link>
                 <a className="link getcv" href="/cv_3.3.pdf" target="_blank">Obtenir mon cv</a>
                 
                <SocialMenu />
