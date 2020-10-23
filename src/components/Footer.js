@@ -6,7 +6,7 @@ import { freePik,contact,amt2 } from '../Images/Images';
 import * as yup from 'yup';
 import { setLocale } from 'yup';
 import emailjs from 'emailjs-com';
-
+import {Tooltip} from  'react-mdl'
 export default class Footer extends Component {
 
 
@@ -209,9 +209,20 @@ export default class Footer extends Component {
                                         <span><a target="_blank" href="https://web.facebook.com/adelnagato.tadj" style={{textDecoration:"none"}}><i className="fab fa-facebook" style={{color:"#3b5999"}}></i></a></span>
                                         <span><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr" style={{textDecoration:"none"}}><i className="fab fa-skype" style={{color:"#00AFF0"}}></i></a></span>
                                         <span><a target="_blank" href="mailto:mohnagato@gmail.com" style={{textDecoration:"none"}}><i className="fab fa-google" style={{color:"#dd4b39"}}></i></a></span>
-                                        <span><a target="_blank" href="#" style={{textDecoration:"none"}}><i className="fab fa-viber" style={{color:"#7c3cac"}}></i></a></span>
-                                        <span><a target="_blank" href="#" style={{textDecoration:"none"}}><i className="fab fa-whatsapp" style={{color:"#25D366"}}></i></a></span>
-
+                                        <span>
+                                            <a href="javascript:void(0)" style={{textDecoration:"none"}}>
+                                                <Tooltip label={"+213 555791105"} large>
+                                                    <i className="fab fa-viber" style={{color:"#7c3cac"}}></i>
+                                                </Tooltip>
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a href="javascript:void(0)" style={{textDecoration:"none"}}>
+                                                <Tooltip label={"+213 555791105"} large>
+                                                    <i className="fab fa-whatsapp" style={{color:"#25D366"}}></i>
+                                                </Tooltip>
+                                            </a>
+                                        </span>
                                     </div>
                                 </div>
                         </div>
