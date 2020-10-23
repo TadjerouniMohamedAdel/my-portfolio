@@ -22,7 +22,7 @@ import LandingProject from './LandingProject/LandingProject'
 
 const lastExperience ={
     startDate:"Novembre 2018",
-    endDate:"En cours",
+    endDate:"Octobre 2020",
     title:"Développeur Web/Mobile Full Stack",
     description:"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
     logo:logoEp,

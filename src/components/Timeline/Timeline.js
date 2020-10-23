@@ -8,7 +8,7 @@ import { Chip } from 'react-mdl'
 const experiences = [
   {
       startDate:"Novembre 2018",
-      endDate:"En cours",
+      endDate:"Octobre 2020",
       jobName:"Développeur Full Stack Web/Mobile",
       jobDescription:"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
       img:logoEp,
