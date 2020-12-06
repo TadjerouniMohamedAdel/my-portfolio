@@ -20,7 +20,7 @@ export default function Citation() {
                 <Link to="aboutme" style={{textDecoration:"none"}}>
                 <a className="link readmore" href="#">Apprendre plus</a>
                 </Link>
-                <a className="link getcv" href="/cv_3.3.pdf" target="_blank">Obtenir mon cv</a>
+                <a className="link getcv" href="/cv_3.4.pdf" target="_blank">Obtenir mon cv</a>
                 
                <SocialMenu />
                     
