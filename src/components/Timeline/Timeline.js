@@ -1,11 +1,22 @@
 import React, { Component } from 'react'
 import './Timeline.css'
 import Experience from '../Experience'
-import { logoEp,logoBea,logoBuileo, html_logo, symfony, api_logo, php, js_logo, css_logo, jquery, bootstrap, react, docker, webpack, git, mysql_logo, codeigniter_logo } from '../../Images/Images'
+import { logoEp,logoBea,logoBuileo, html_logo,material,symfony, api_logo, php, js_logo, css_logo, jquery, bootstrap, react, docker, webpack, git, mysql_logo, codeigniter_logo, pass } from '../../Images/Images'
 import { height } from 'dom-helpers'
 import { Chip } from 'react-mdl'
 
 const experiences = [
+  {
+    startDate:"Novembre 2020",
+    endDate:"En cours",
+    title:"Développeur Full Stack",
+    jobDescription:"Assurer le développement de la plateforme e-santé pass vital ainsi que les applications internes et externes de la société pass vital",
+    img:pass,
+    imgWidth:80,
+    imgHeight:80,
+    className:"img90x70",
+    tech:[{name:"Api Platform",logo:api_logo},{name:"Symfony",logo:symfony},{name:"React",logo:react},{name:"PHP",logo:php},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"Material Ui",logo:material},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
+},
   {
       startDate:"Novembre 2018",
       endDate:"Octobre 2020",

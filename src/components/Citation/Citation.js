@@ -1,6 +1,6 @@
 import React from 'react'
 import './Citation.css'
-import { user, mini_ep } from '../../Images/Images'
+import { user, mini_ep, mini_pass } from '../../Images/Images'
 import SocialMenu from '../ProfileCard/SocialMenu'
 import { Link } from 'react-router-dom'
 export default function Citation() {
@@ -14,7 +14,7 @@ export default function Citation() {
                 <img src={user} alt="profile-image" className="profile-image" />
                 <div className="content-info">
                     <h2>Salut, je m'appelle Adel<br/>Développeur Full Stack web & mobile</h2>
-                    <h3>chez Emploipatner.com <img src={mini_ep} /></h3>
+                    <h3>chez PassVital <img src={mini_pass} /></h3>
                 </div>
             </div>
                 <Link to="aboutme" style={{textDecoration:"none"}}>

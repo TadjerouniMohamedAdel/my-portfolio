@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Profile from './Profile/Profile'
 import ProjectCard from './ProjectCard/ProjectCard'
-import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2 } from '../Images/Images'
+import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material } from '../Images/Images'
 import Tooltip from 'react-mdl/lib/Tooltip'
 import WaveButton from './WaveButton/WaveButton'
 import { Chip } from 'react-mdl/lib/Chip'
@@ -21,14 +21,14 @@ import LandingProject from './LandingProject/LandingProject'
 
 
 const lastExperience ={
-    startDate:"Novembre 2018",
-    endDate:"Octobre 2020",
-    title:"Développeur Web/Mobile Full Stack",
-    description:"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
-    logo:logoEp,
+    startDate:"Novembre 2020",
+    endDate:"En cours",
+    title:"Développeur Full Stack",
+    description:"Assurer le développement de la plateforme e-santé pass vital ainsi que les applications internes et externes de la société pass vital",
+    logo:pass,
     imgWidth:80,
     imgHeight:80,
-    tech:[{name:"Symfony",logo:symfony},{name:"PHP",logo:php},{name:"Api Platform",logo:api_logo},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"JQuery",logo:jquery},{name:"Bootstrap",logo:bootstrap},{name:"React",logo:react},{name:"React Native",logo:react},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
+    tech:[{name:"Api Platform",logo:api_logo},{name:"Symfony",logo:symfony},{name:"React",logo:react},{name:"PHP",logo:php},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"Material Ui",logo:material},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
 }
 
 export default class LandingPage extends Component {
