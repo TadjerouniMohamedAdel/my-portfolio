@@ -9,7 +9,7 @@ const experiences = [
   {
     startDate:"Novembre 2020",
     endDate:"En cours",
-    title:"Développeur Full Stack",
+    jobName:"Développeur Full Stack",
     jobDescription:"Assurer le développement de la plateforme e-santé pass vital ainsi que les applications internes et externes de la société pass vital",
     img:pass,
     imgWidth:80,
