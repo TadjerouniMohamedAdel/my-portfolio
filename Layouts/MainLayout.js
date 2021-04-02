@@ -8,6 +8,20 @@ import {useRouter} from 'next/router'
 import {Link } from '@material-ui/core'
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js'
+import {motion} from 'framer-motion'
+
+const easing = [0.6, -0.05, 0.01, 0.99];
+const animLayout= {
+    initial: { x: "-100vw", opacity: 0,transition:{ease:easing,duration: 0.6,delay:0.6}},
+    animate: { x: 0, opacity: 1,transition:{ease:easing,duration: 0.6,delay:0.8}},
+};
+
+const animFooter = {
+    initial: { opacity: 0,transition:{ease:easing,}},
+    animate: { opacity: 1,transition:{ease:easing,delay:2}},
+};
+
+
 const  MainLayout = ({children})=> {
     emailjs.init(process.env.REACT_APP_EMAIL_USER_ID);
     const hideToggle= (event) =>{
@@ -48,13 +62,13 @@ const  MainLayout = ({children})=> {
                         </Navigation>
                     </Drawer>
                     <Content className="section">
-                        <section className="section-app-content">
+                        <motion.section className="section-app-content" variants={animLayout} exit="initial" initial="initial" animate="animate">
                             <div className="page-content" />
                             { children}
-                        </section>
-                        <footer>
+                        </motion.section>
+                        <motion.footer variants={animFooter} exit="initial" initial="initial" animate="animate">
                                 <Footer />
-                        </footer>
+                        </motion.footer>
                     </Content>
                 </Layout>
             </div>
