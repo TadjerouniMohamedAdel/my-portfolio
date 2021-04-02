@@ -6,6 +6,8 @@ import * as yup from 'yup';
 import { setLocale } from 'yup';
 import emailjs from 'emailjs-com';
 import {Tooltip} from  'react-mdl'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGoogle, faLinkedin, faSkype, faViber, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 export default class Footer extends Component {
 
 
@@ -204,21 +206,21 @@ export default class Footer extends Component {
                                 <div className="social-contacts">
                                     <h4>Trouvez-moi sur</h4>
                                     <div className="social-links">
-                                        <span><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/" style={{textDecoration:"none"}}><i className="fab fa-linkedin" style={{color:"#0077B5"}}></i></a></span>
-                                        <span><a target="_blank" href="https://web.facebook.com/adelnagato.tadj" style={{textDecoration:"none"}}><i className="fab fa-facebook" style={{color:"#3b5999"}}></i></a></span>
-                                        <span><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr" style={{textDecoration:"none"}}><i className="fab fa-skype" style={{color:"#00AFF0"}}></i></a></span>
-                                        <span><a target="_blank" href="mailto:mohnagato@gmail.com" style={{textDecoration:"none"}}><i className="fab fa-google" style={{color:"#dd4b39"}}></i></a></span>
+                                        <span><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faLinkedin} style={{color:"#0077B5"}} /></a></span>
+                                        <span><a target="_blank" href="https://web.facebook.com/adelnagato.tadj" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faFacebook} style={{color:"#3b5999"}}/></a></span>
+                                        <span><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faSkype} style={{color:"#00AFF0"}}/></a></span>
+                                        <span><a target="_blank" href="mailto:mohnagato@gmail.com" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faGoogle} style={{color:"#dd4b39"}}/></a></span>
                                         <span>
                                             <a href="javascript:void(0)" style={{textDecoration:"none"}}>
                                                 <Tooltip label={"+213 555791105"} large>
-                                                    <i className="fab fa-viber" style={{color:"#7c3cac"}}></i>
+                                                    <FontAwesomeIcon icon={faViber} style={{color:"#7c3cac"}}/>
                                                 </Tooltip>
                                             </a>
                                         </span>
                                         <span>
                                             <a href="javascript:void(0)" style={{textDecoration:"none"}}>
                                                 <Tooltip label={"+213 555791105"} large>
-                                                    <i className="fab fa-whatsapp" style={{color:"#25D366"}}></i>
+                                                    <FontAwesomeIcon icon={faWhatsapp} style={{color:"#25D366"}}/>
                                                 </Tooltip>
                                             </a>
                                         </span>

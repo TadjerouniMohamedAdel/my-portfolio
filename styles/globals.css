@@ -20,10 +20,9 @@ code {
 @import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
 
 
-.mdl-layout__drawer-button{
+/* .mdl-layout__drawer-button{
   color:rgba(0,0,0) !important;
-}
-
+} */
 @media(max-width: 763px) {
   .landing-grid{
    overflow-y:scroll;
@@ -160,7 +159,7 @@ code {
 }
 
 .resume-container{
-  background-image: url(/src/back.png);
+  background-image: url(back.png);
   display: flex;
   flex-direction: column;
   font-family:  'Montserrat', sans-serif; 
@@ -234,7 +233,7 @@ code {
   left:0;
   width:100%;
   height:100px;
-    background:url(wave.png);
+  background:url(wave.png);
   background-size: 1000px 100px;
 
 }
@@ -1697,7 +1696,7 @@ footer{
   transition:0.5s cubic-bezier(.95,.32,.37,1.31);
 }
 
-.list-social1 li .social-link1 .fab{
+.list-social1 li .social-link1 > *{
   z-index: 1000;
 }
 .list-social1 li .social-link1:hover:before{
@@ -2088,7 +2087,7 @@ footer{
     left:0;
     width:100%;
     height: 22px;
-    background: url(wave.png);
+    background: url(wave-b.png);
     animation: animateWave 0.5s linear infinite;
 }
 @keyframes animateWave{
@@ -2119,7 +2118,7 @@ footer{
 .about-container{
   display: flex;
   flex-direction: column;
-  background-image: url(/src/back.png);
+  background-image: url(back.png);
 }
 .about-section{
   width:100%;
@@ -2200,19 +2199,19 @@ label.Mui-focused {
   border-color: black !important;
 }
 .footer-container .social-contacts {
-  width:60%
+  width:90%
 }
 .footer-container .social-contacts .social-links{
   display: flex;
   width:100%;
   margin-top: 20px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
 }
 
-.footer-container .social-contacts .social-links  i{
-  font-size: 40px;
+.footer-container .social-contacts .social-links  {
+  font-size: 13px;
 }
 .social-contacts h4{
   text-align: center;
@@ -2411,7 +2410,7 @@ label.Mui-focused {
 
 /*Projects.css */
 .projects-grid{
-  background-image: url(/src/back.png);
+  background-image: url(back.png);
   display: flex;
   flex-direction: row;
   justify-content: center;
