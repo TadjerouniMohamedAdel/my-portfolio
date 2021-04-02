@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import PersonIcon from '@material-ui/icons/Person';
 import WorkIcon from '@material-ui/icons/Work';
 import MainLayout from '../../Layouts/MainLayout';
+import MyHead from '../../components/MyHead/MyHead';
 const  index = (props)=> {
        
         const [activeTab,setActiveTab] = useState(0)
@@ -133,8 +134,7 @@ const  index = (props)=> {
 
         return (
             <MainLayout>
-
-            
+            <MyHead title="NagatoDev - Projects" /> 
             <div >
                     {/* <Tabs activeTab={activeTab}onChange={(tabId) => setState({activeTab:tabId})} ripple>
                         <Tab>Profesionelle</Tab>

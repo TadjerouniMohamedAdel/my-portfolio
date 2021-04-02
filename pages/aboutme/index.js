@@ -4,10 +4,12 @@ import { manga, user, prof, programming, reading, music, football, chess } from 
 import Biography from '../../components/Biography/Biography'
 import Education from '../../components/Education/Education'
 import MainLayout from '../../Layouts/MainLayout'
+import MyHead from '../../components/MyHead/MyHead'
 export default class AboutMe extends Component {
     render() {
         return (
             <MainLayout>
+                <MyHead title="NagatoDev - About Me" />
             <div className="about-container">
                  <div className="about-section">
                     <h3 className="about-section-title">

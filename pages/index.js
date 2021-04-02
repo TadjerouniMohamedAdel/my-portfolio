@@ -6,6 +6,7 @@ import LandingSkill from '../components/LandingSkills/LandingSkill';
 import { Chip } from 'react-mdl/lib/Chip'
 import MainLayout from '../Layouts/MainLayout';
 import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material } from '../Images/Images'
+import MyHead from '../components/MyHead/MyHead';
 const lastExperience ={
   startDate:"Novembre 2020",
   endDate:"En cours",
@@ -22,6 +23,7 @@ const lastExperience ={
 export default function index() {
   return (
     <MainLayout>
+        <MyHead title="NagatoDev - Home" />
       <div className="landing-grid">
                     <div className="wave-section">
                         <div className="wave wave1"></div>

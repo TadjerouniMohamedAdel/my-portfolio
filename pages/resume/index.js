@@ -6,6 +6,7 @@ import Timeline from '../../components/Timeline/Timeline'
 import Card2 from '../../components/Card2/Card2'
 import WaveButton from '../../components/WaveButton/WaveButton'
 import MainLayout from '../../Layouts/MainLayout'
+import MyHead from '../../components/MyHead/MyHead'
 
 
 
@@ -214,6 +215,7 @@ export default class index extends Component {
     render(){
         return(
             <MainLayout>
+                <MyHead title="NagatoDev - Resume" />
             <div className="resume-container">
                 <div className="experiences-block" style={{paddingTop:'2em'}}>
                                  
