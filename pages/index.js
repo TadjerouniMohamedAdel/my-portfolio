@@ -1,65 +1,94 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react'
+import Profile from '../components/Profile/Profile';
+import WaveButton from '../components/WaveButton/WaveButton';
+import LandingProject from '../components/LandingProject/LandingProject';
+import LandingSkill from '../components/LandingSkills/LandingSkill';
+import { Chip } from 'react-mdl/lib/Chip'
+import MainLayout from '../Layouts/MainLayout';
+import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material } from '../Images/Images'
+const lastExperience ={
+  startDate:"Novembre 2020",
+  endDate:"En cours",
+  title:"Développeur Full Stack",
+  description:"Assurer le développement de la plateforme e-santé pass vital ainsi que les applications internes et externes de la société pass vital",
+  logo:pass,
+  imgWidth:80,
+  imgHeight:80,
+  tech:[{name:"Api Platform",logo:api_logo},{name:"Symfony",logo:symfony},{name:"React",logo:react},{name:"PHP",logo:php},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"Material Ui",logo:material},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
+}
 
-export default function Home() {
+
+
+export default function index() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <MainLayout>
+      <div className="landing-grid">
+                    <div className="wave-section">
+                        <div className="wave wave1"></div>
+                        <div className="wave wave2"></div>
+                        <div className="wave wave3"></div>
+                        <div className="wave wave4"></div>
+                        <Profile />
+                        
+                    </div>
+                    <div className="landing-skills">
+                        <h3>
+                        Compétences Principales
+                        </h3>
+                        <div className="landing-skills-container">
+                        
+                            <div className="div-landing-skill">
+                                <LandingSkill />
+                            </div>
+                            <div className="img-landing-skill">
+                                <img src={dev_skill}  />
+                            </div>
+                        </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+                        <div style={{marginTop:30}}>
+                            <WaveButton 
+                                label="Voir toutes les compétences"
+                                path="/resume"
+                            />
+                        </div>
+                    </div>
+                    <LandingProject />
+                    <div className="last-section-landing">
+                    <div className="landing-last-experience">
+                                <h3>Dernière Expérience</h3>
+                                <div className="last-experience">
+                                    <h4>{lastExperience.title}</h4>
+                                    <span className="time">
+                                        {lastExperience.startDate } - {lastExperience.endDate}
+                                    </span>
+                                    <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-5}}/>
+                                    <p className="description">
+                                        {lastExperience.description}
+                                    </p>
+                                    <div style={{marginTop:10}}>
+                                        <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
+                                        {
+                                        lastExperience.tech.map((tech,ind)=>(
+                                            <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>
+                                                <Chip>
+                                                <img src={tech.logo} className="chip-image" style={{marginRight:3}}/>
+                                                {tech.name}
+                                                </Chip>
+                                            </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+                                        ))
+                                        }
+                                    </div>
+                                </div>
+                                  <div>
+                                      <WaveButton
+                                        label="Voir toutes les expériences" 
+                                        path="/resume"
+                                      />
+                                  </div>
+                    </div>
+                    </div>
+                </div>
+    </MainLayout>
   )
 }
