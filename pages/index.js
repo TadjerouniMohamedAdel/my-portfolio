@@ -5,17 +5,22 @@ import LandingProject from '../components/LandingProject/LandingProject';
 import LandingSkill from '../components/LandingSkills/LandingSkill';
 import { Chip } from 'react-mdl/lib/Chip'
 import MainLayout from '../Layouts/MainLayout';
-import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material } from '../Images/Images'
+import { logoKhedemni, next_mini,node,logoBuileo, jira,js_dev,ts_mini,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material, cleverzone, express_mini } from '../Images/Images'
 import MyHead from '../components/MyHead/MyHead';
 const lastExperience ={
-  startDate:"Novembre 2020",
+  startDate:"Janvier 2021",
   endDate:"En cours",
   title:"Développeur Full Stack",
-  description:"Assurer le développement de la plateforme e-santé pass vital ainsi que les applications internes et externes de la société pass vital",
-  logo:pass,
+  description:`Analyse des besoins du client.
+  Participation à l’élaboration du cahier des charges.
+  Développement &conception d’un site web ou d’une application.
+  Contrôle qualité : réalisation de différents tests, correction des bugs éventuels.
+  Livraison au client.
+  Suivi technique et maintenance du site internet ou de l’application web en fonction des besoins.`,
+  logo:cleverzone,
   imgWidth:80,
   imgHeight:80,
-  tech:[{name:"Api Platform",logo:api_logo},{name:"Symfony",logo:symfony},{name:"React",logo:react},{name:"PHP",logo:php},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"Material Ui",logo:material},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo}]
+  tech:[{name:"Express",logo:express_mini},{name:"nodejs",logo:node},{name:"React",logo:react},{name:"Nextjs",logo:next_mini},{name:"TypeScript",logo:ts_mini},{name:"JavaScript",logo:js_logo},{name:"HTML",logo:html_logo},{name:"CSS",logo:css_logo},{name:"Material Ui",logo:material},{name:"Docker",logo:docker},{name:"Webpack",logo:webpack},{name:"git",logo:git},{name:"Mysql",logo:mysql_logo},{name:"Jira",logo:jira}]
 }
 
 

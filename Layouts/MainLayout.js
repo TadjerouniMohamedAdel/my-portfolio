@@ -43,10 +43,10 @@ const  MainLayout = ({children})=> {
                             >
                                 Nagatodev</Link> } scroll>
                         <Navigation className="app-bar-navigation">
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} onClick={()=>location.push("/")}>Accueil</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} onClick={()=>location.push("/resume")}>Cursus</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} onClick={()=>location.push("/projects")}>Projets</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,transition:"0.8s"}} onClick={()=>location.push("/aboutme")}>À propos</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/")}>Accueil</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/resume")}>Cursus</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/projects")}>Projets</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/aboutme")}>À propos</Link>
                         </Navigation>
                     </Header>
                     <Drawer title={<Link onClick={()=>location.push("/")} style={{textDecoration:'none',color:'black',marginLeft:20}}>Mon Portfolio</Link> }>

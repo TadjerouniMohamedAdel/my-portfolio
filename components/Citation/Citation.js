@@ -1,5 +1,5 @@
 import React from 'react'
-import { user, mini_ep, mini_pass } from '../../Images/Images'
+import { user, mini_ep, mini_pass, cleverzone_mini } from '../../Images/Images'
 import SocialMenu from '../ProfileCard/SocialMenu'
 import { Link } from '@material-ui/core'
 export default function Citation() {
@@ -13,7 +13,7 @@ export default function Citation() {
                 <img src={user} alt="profile-image" className="profile-image" />
                 <div className="content-info">
                     <h2>Salut, je m'appelle Adel<br/>Développeur Full Stack web & mobile</h2>
-                    <h3>chez PassVital <img src={mini_pass} /></h3>
+                    <h3>chez Cleverzone <img src={cleverzone_mini} /></h3>
                 </div>
             </div>
                 <Link to="aboutme" style={{textDecoration:"none"}}>

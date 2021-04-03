@@ -1,6 +1,9 @@
 import React from 'react'
 import { Chip } from 'react-mdl'
 import {  react } from '../../Images/Images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub  } from '@fortawesome/free-brands-svg-icons'
+import { faPlay  } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProjectCard(props) {
     return (
@@ -38,14 +41,14 @@ export default function ProjectCard(props) {
                     {
                         props.github && (
                             <a href={props.github} target="_blanck">
-                                <i className="fab fa-github"></i>
+                                <FontAwesomeIcon icon={faGithub} />
                                 Code Source
                             </a>
 
                         )
                     }
                     <a href={props.live} target="_blank">
-                        <i className="fas fa-play"></i>
+                    <FontAwesomeIcon icon={faPlay} />
                         Démo en direct
                     </a>
                 </div>
