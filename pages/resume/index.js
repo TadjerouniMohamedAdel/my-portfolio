@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express, firebase } from '../../Images/Images'
 import SkillItem from '../../components/Skills/SkillItem'
 import {} from 'react-mdl'
@@ -12,15 +12,12 @@ import MyHead from '../../components/MyHead/MyHead'
 
 
 
-export default class index extends Component {
+export default function index() {
     
-    constructor(props){
-        super(props);
-        this.state = { activeTab:0 }
-        
-    }
+    
+    const [activeTab, setActiveTab] = useState(0)
 
-    renderMobile = ()=>{
+    const renderMobile = ()=>{
         return (
             <div className="skill-grid">
                 <div className="skill-item" key="rn">
@@ -42,7 +39,7 @@ export default class index extends Component {
         )
     }
 
-    renderDevops  = ()=>{
+    const renderDevops  = ()=>{
         return (
             <div className="skill-grid" key="devops">
                 <div className="skill-item" key={2}>
@@ -85,7 +82,7 @@ export default class index extends Component {
         )
     }
 
-    renderBackEnd = ()=>{
+    const renderBackEnd = ()=>{
         return(
             <div className="skill-grid" key="back">
                 <div className="skill-item" key={7}>
@@ -140,7 +137,7 @@ export default class index extends Component {
             }
 
 
-    renderFrontEnd = ()=>{
+    const renderFrontEnd = ()=>{
         return(
             <div className="skill-grid" key="fron">
                 <div className="skill-item" key={11}>
@@ -194,25 +191,24 @@ export default class index extends Component {
         )
     }
     
-    toggleCategories = ()=>{
-        switch (this.state.activeTab) {
+    const toggleCategories = ()=>{
+        switch (activeTab) {
             case 0:
-                return this.renderFrontEnd()
+                return renderFrontEnd()
             break;
             case 1:
-                   return this.renderBackEnd()
+                   return renderBackEnd()
             break;
             case 2:
-                return this.renderMobile()
+                return renderMobile()
             break;
             case 3:
-                return this.renderDevops()
+                return renderDevops()
             break;
         
         }
     }
     
-    render(){
         return(
             <MainLayout>
                 <MyHead title="NagatoDev - Resume" />
@@ -226,24 +222,24 @@ export default class index extends Component {
                         <div  style={{display:"flex",marginBottom:100,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
                                 <Card2 
-                                    content={this.renderBackEnd()}
+                                    content={renderBackEnd()}
                                     icon="fas fa-cogs"
                                     title="Back End"
                                 />
                                 <Card2 
-                                    content={this.renderFrontEnd()}
+                                    content={renderFrontEnd()}
                                     icon="fas fa-desktop"
                                     title="Front End"    
                                 />
                                 <Card2 
-                                    content={this.renderMobile()}
+                                    content={renderMobile()}
                                     icon="fas fa-mobile-alt"
                                     title="Développement mobile"
                                 />
                                 <Card2 
                                     title="Outils & Devops"
                                     icon="fas fa-tools"
-                                    content={this.renderDevops()}
+                                    content={renderDevops()}
                                 />
                             
                         </div>
@@ -259,7 +255,7 @@ export default class index extends Component {
                   
 
         )
-    }
+}
     
 
-}
+

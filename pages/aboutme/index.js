@@ -5,8 +5,8 @@ import Biography from '../../components/Biography/Biography'
 import Education from '../../components/Education/Education'
 import MainLayout from '../../Layouts/MainLayout'
 import MyHead from '../../components/MyHead/MyHead'
-export default class AboutMe extends Component {
-    render() {
+
+export default function AboutMe(props){
         return (
             <MainLayout>
                 <MyHead title="NagatoDev - About Me" />
@@ -64,5 +64,4 @@ export default class AboutMe extends Component {
             </div>
             </MainLayout>
         )
-    }
 }
