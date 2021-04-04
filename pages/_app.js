@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion';
+import { appWithTranslation } from 'next-i18next'
+
 
 function MyApp({ Component, pageProps,router }) {
   return(
@@ -9,4 +11,4 @@ function MyApp({ Component, pageProps,router }) {
   ) 
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)
