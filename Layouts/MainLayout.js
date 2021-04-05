@@ -9,6 +9,7 @@ import {Link } from '@material-ui/core'
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js'
 import {motion} from 'framer-motion'
+import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const animLayout= {
@@ -62,9 +63,10 @@ const  MainLayout = ({children})=> {
                         </Navigation>
                     </Drawer>
                     <Content className="section">
+                                <LanguageSwitcher />
                         <motion.section className="section-app-content" variants={animLayout} exit="initial" initial="initial" animate="animate">
-                            <div className="page-content" />
-                            { children}
+                                <div className="page-content" />
+                                { children}
                         </motion.section>
                         <motion.footer variants={animFooter} exit="initial" initial="initial" animate="animate">
                                 <Footer />
