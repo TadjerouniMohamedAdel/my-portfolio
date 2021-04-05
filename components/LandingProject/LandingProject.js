@@ -3,13 +3,15 @@ import { logoKhedemni, node,logoBuileo, js_dev,react,webpack,git,mysql_logo,dock
 import ProjectCard from '../ProjectCard/ProjectCard'
 import DivWave from '../DivWave/DivWave'
 import WaveButton from '../WaveButton/WaveButton'
+import { useTranslation } from 'next-i18next'
 
 export default function LandingProject() {
+    const { t } = useTranslation('landing')
     return (
         <div className="landing-projects-container">
         <DivWave>
             <h3 className="landing-projects-title">
-                Derniers Projets
+                {t("last-projects")}
             </h3>
             <div className="landing-projects">
             <ProjectCard 
@@ -51,7 +53,7 @@ export default function LandingProject() {
                 />
             </div>
             <WaveButton 
-                label="Voir tous les projets"
+                label={t('view-all-projects')}
                 path="/projects"
             />
         </DivWave>

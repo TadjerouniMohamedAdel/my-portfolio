@@ -7,6 +7,10 @@ import { Chip } from 'react-mdl/lib/Chip'
 import MainLayout from '../Layouts/MainLayout';
 import { logoKhedemni, next_mini,node,logoBuileo, jira,js_dev,ts_mini,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material, cleverzone, express_mini } from '../Images/Images'
 import MyHead from '../components/MyHead/MyHead';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
+
 const lastExperience ={
   startDate:"Janvier 2021",
   endDate:"En cours",
@@ -24,8 +28,14 @@ const lastExperience ={
 }
 
 
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+      ...await serverSideTranslations(locale, ["landing"]),
+    },
+  })
 
 export default function index() {
+    const { t } = useTranslation('landing')
   return (
     <MainLayout>
         <MyHead title="NagatoDev - Home" />
@@ -40,7 +50,7 @@ export default function index() {
                     </div>
                     <div className="landing-skills">
                         <h3>
-                        Compétences Principales
+                        {t('main-skills')}
                         </h3>
                         <div className="landing-skills-container">
                         
@@ -54,7 +64,7 @@ export default function index() {
 
                         <div style={{marginTop:30}}>
                             <WaveButton 
-                                label="Voir toutes les compétences"
+                                label={t('view-all-skills')}
                                 path="/resume"
                             />
                         </div>
@@ -62,7 +72,7 @@ export default function index() {
                     <LandingProject />
                     <div className="last-section-landing">
                     <div className="landing-last-experience">
-                                <h3>Dernière Expérience</h3>
+                                <h3>{t("latest-experience")}</h3>
                                 <div className="last-experience">
                                     <h4>{lastExperience.title}</h4>
                                     <span className="time">
@@ -89,7 +99,7 @@ export default function index() {
                                 </div>
                                   <div>
                                       <WaveButton
-                                        label="Voir toutes les expériences" 
+                                        label={t("view-all-experiences")} 
                                         path="/resume"
                                       />
                                   </div>
