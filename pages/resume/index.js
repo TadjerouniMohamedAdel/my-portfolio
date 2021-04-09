@@ -8,18 +8,19 @@ import WaveButton from '../../components/WaveButton/WaveButton'
 import MainLayout from '../../Layouts/MainLayout'
 import MyHead from '../../components/MyHead/MyHead'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-      ...await serverSideTranslations(locale, ["landing","layout"]),
+      ...await serverSideTranslations(locale, ["resume","layout"]),
     },
   })
 
 
 export default function index() {
-    
-    
     const [activeTab, setActiveTab] = useState(0)
+    const {t} = useTranslation("resume")
 
     const renderMobile = ()=>{
         return (
@@ -221,7 +222,7 @@ export default function index() {
                                  
                                  <Timeline />
                 </div>
-                        <h2 className="section-title-resume" style={{textAlign:"center"}}>Compétences</h2>
+                        <h2 className="section-title-resume" style={{textAlign:"center"}}>{t("skills.title")}</h2>
                     <div className="skills-block">
                         <div  style={{display:"flex",marginBottom:100,alignItems:"center",justifyContent:"center",flexDirection:'row',width:"80%",flexWrap:"wrap"}}>
                             
@@ -238,17 +239,17 @@ export default function index() {
                                 <Card2 
                                     content={renderMobile()}
                                     icon="fas fa-mobile-alt"
-                                    title="Développement mobile"
+                                    title={t("skills.mobile_development")}
                                 />
                                 <Card2 
-                                    title="Outils & Devops"
+                                    title={t("skills.others")}
                                     icon="fas fa-tools"
                                     content={renderDevops()}
                                 />
                             
                         </div>
                         <WaveButton 
-                            label="Obtenir mon cv"
+                            label={t("get_my_resume")}
                             path="/cv_3.3.pdf"
                             file
                         />

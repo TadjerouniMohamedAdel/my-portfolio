@@ -1,0 +1,29 @@
+{
+    "experiences":{
+        "title":"Expériences",
+        "cleverzone":{
+            "title":"Développeur Full Stack",
+            "description":"Contribuer à la conception et le developpement des solution informatiques de l'entreprise. Participer a l elaboration du cachier des charges. Assurer le Contrôle qualité des solutions par  la creation des test unitaire et fonctionnelles. Assurer la maintenance des solution existantes par la correction des bug et l'ajout de nouvelles fonctionalitees au fonction des besoins.Participer au deployment des solution concuee par l'entreprise",
+            "startDate":"Janvier 2021",
+            "endDate":"En cours"
+        },
+        "emploipartner":{
+            "title":"Développeur Full Stack Web/Mobile",
+            "description":"Assurer le développement du site e-recrutement (l’ajout de nouvelles fonctionnalités ,correction des bugs https://www.emploipartner.com/fr/. ,Développement des applications interne de l’entreprise emploipartner (l’ajout de nouvelles fonctionnalités ,mise a jour des noyaux et la correction des bugs)",
+            "startDate":"Novembre 2018",
+            "endDate":"Octobre 2020"
+        },
+        "beo":{
+            "title":"Stagiaire Développeur web full stack",
+            "description":"Développement d’une application web pour la gestion des œuvres sociales (prestations,primes,pres,Dons) des employees la banque d’extérieur d ‘Algérie .",
+            "startDate":"Fevrier",
+            "endDate":"juillet 2018"
+        }
+    },
+    "skills":{
+        "title":"Compétences",
+        "mobile_development":"Développement mobile",
+        "others":"Outils & Devops"
+    },
+    "get_my_resume":"Obtenir mon cv"
+}

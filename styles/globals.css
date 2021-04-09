@@ -2491,10 +2491,13 @@ label.Mui-focused {
   object-fit: cover;
 }
 .languageSwitcherContainer >div > button{
-  background-color: rebeccapurple;
+  background-color: rgba(0,0,0,0.90);
   border:2px solid rgb(46, 62, 66);
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   transition:0.5s;
+  width: 75px;
+  height: 75px;
+  color:#fff  !important;
   animation: animateDiveWaves 6s linear infinite; 
 }
 .languageSwitcherContainer >div > button >*{

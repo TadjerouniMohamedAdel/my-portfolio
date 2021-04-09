@@ -9,14 +9,16 @@ import WorkIcon from '@material-ui/icons/Work';
 import MainLayout from '../../Layouts/MainLayout';
 import MyHead from '../../components/MyHead/MyHead';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next';
+
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-      ...await serverSideTranslations(locale, ["landing","layout"]),
+      ...await serverSideTranslations(locale, ["projects","layout"]),
     },
   })
 const  index = (props)=> {
-       
+        const { t } = useTranslation("projects")
         const [activeTab,setActiveTab] = useState(0)
         
 
@@ -26,9 +28,9 @@ const  index = (props)=> {
             <div className="projects-grid">
                     <ProjectCard 
                                 title="Khedemni Mobile"
-                                type="Professional Project"
+                                type={t("type.professional")}
                                 live="https://play.google.com/store/apps/details?id=com.khedemni&hl=fr"
-                                description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
+                                description={t("khedemni.description")}
                                 logo={logoKhedemni}
                                 tech={[
                                     {name:"Java Script",logo:js_logo},
@@ -42,8 +44,8 @@ const  index = (props)=> {
                             />
                             <ProjectCard 
                                 title="Buileo CRM"
-                                type="Professional Project"
-                                description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
+                                type={t("type.professional")}
+                                description={t("buileo.description")}
                                 logo={logoBuileo}
                                 live="https://www.buileo.com/"
                                 classes="buileo"
@@ -60,8 +62,8 @@ const  index = (props)=> {
                             />
                             <ProjectCard 
                                 title="Emploipartner.com"
-                                type="Professional Project"
-                                description=" EmploiPartner est une site web de e-recrutement qui propose des solutions de Sourcing et de Recrutement innovantes pour accompagner les entreprises dans leurs projets de développement RH "
+                                type={t("type.professional")}
+                                description={t("ep.description")}
                                 live="https://www.emploipartner.com/fr/"
                                 logo={logoEp}
                                 classes="ep"
@@ -87,10 +89,10 @@ const  index = (props)=> {
                 <ProjectCard 
                             key="prs-artelyes"
                             title="Artelyes"
-                            type="Personal Project"
+                            type={t("type.personal")}
                             live="https://artelyes.netlify.app/"
                             github="https://github.com/TadjerouniMohamedAdel/artelyes"
-                            description="Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine."
+                            description={t("artelyes.description")}
                             logo={artelyes}
                             classes="artelyes"
                             tech={[
@@ -106,10 +108,10 @@ const  index = (props)=> {
             <ProjectCard
                             key="prs-lyric-boot" 
                             title="Lyric Boot"
-                            type="Personal Project"
+                            type={t("type.personal")}
                             live="https://lyric-boot.netlify.app/"
                             github="https://github.com/TadjerouniMohamedAdel/lyric-boot"
-                            description="Lyric Boot est une application web qui sert à récupérer lyric de vos chansons préfère."
+                            description={t("lyric_boot.description")}
                             logo={lyricBoot}
                             classes="lyric-boot"
                             tech={[
@@ -158,8 +160,8 @@ const  index = (props)=> {
                     textColor="secondary"
                     aria-label="icon label tabs example"
                 >
-                    <Tab icon={<WorkIcon />} label="Profesionelle" />
-                    <Tab icon={<PersonIcon />} label="Personel" />
+                    <Tab icon={<WorkIcon />} label={t("type.professional")} />
+                    <Tab icon={<PersonIcon />} label={t("type.personal")} />
                 </Tabs>
 
                     </div>

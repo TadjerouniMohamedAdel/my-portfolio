@@ -6,63 +6,65 @@ import Education from '../../components/Education/Education'
 import MainLayout from '../../Layouts/MainLayout'
 import MyHead from '../../components/MyHead/MyHead'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 export const getStaticProps = async ({ locale }) => ({
     props: {
-      ...await serverSideTranslations(locale, ["landing","layout"]),
+      ...await serverSideTranslations(locale, ["about","layout"]),
     },
   })
 export default function AboutMe(props){
+    const {t} = useTranslation("about")
         return (
             <MainLayout>
                 <MyHead title="NagatoDev - About Me" />
             <div className="about-container">
                  <div className="about-section">
                     <h3 className="about-section-title">
-                        Développeur Full Stack
+                         {t("aboutme_title")}
                     </h3>
                     <Biography />
                     
                 </div>
                 <div className="about-section">
                     <h3 className="about-section-title">
-                        Formation
+                        {t("education_title")}
                     </h3>
                     <Education />
                 </div>
                 <div className="about-section">
                     <h3 className="about-section-title">
-                    Passions
+                    {t("passions.title")}
                     </h3>
                     <div className="interest-section">
                         <InterestItem
-                            title="La programmation"
+                            title={t("passions.programing.title")}
                             logo={programming}
-                            description="La programmation est la première passion et c'est elle qui occupe la majeure partie de mon temps libre"
+                            description={t("passions.programing.description")}
                         /> 
                         <InterestItem 
-                            title="Football"
+                            title={t("passions.football.title")}
                             logo={football}
-                            description="Comme pour la plupart des Algériens le football est mon sport préféré"
+                            description={t("passions.programing.description")}
                         />
                         <InterestItem 
-                            title="Le jeu d'échecs"
+                            title={t("passions.chess.title")}
                             logo={chess}
-                            description="Même si j'adore les jeux électroniques j'ai un faible pour le jeu d'échecs"
+                            description={t("passions.chess.description")}
                         />
                         <InterestItem
-                            title="La lecture"
+                            title={t("passions.reading.title")}
                             logo={reading}
-                            description="J'aime beaucoup lire, mes auteurs préférés sont Jules Verne, Arthur Conan Doyle, Paulo Coelho et Amin Maalouf"
+                            description={t("passions.reading.description")}
                         />
                         <InterestItem
-                            title="La Musique"
+                            title={t("passions.music.title")}
                             logo={music}
-                            description="J'écoute beaucoup de la musique, surtout lorsque je travaille, ma musique préférée et le chaabi algérien"
+                            description={t("passions.music.description")}
                         />
                         <InterestItem
                             title="Manga"
                             logo={manga}
-                            description="je peux m'en passer, surtout ces quatre-là"
+                            description={t("passions.manga.description")}
                         /> 
                     </div>
                 </div>

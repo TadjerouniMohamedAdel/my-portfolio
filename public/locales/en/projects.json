@@ -1,0 +1,25 @@
+{
+    "type":{
+        "professional":"Professional project",
+        "personal":"Personnal project"
+    },
+    "khedemni":{
+        "description":"Khedemni! The first application in Algeria specializing in the recruitment of hospitality and catering trades."
+    },
+    "buileo":{
+        "description":"Buileo CRM is the tool that will allow you to better manage your customer relationship and better control your company's sales process. Thanks to its various modules, you will have visibility into all of your activities."
+    },
+    "ep":{
+        "description":"EmploiPartner is an e-recruitment website that offers innovative Sourcing and Recruitment solutions to support companies in their HR development projects."
+    },
+    "artelyes":{
+        "description":"Artelyes is a website dedicated to the presentation and publication of the works of art of Mr Elyes Tayeb Lamine."
+    },
+    "lyric_boot":{
+        "description":"Lyric Boot is a web application which is used to retrieve lyric from your favorite songs."
+    },
+    "project_built_with":"This project has been developed mainly with:",
+    "live_menu":"Live demo",
+    "code_source":"Source code"
+
+}

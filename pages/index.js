@@ -26,7 +26,7 @@ const lastExperience ={
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-      ...await serverSideTranslations(locale, ["landing","layout"]),
+      ...await serverSideTranslations(locale, ["landing","layout","projects"]),
     },
   })
 

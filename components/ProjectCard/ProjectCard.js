@@ -4,8 +4,10 @@ import {  react } from '../../Images/Images'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub  } from '@fortawesome/free-brands-svg-icons'
 import { faPlay  } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'next-i18next'
 
 export default function ProjectCard(props) {
+    const { t } = useTranslation("projects") 
     return (
         <div className={`card-project ${props.classes}`}>
             <div className="imgBx">
@@ -20,8 +22,7 @@ export default function ProjectCard(props) {
                     {props.description}
                 </p><br/>
                 <p>
-                ce projet a été développée principalement avec :
-
+                    {t("project_built_with")}
                 </p>
                 <div className="tech">
                     {
@@ -42,14 +43,14 @@ export default function ProjectCard(props) {
                         props.github && (
                             <a href={props.github} target="_blanck">
                                 <FontAwesomeIcon icon={faGithub} />
-                                Code Source
+                                {t("code_source")}
                             </a>
 
                         )
                     }
                     <a href={props.live} target="_blank">
                     <FontAwesomeIcon icon={faPlay} />
-                        Démo en direct
+                        {t("live_menu")}
                     </a>
                 </div>
             </div>
