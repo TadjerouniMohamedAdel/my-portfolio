@@ -10,5 +10,23 @@
     "job":"Full Stack Web & Mobile Developer",
     "at":"at",
     "learn-more":"Learn more",
-    "get-resume":"Get my resume"
+    "get-resume":"Get my resume",
+    "technologies_used":"Technologies used",
+    "professional_project":"Professional Project",
+    "projects":{
+        "khedemni":{
+            "description":"Khedemni! The first application in Algeria specializing in the recruitment of hospitality and catering trades."
+        },
+        "buileo":{
+            "description":"Buileo CRM is the tool that will allow you to better manage your customer relationship and better control your company's sales process. Thanks to its various modules, you will have visibility into all of your activities."
+        }
+    },
+    "last_experience":{
+        "cleverzone":{
+            "title":"Full Stack Developer",
+            "description":"Contribute to the design and development of the company's IT solutions. Participate in the development of the cost cachet. Ensure the quality control of solutions by creating unit and functional tests. Ensure the maintenance of existing solutions by correcting bugs and adding new features as needed. Participate in the deployment of solutions designed by the company",
+            "startDate":"January 2021",
+            "endDate":"Current"
+        }
+    }
 }

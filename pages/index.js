@@ -8,19 +8,15 @@ import MainLayout from '../Layouts/MainLayout';
 import { logoKhedemni, next_mini,node,logoBuileo, jira,js_dev,ts_mini,react,webpack,git,mysql_logo,docker, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, rn_logo, logoEp, dev_skill, amt2, pass, material, cleverzone, express_mini } from '../Images/Images'
 import MyHead from '../components/MyHead/MyHead';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 import { useTranslation } from 'next-i18next'
 
 
 const lastExperience ={
-  startDate:"Janvier 2021",
-  endDate:"En cours",
-  title:"Développeur Full Stack",
-  description:`Analyse des besoins du client.
-  Participation à l’élaboration du cahier des charges.
-  Développement &conception d’un site web ou d’une application.
-  Contrôle qualité : réalisation de différents tests, correction des bugs éventuels.
-  Livraison au client.
-  Suivi technique et maintenance du site internet ou de l’application web en fonction des besoins.`,
+  startDate:"last_experience.cleverzone.startDate",
+  endDate:"last_experience.cleverzone.endDate",
+  title:"last_experience.cleverzone.title",
+  description:"last_experience.cleverzone.description",
   logo:cleverzone,
   imgWidth:80,
   imgHeight:80,
@@ -30,7 +26,7 @@ const lastExperience ={
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-      ...await serverSideTranslations(locale, ["landing"]),
+      ...await serverSideTranslations(locale, ["landing","layout"]),
     },
   })
 
@@ -74,16 +70,16 @@ export default function index() {
                     <div className="landing-last-experience">
                                 <h3>{t("latest-experience")}</h3>
                                 <div className="last-experience">
-                                    <h4>{lastExperience.title}</h4>
+                                    <h4>{t(lastExperience.title)}</h4>
                                     <span className="time">
-                                        {lastExperience.startDate } - {lastExperience.endDate}
+                                        {t(lastExperience.startDate) } - {t(lastExperience.endDate)}
                                     </span>
                                     <img src={lastExperience.logo} width={100} heigh={100} style={{float:"left",marginTop:-5}}/>
                                     <p className="description">
-                                        {lastExperience.description}
+                                        {t(lastExperience.description)}
                                     </p>
                                     <div style={{marginTop:10}}>
-                                        <h6 style={{fontWeight:"800"}}>Technologees utilisees:</h6>
+                                        <h6 style={{fontWeight:"800"}}>{t("technologies_used")}:</h6>
                                         {
                                         lastExperience.tech.map((tech,ind)=>(
                                             <div style={{display:"inline",flex:1,margin:5}} key={ind+"l"}>

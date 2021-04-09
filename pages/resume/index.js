@@ -7,9 +7,13 @@ import Card2 from '../../components/Card2/Card2'
 import WaveButton from '../../components/WaveButton/WaveButton'
 import MainLayout from '../../Layouts/MainLayout'
 import MyHead from '../../components/MyHead/MyHead'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-
-
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+      ...await serverSideTranslations(locale, ["landing","layout"]),
+    },
+  })
 
 
 export default function index() {

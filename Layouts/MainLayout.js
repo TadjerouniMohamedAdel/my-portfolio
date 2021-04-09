@@ -10,6 +10,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js'
 import {motion} from 'framer-motion'
 import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'next-i18next'
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const animLayout= {
@@ -30,6 +31,7 @@ const  MainLayout = ({children})=> {
         selectorId.MaterialLayout.toggleDrawer();
     }
     const location = useRouter();
+    const { t } = useTranslation('layout')
   
         return (
             <div className="demo-big-content">
@@ -44,22 +46,22 @@ const  MainLayout = ({children})=> {
                             >
                                 Nagatodev</Link> } scroll>
                         <Navigation className="app-bar-navigation">
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/")}>Accueil</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/resume")}>Cursus</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/projects")}>Projets</Link>
-                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/aboutme")}>À propos</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/")}>{t("navbar.links.home")}</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/resume")}>{t("navbar.links.resume")}</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/projects")}>{t("navbar.links.projects")}</Link>
+                            <Link style={{color:location.pathname=="/" ?"#fff":"#000",fontWeight:"600",fontSize:17,textDecoration:'none',cursor:"pointer",transition:"0.8s"}} onClick={()=>location.push("/aboutme")}>{t("navbar.links.about")}</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title={<Link onClick={()=>location.push("/")} style={{textDecoration:'none',color:'black',marginLeft:20}}>Mon Portfolio</Link> }>
+                    <Drawer title={<Link onClick={()=>location.push("/")} style={{textDecoration:'none',color:'black',marginLeft:20}}>{t("my_portfolio")}</Link> }>
                         <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
                             <img src={amt2} width={150} height={140} style={{textAlign:"center"}}/>
                             <span style={{textAlign:"center",fontWeight:"800"}}>v-1.0.0</span>
                         </div>
                         <Navigation>
-                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/")}>Accueil</Link>
-                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/resume")}>Cursus</Link>
-                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/projects")}>Projets</Link>
-                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/aboutme")}>À propos</Link>
+                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/")}>{t("navbar.links.home")}</Link>
+                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/resume")}>{t("navbar.links.resume")}</Link>
+                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/projects")}>{t("navbar.links.projects")}</Link>
+                            <Link  onClick={() => hideToggle()} onClick={()=>location.push("/aboutme")}>{t("navbar.links.about")}</Link>
                         </Navigation>
                     </Drawer>
                     <Content className="section">

@@ -8,6 +8,13 @@ import PersonIcon from '@material-ui/icons/Person';
 import WorkIcon from '@material-ui/icons/Work';
 import MainLayout from '../../Layouts/MainLayout';
 import MyHead from '../../components/MyHead/MyHead';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+      ...await serverSideTranslations(locale, ["landing","layout"]),
+    },
+  })
 const  index = (props)=> {
        
         const [activeTab,setActiveTab] = useState(0)

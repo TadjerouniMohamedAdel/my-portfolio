@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import TextField from '@material-ui/core/TextField';
 import { Button } from '@material-ui/core';
 import { freePik,contact,amt2 } from '../../Images/Images';
@@ -8,12 +8,12 @@ import emailjs from 'emailjs-com';
 import {Tooltip} from  'react-mdl'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGoogle, faLinkedin, faSkype, faViber, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-export default class Footer extends Component {
+import { useTranslation } from 'next-i18next'
 
+export default function Footer(props) {
+        const { t } = useTranslation('layout')
 
-    constructor(props){
-        super(props)
-        this.schema = yup.object().shape({
+        const footerSchema = yup.object().shape({
             email:yup.string().email().required(),
             subject: yup.string().required(),
             message: yup.string().required()
@@ -23,7 +23,7 @@ export default class Footer extends Component {
                 required:'Ce champ est requis .',
                 }
             })
-        this.state={
+        const [form,setForm] =useState({
             subject:"",
             message:"",
             email:"",
@@ -33,20 +33,19 @@ export default class Footer extends Component {
                 message:null,
                 email:null
             }
-        }
+        })
 
 
-    }
 
 
-    submitEmail = ()=>{
+    const submitEmail = ()=>{
         let template_params = {
-            "message": this.state.message,
-            "from_email": this.state.email,
+            "message": form.message,
+            "from_email": form.email,
 
          }
          
-         this.schema.isValid(this.state)
+         this.schema.isValid(form)
          .then((valid)=>{
              if(valid){
                  emailjs.send('artelyes_gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, template_params)
@@ -70,7 +69,7 @@ export default class Footer extends Component {
                     
                 }
                 else{
-                    this.schema.validate(this.state,{abortEarly: false}).catch((err) =>{
+                    this.schema.validate(form,{abortEarly: false}).catch((err) =>{
                         var errors={};
                         err.inner.map((item,index) =>{
                             console.log(item.path,item.message)
@@ -84,7 +83,7 @@ export default class Footer extends Component {
             })
         }
 
-    createBubble(){
+    const createBubble = ()=>{
         console.log(window.width)
         const section = document.querySelector('.bubbles-section')
         const createElement = document.createElement('span')
@@ -103,35 +102,35 @@ export default class Footer extends Component {
     //     setInterval(this.createBubble,200)
     // }
 
-    changeInput = (event,type)=>{
+    const changeInput = (event,type)=>{
         switch (type) {
-            case "email":
-                this.setState({
-                    email:event.target.value,
-                    errors:{
-                        ...this.state.errors,
-                        email:null
-                        }
-                    })
-                    break;
-                    case "subject":
-                        this.setState({
-                    subject:event.target.value,
-                    errors:{
-                        ...this.state.errors,
-                        subject:null
-                    }
-                })
-                break;
-                case "message":
-                    this.setState({
-                        message:event.target.value,
-                    errors:{
-                        ...this.state.errors,
-                        message:null
-                    }
-                })
-                break;
+            // case "email":
+            //     this.setState({
+            //         email:event.target.value,
+            //         errors:{
+            //             ...form.errors,
+            //             email:null
+            //             }
+            //         })
+            //         break;
+            //         case "subject":
+            //             this.setState({
+            //         subject:event.target.value,
+            //         errors:{
+            //             ...form.errors,
+            //             subject:null
+            //         }
+            //     })
+            //     break;
+            //     case "message":
+            //         this.setState({
+            //             message:event.target.value,
+            //         errors:{
+            //             ...form.errors,
+            //             message:null
+            //         }
+            //     })
+            //     break;
         
             default:
                 break;
@@ -140,7 +139,6 @@ export default class Footer extends Component {
 
 
 
-    render() {
         return (
             
                 
@@ -153,16 +151,16 @@ export default class Footer extends Component {
                     </div>
                     <div>
                         <div className="contact-form">
-                                <h3>Contactez moi</h3>
+                                <h3>{t("footer.title")}</h3>
                                 <div className="form-field">
                                     <TextField
                                         style={{color:"white",width:"100%"}} 
                                         id="outlined-basic" 
-                                        label="Email" 
+                                        label={t("footer.fields.email")} 
                                         variant="outlined"
-                                        value={this.state.email}
-                                        helperText={this.state.errors.email}
-                                        error={this.state.errors.email !=null}
+                                        value={form.email}
+                                        helperText={form.errors.email}
+                                        error={form.errors.email !=null}
                                         onChange={(event)=>this.changeInput(event,"email")} 
  
                                     />
@@ -171,11 +169,11 @@ export default class Footer extends Component {
                                     <TextField
                                         style={{color:"white",width:"100%"}} 
                                         id="outlined-basic" 
-                                        label="Sujet" 
+                                        label={t("footer.fields.subject")} 
                                         variant="outlined"
-                                        value={this.state.subject}
-                                        helperText={this.state.errors.subject}
-                                        error={this.state.errors.subject !=null} 
+                                        value={form.subject}
+                                        helperText={form.errors.subject}
+                                        error={form.errors.subject !=null} 
                                         onChange={(event)=>this.changeInput(event,"subject")} 
                                     />
                                 </div>
@@ -183,13 +181,13 @@ export default class Footer extends Component {
                                     <TextField
                                         style={{color:"white",width:"100%"}} 
                                         id="outlined-basic" 
-                                        label="Message"
+                                        label={t("footer.fields.message")}
                                         multiline
                                         rows={5}
                                         variant="outlined"
-                                        value={this.state.message}
-                                        helperText={this.state.errors.message}
-                                        error={this.state.errors.message !=null}
+                                        value={form.message}
+                                        helperText={form.errors.message}
+                                        error={form.errors.message !=null}
                                         onChange={(event)=>this.changeInput(event,"message")} 
                                     />
                                 </div>
@@ -199,12 +197,12 @@ export default class Footer extends Component {
                                         variant="outlined"
                                         onClick={()=>this.submitEmail()}
                                     >
-                                        Envoyer un message
+                                        {t("footer.send_message")}
                                     </Button>
                                 </div>
                                 
                                 <div className="social-contacts">
-                                    <h4>Trouvez-moi sur</h4>
+                                    <h4>{t("footer.find_me")}</h4>
                                     <div className="social-links">
                                         <span><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faLinkedin} style={{color:"#0077B5"}} /></a></span>
                                         <span><a target="_blank" href="https://web.facebook.com/adelnagato.tadj" style={{textDecoration:"none"}}><FontAwesomeIcon icon={faFacebook} style={{color:"#3b5999"}}/></a></span>
@@ -232,7 +230,7 @@ export default class Footer extends Component {
                     <div className="footer-logo-section">
                         <img src={amt2} className="footer-logo-img"/>
                         <a className="footer-logo-link"  href="https://stories.freepik.com/education">
-                                Illustration par Freepik Stories<br/>
+                                {t("footer.freepik")}<br/>
                                 <img src={freePik} width={150} />
                         </a>
                     </div>
@@ -240,4 +238,4 @@ export default class Footer extends Component {
                 </div>
         )
     }
-}
+

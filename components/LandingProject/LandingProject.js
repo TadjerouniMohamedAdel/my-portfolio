@@ -16,9 +16,9 @@ export default function LandingProject() {
             <div className="landing-projects">
             <ProjectCard 
                     title="Khedemni Mobile"
-                    type="Professional Project"
+                    type={t("professional_project")}
                     live="https://play.google.com/store/apps/details?id=com.khedemni&hl=fr"
-                    description="Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
+                    description={t("projects.khedemni.description")}
                     logo={logoKhedemni}
                     tech={[
                         {name:"Java Script",logo:js_logo},
@@ -35,9 +35,9 @@ export default function LandingProject() {
                 </div>
                 <ProjectCard 
                     title="Buileo CRM"
-                    type="Professional Project"
+                    type={t("professional_project")}
                     live="https://www.buileo.com/"
-                    description="Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
+                    description={t("projects.buileo.description")}
                     logo={logoBuileo}
                     classes="buileo"
                     tech={[

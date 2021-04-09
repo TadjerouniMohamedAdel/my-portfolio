@@ -5,7 +5,12 @@ import Biography from '../../components/Biography/Biography'
 import Education from '../../components/Education/Education'
 import MainLayout from '../../Layouts/MainLayout'
 import MyHead from '../../components/MyHead/MyHead'
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+      ...await serverSideTranslations(locale, ["landing","layout"]),
+    },
+  })
 export default function AboutMe(props){
         return (
             <MainLayout>
