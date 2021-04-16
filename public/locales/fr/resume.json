@@ -1,4 +1,8 @@
 {
+    "meta":{
+        "title":"Nagatodec - Cv",
+        "description":"Cv NagatoDev vous trouverez des informations concernant les compétences techniques ainsi que les expériences professionnelles de Tadjerouni Mohamed Adel"
+    },
     "experiences":{
         "title":"Expériences",
         "cleverzone":{

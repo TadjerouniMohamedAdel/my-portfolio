@@ -1,4 +1,8 @@
 {
+    "meta":{
+        "title":"Nagatodev - AboutMe",
+        "description":"About NagatoDev you will find information about the training passions and a little description on Tadjerouni Mohamed Adel"
+    },
     "aboutme_title":"Full Stack Developer",
     "aboutme_1":"I am a full stack developer mainly passionate about the web but also for desktop mobile development and third degree DevOps. I am the self-taught type, I love self-study and I use this faculty to improve my technical skills.",
     "aboutme_2":"My great motivation is to be a full stack who masters the FRONT and BACK END very well at the same time. even though it's hard to focus on both, i work and train every day to achieve this goal",

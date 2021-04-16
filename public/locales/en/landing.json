@@ -1,4 +1,8 @@
 {
+    "meta":{
+        "title":"Nagatodev - Home",
+        "description":"Nagatodev is the personal website of the full stack developer TADJEROUNI MOHAMED ADEl, this site contains informations about skills projects experiences as well as Adel Mohamed Tadjerouni's personel information"
+    },
     "main-skills":"Main Skills",
     "view-all-skills":"View all skills",
     "last-projects":"Latest Projects",

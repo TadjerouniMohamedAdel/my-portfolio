@@ -1,4 +1,8 @@
 {
+    "meta":{
+        "title":"Nagatodev - Projects",
+        "description":"NagatoDev projects you will find information about personal and professional projects created or to which Tadjerouni Mohamed Adel has contributed"
+    },
     "type":{
         "professional":"Professional project",
         "personal":"Personnal project"
