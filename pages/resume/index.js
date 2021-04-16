@@ -216,7 +216,10 @@ export default function index() {
     
         return(
             <MainLayout>
-                <MyHead title="NagatoDev - Resume" />
+                <MyHead 
+                    title={t("meta.title")}
+                    description={t("meta.description")}
+                />
             <div className="resume-container">
                 <div className="experiences-block" style={{paddingTop:'2em'}}>
                                  

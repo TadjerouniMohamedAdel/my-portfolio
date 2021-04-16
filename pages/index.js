@@ -34,7 +34,10 @@ export default function index() {
     const { t } = useTranslation('landing')
   return (
     <MainLayout>
-        <MyHead title="NagatoDev - Home" />
+        <MyHead 
+            title={t("meta.title")}
+            description={t("meta.description")}
+        />
       <div className="landing-grid">
                     <div className="wave-section">
                         <div className="wave wave1"></div>

@@ -143,7 +143,10 @@ const  index = (props)=> {
 
         return (
             <MainLayout>
-            <MyHead title="NagatoDev - Projects" /> 
+            <MyHead 
+            title={t("meta.title")}
+            description={t("meta.description")}
+        />
             <div >
                     {/* <Tabs activeTab={activeTab}onChange={(tabId) => setState({activeTab:tabId})} ripple>
                         <Tab>Profesionelle</Tab>
