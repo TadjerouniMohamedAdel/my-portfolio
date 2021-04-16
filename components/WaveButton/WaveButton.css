@@ -1,0 +1,77 @@
+.wave-button
+{
+    position:relative;
+    display:block;
+    padding:20px 40px;   
+    border:1px solid ;
+    background-color: #000;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);    
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+    border-color: #000;
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    color:#fff;
+    width:200px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.wave-button span{
+    position:relative;
+    font-family: 'Oxygen';
+    z-index:1;
+    transition: 1s;
+}
+.wave-button span i{
+    margin-right: 5px;
+}
+.wave-button .wave{
+    position: absolute; 
+    top:calc(100% + 22px);
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #00aeff;
+    transition:1s;  
+}
+.wave-button:hover .wave{
+    top:0;
+}
+
+.wave-button:hover span{
+    color:#fff
+}
+.wave-button .wave:before{
+    content: '';
+    position: absolute;
+    top:-22px;
+    left:0;
+    width:100%;
+    height: 22px;
+    background: url(wave.png);
+    animation: animateWave 0.5s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 118px;
+    }
+}
+
+@media(max-width:750px){
+    .wave-button{
+        font-size: 16px;
+        padding:15px 10px;   
+        width:200px
+    }
+}
+@media(max-width:400px){
+    .wave-button{
+        font-size: 14px;
+        padding:15px 10px;
+        width:150px;  
+    }
+}

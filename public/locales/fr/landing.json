@@ -1,0 +1,33 @@
+{
+    "main-skills":"Compétences Principales",
+    "view-all-skills":"Voir toutes les compétences",
+    "last-projects":"Derniers Projets",
+    "view-all-projects":"Voir tous les projets",
+    "latest-experience":"Dernière Expérience",
+    "view-all-experiences":"Voir toutes les expériences",
+    "hi":"Salut",
+    "am":"Je m'appelle",
+    "job":"Développeur Full Stack web & mobile",
+    "at":"chez",
+    "learn-more":"Apprendre plus",
+    "get-resume":"Obtenir mon cv",
+    "technologies_used":"Technologies utilisées",
+    "professional_project":"Projet professionnel",
+    "projects":{
+        "khedemni":{
+            "description":"Khedemni! La première application en Algérie spécialisée dans le recrutement des métiers de l'hôtellerie et de la restauration."
+        },
+        "buileo":{
+            "description":"Buileo CRM est l'outil qui va vous permettre de mieux gérer votre relation client et de mieux contrôler le processus de vente de votre entreprise.Grâce à ses différents modules, vous aurez une visibilité sur l’ensemble de vos activités."
+        }
+    },
+    "last_experience":{
+        "cleverzone":{
+            "title":"Développeur Full Stack",
+            "description":"Contribuer à la conception et le developpement des solution informatiques de l'entreprise. Participer a l elaboration du cachier des charges. Assurer le Contrôle qualité des solutions par  la creation des test unitaire et fonctionnelles. Assurer la maintenance des solution existantes par la correction des bug et l'ajout de nouvelles fonctionalitees au fonction des besoins.Participer au deployment des solution concuee par l'entreprise",
+            "startDate":"Janvier 2021",
+            "endDate":"En cours"
+        }
+    }
+      
+}

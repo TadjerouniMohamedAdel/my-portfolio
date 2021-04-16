@@ -1,0 +1,23 @@
+{
+    "my_portfolio":"Mon Portfolio",
+    "navbar":{
+        "links":{
+            "home":"Accueil",
+            "resume":"Curriculum",
+            "projects":"Projets",
+            "about":"À propos"
+        }
+    },
+    "footer":{
+        "title":"Contactez moi",
+        "fields":{
+            "email":"Email",
+            "subject":"Sujet",
+            "message":"Message"
+        },
+        "send_message":"Envoyer un message",
+        "find_me":"Trouvez-moi sur",
+        "freepik":"Illustration par Freepik Stories"
+
+    }
+}

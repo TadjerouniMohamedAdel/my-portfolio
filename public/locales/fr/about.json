@@ -1,0 +1,34 @@
+{
+    "aboutme_title":"Développeur Full Stack",
+    "aboutme_1":"Je suis un développeur full stack passionné principalement par le web mais aussi pour le développement mobile desktop et le Devops en troisième degré . je suis du type autodidacte, j'adore l'autoapprentissage et j'appuie sur cette faculté pour améliorer mes compétences techniques.",
+    "aboutme_2":"Ma grande motivation est d'être un full stack qui maîtrise très bien le FRONT et BACK END en même temps . même si c'est difficile de se concentrer sur les deux, je travaille et je me forme tous les jours pour atteindre cet objectif",
+    "education_title":"Formation",
+    "education":"J'ai une licence en système d'information et genie logiciel à l'université d'Alger. pourquoi je n'ai pas continué mes études y a pas mal de raisons mais je pense que j'ai pris la meilleure décision et j'ai choisi mon propre chemin, le chemin de ma passion.",
+    "passions":{
+        "title":"Passions",
+        "programing":{
+            "title":"LA PROGRAMMATION",
+            "description":"La programmation est la première passion et c'est elle qui occupe la majeure partie de mon temps libre"
+        },
+        "football":{
+            "title":"FOOTBALL",
+            "description":"Comme pour la plupart des Algériens le football est mon sport préféré"
+        },
+        "chess":{
+            "title":"LE JEU D'ÉCHECS",
+            "description":"Même si j'adore les jeux électroniques j'ai un faible pour le jeu d'échecs"
+        },
+        "reading":{
+            "title":"LA LECTURE",
+            "description":"J'aime beaucoup lire, mes auteurs préférés sont Jules Verne, Arthur Conan Doyle, Paulo Coelho et Amin Maalouf"
+        },
+        "music":{
+            "title":"LA MUSIQUE",
+            "description":"J'écoute beaucoup de la musique, surtout lorsque je travaille, ma musique préférée est le chaabi algérien"
+        },
+        "manga":{
+            "title":"MANGA",
+            "description":"je peux m'en passer, surtout ces quatre-là"
+        }
+    }
+}

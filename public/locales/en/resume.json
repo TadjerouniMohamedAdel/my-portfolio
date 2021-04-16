@@ -1,0 +1,29 @@
+{
+    "experiences":{
+        "title":"Experiences",
+        "cleverzone":{
+            "title":"Full Stack Developer",
+            "description":"Contribute to the design and development of the company's IT solutions. Participate in the development of the cost cachet. Ensure the quality control of solutions by creating unit and functional tests. Ensure the maintenance of existing solutions by correcting bugs and adding new features as needed. Participate in the deployment of solutions designed by the company",
+            "startDate":"January 2021",
+            "endDate":"Current"
+        },
+        "emploipartner":{
+            "title":"Full Stack Web / Mobile Developer",
+            "description":"Ensure the development of the e-recruitment site (the addition of new features, correction of bugs https://www.emploipartner.com/fr/., Development of internal applications of the company emploipartner (addition of new features, kernel update and bug fixing)",
+            "startDate":"November 2018",
+            "endDate":"October 2020"
+        },
+        "beo":{
+            "title":"Full stack web developer intern",
+            "description":"Development of a web application for the management of social works (benefits, bonuses, pres, donations) of employees at the external bank of Algeria.",
+            "startDate":"February",
+            "endDate":"July 2018"
+        }
+    },
+    "skills":{
+        "title":"Skills",
+        "mobile_development":"Mobile development",
+        "others":"Tools & Devops"
+    },
+    "get_my_resume":"Get my resume"
+}

@@ -1,0 +1,34 @@
+{
+    "aboutme_title":"Full Stack Developer",
+    "aboutme_1":"I am a full stack developer mainly passionate about the web but also for desktop mobile development and third degree DevOps. I am the self-taught type, I love self-study and I use this faculty to improve my technical skills.",
+    "aboutme_2":"My great motivation is to be a full stack who masters the FRONT and BACK END very well at the same time. even though it's hard to focus on both, i work and train every day to achieve this goal",
+    "education_title":"Education",
+    "education":"I have a bachelor's degree in information systems and software engineering at the University of Algiers. why I did not continue my studies there are a lot of reasons but I think I made the best decision and I chose my own path, the path of my passion.",
+    "passions":{
+        "title":"Passions",
+        "programing":{
+            "title":"PROGRAMMING",
+            "description":"Programming is my first passion and it occupies most of my free time"
+        },
+        "football":{
+            "title":"FOOTBALL",
+            "description":"Like most Algerians, football is my favorite sport"
+        },
+        "chess":{
+            "title":"CHESS",
+            "description":"even if I like electronic games, the chess is my favorite game"
+        },
+        "reading":{
+            "title":"READING",
+            "description":"I like reading, my favorite authors are Jules Verne, Arthur Conan Doyle, Paulo Coelho and Amin Maalouf"
+        },
+        "music":{
+            "title":" MUSIC",
+            "description":"I listen to a lot of music, especially when I work, my favorite music is Algerian chaabi"
+        },
+        "manga":{
+            "title":"MANGA",
+            "description":"the essential four"
+        }
+    }
+}
