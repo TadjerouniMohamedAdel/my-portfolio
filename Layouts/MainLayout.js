@@ -36,7 +36,7 @@ const  MainLayout = ({children})=> {
     useEffect(()=>{
         let el = document.querySelector(".mdl-layout__drawer-button")
         console.log(el)
-        el.remove()
+        el.style="display:none"
     },[])
     return (
         <div className="demo-big-content">
@@ -48,8 +48,8 @@ const  MainLayout = ({children})=> {
                             className="header-color" 
                             title={
                             <>
-                            <IconButton onClick={()=>hideToggle()}>
-                                <MenuIcon style={{color:"white",fontSize:18}}/>
+                            <IconButton onClick={()=>hideToggle()} style={{position:"relative",left:-20}}>
+                                <MenuIcon style={{color:"black",fontSize:25}}/>
                             </IconButton>
                             <Link href="/" 
                             style={{textDecoration:'none',color:location.pathname=="/" ?"#fff":"#000",transition:"0.8s"}}
