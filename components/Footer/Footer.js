@@ -48,24 +48,24 @@ export default function Footer(props) {
          this.schema.isValid(form)
          .then((valid)=>{
              if(valid){
-                 emailjs.send('artelyes_gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, template_params)
-                 .then((result) => {
-                     console.log(result.text);
-                     this.setState({
-                                fullName:"",
-                                subject:"",
-                                message:"",
-                                email:"",
-                                errors:{
-                                    fullName:null,
-                                    subject:null,
-                                    message:null,
-                                    email:null
-                                }
-                            })
-                    }, (error) => {
-                        console.log(error.text);
-                    });
+                //  emailjs.send('artelyes_gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, template_params)
+                //  .then((result) => {
+                //      console.log(result.text);
+                //      this.setState({
+                //                 fullName:"",
+                //                 subject:"",
+                //                 message:"",
+                //                 email:"",
+                //                 errors:{
+                //                     fullName:null,
+                //                     subject:null,
+                //                     message:null,
+                //                     email:null
+                //                 }
+                //             })
+                //     }, (error) => {
+                //         console.log(error.text);
+                //     });
                     
                 }
                 else{

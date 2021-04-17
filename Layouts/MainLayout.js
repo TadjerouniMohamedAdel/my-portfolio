@@ -25,7 +25,7 @@ const animFooter = {
 
 
 const  MainLayout = ({children})=> {
-    emailjs.init(process.env.REACT_APP_EMAIL_USER_ID);
+    // emailjs.init(process.env.REACT_APP_EMAIL_USER_ID);
     const hideToggle= (event) =>{
         var selectorId = document.querySelector('.mdl-layout');
         selectorId.MaterialLayout.toggleDrawer();
