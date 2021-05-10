@@ -4,6 +4,8 @@ export const logoEp = `/images/ep_logo.png`
 export const logoKhedemni = `/images/khedemi.webp`
 export const logoUalger = `/images/ualger1.png`
 export const user= `/images/v5.png`
+export const npm= `/images/npm.png`
+export const puppeteer= `/images/puppeteer.png`
 
 export const prof= `/images/prof.png`
 export const react_logo= `/images/react_logo.png`

@@ -22,6 +22,9 @@
     "lyric_boot":{
         "description":"Lyric Boot est une application web qui sert à récupérer lyric de vos chansons préfère."
     },
+    "simple-link-previewer":{
+        "description":"simple-link-preview est un package node  qui vous permet d'obtenir des données à partir d'un lien comme le titre, la description, l'image comme un aperçu du contenu de la page"
+    },
     "project_built_with":"Ce projet a été développée principalement avec :",
     "live_menu":"Démo en direct",
     "code_source":"Code Source"

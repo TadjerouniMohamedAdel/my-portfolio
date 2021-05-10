@@ -1,6 +1,6 @@
 import React, { Component,useState } from 'react'
 import {Grid,Cell,Card,CardTitle,CardActions,Button,CardMenu,IconButton, CardText} from 'react-mdl'
-import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp, lyricBoot } from '../../Images/Images'
+import { logoKhedemni, artelyes,material,redux_i,logoBuileo, react, js_logo, php,puppeteer, vue,symfony, api_logo, jquery, html_logo, css_logo, bootstrap, firebase, react_logo, php_logo, symfony_logo, logoEp, lyricBoot, npm, node } from '../../Images/Images'
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -120,6 +120,23 @@ const  index = (props)=> {
                                 {name:"Material UI",logo:material},
                                 {name:"HTML 5",logo:html_logo},
                                 {name:"CSS 3",logo:css_logo},
+                               
+                            ]}
+                        />
+            <ProjectCard
+                            key="simple-link-previewer" 
+                            title="Simple Link Previewer"
+                            type={t("type.personal")}
+                            live="https://www.npmjs.com/package/simple-link-previewer"
+                            github="https://github.com/TadjerouniMohamedAdel/simple-link-previewer"
+                            description={t("simple-link-previewer.description")}
+                            logo={npm}
+                            classes="npm-package"
+                            tech={[
+                                {name:"Java Script",logo:js_logo},
+                                {name:"node",logo:node},
+                                {name:"Puppeteer",logo:puppeteer},
+                                {name:"Cheeriojs"},
                                
                             ]}
                         />
