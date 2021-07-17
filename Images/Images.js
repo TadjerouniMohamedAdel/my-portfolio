@@ -76,3 +76,4 @@ export const ts_mini = `/images/ts_mini.webp`
 export const next = `/images/next.png`
 export const next_mini = `/images/next_mini.png`
 export const jira = `/images/jira.png`
+export const storybook = `/images/storybook.png`

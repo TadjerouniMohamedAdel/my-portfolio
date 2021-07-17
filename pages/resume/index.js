@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { logoUalger, react_logo, redux_logo, js_logo, html_logo, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express, firebase } from '../../Images/Images'
+import { logoUalger, react_logo, redux_logo,ts, js_logo,next, storybook, jquery_logo, bootstrap_logo, css_logo, php_logo, codeigniter_logo, symfony_logo, api_logo, docker_logo, git_logo, webpack_logo, mysql_logo, arch_logo, rn_logo, node, express, firebase } from '../../Images/Images'
 import SkillItem from '../../components/Skills/SkillItem'
 import {} from 'react-mdl'
 import Timeline from '../../components/Timeline/Timeline'
@@ -77,6 +77,13 @@ export default function index() {
                     />
                 </div>
                 <div className="skill-item" key={6}>
+                    <SkillItem 
+                        skillImage={storybook}
+                        color="#1694D1"
+                        percent="65"
+                    />
+                </div>
+                <div className="skill-item" key={7}>
                     <SkillItem 
                         skillImage={arch_logo}
                         color="#1694D1"
@@ -188,6 +195,20 @@ export default function index() {
                     <SkillItem
                         percent="80" 
                         skillImage={css_logo}
+                        color="#449ccf"
+                    />
+                </div>
+                <div className="skill-item" key={76}>
+                    <SkillItem
+                        percent="80" 
+                        skillImage={ts}
+                        color="#449ccf"
+                    />
+                </div>
+                <div className="skill-item" key={18}>
+                    <SkillItem
+                        percent="80" 
+                        skillImage={next}
                         color="#449ccf"
                     />
                 </div>
