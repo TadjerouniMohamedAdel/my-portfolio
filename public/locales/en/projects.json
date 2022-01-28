@@ -1,4 +1,6 @@
 {
+    "view-all-projects":"View all projects",
+    "last-projects":"Latest Projects",
     "meta":{
         "title":"Nagatodev - Projects",
         "description":"NagatoDev projects you will find information about personal and professional projects created or to which Tadjerouni Mohamed Adel has contributed"
@@ -6,6 +8,15 @@
     "type":{
         "professional":"Professional project",
         "personal":"Personnal project"
+    },
+    "docta":{
+        "description":"Docta is a digital system that provides a clever healthcare experience through A free mobile application that enables patients to book appointments with doctors."
+    },
+    "eenar":{
+        "description":"EENAR is an interactive scientific research platform for academic institutions and researchers. Its goal is to enrich and facilitate scientific research. Share and discuss your projects and ideas. Find potential investors for your scientific projects"
+    },
+    "passvital":{
+        "description":"PassVital is a universal digital health passport that can be used anywhere in the world. It allows citizens to immediately retrieve and classify their health data in complete security."
     },
     "khedemni":{
         "description":"Khedemni! The first application in Algeria specializing in the recruitment of hospitality and catering trades."

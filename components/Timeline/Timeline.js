@@ -26,10 +26,15 @@ import {
   mysql_logo,
   codeigniter_logo,
   pass,
+  storybook_mini,
+  react_query,
+  postgres,
+  digital_mini,
+  aws,
 } from "../../Images/Images";
 import { height } from "dom-helpers";
 import { Chip } from "react-mdl";
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from "next-i18next";
 
 const experiences = [
   {
@@ -42,20 +47,23 @@ const experiences = [
     imgHeight: 80,
     className: "img80x80",
     tech: [
-      { name: "Express", logo: express_mini },
-      { name: "nodejs", logo: node },
       { name: "React", logo: react },
       { name: "Nextjs", logo: next_mini },
       { name: "TypeScript", logo: ts_mini },
       { name: "JavaScript", logo: js_logo },
+      { name: "React Query", logo: react_query },
+      { name: "Express", logo: express_mini },
+      { name: "nodejs", logo: node },
       { name: "HTML", logo: html_logo },
       { name: "CSS", logo: css_logo },
-      { name: "Material Ui", logo: material },
       { name: "Docker", logo: docker },
       { name: "Webpack", logo: webpack },
       { name: "git", logo: git },
-      { name: "Mysql", logo: mysql_logo },
       { name: "Jira", logo: jira },
+      { name: "Storybook", logo: storybook_mini },
+      { name: "PostgreSql", logo: postgres },
+      { name: "Digital Ocean", logo: digital_mini },
+      { name: "", logo: aws },
     ],
   },
   {
@@ -107,7 +115,7 @@ const experiences = [
 ];
 
 export default function Timeline() {
-  const { t } = useTranslation('resume')
+  const { t } = useTranslation("resume");
   return (
     <div className="timeline ">
       <h2 className="section-title-resume" style={{ textAlign: "center" }}>

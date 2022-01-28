@@ -15,9 +15,16 @@ code {
 }
 
 /* App.css */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lobster|Amiri|PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins',sans-serif !important;
+  /* font-weight: normal !important; */
+}
+p,li,b,span,button,ul,table,td{
+  font-family: 'Roboto',sans-serif !important;
+}
 
 
 /* .mdl-layout__drawer-button{
@@ -1749,7 +1756,7 @@ footer{
  .card-project{
     transition: 0.5s;
     width:350px;
-    height:520px;
+    height:570px;
     margin:30px;
     padding:20px 20px;
     border-radius: 40px;
@@ -1863,16 +1870,17 @@ footer{
     height: 100px;
 }
 .card-project .contentBx .links{
-    margin-top: 25px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .card-project .contentBx .links a{
     transition: 0.5s;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:85px;
+    min-width:85px;
     margin: auto;
 }
 .card-project:hover .contentBx .links a{

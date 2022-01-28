@@ -76,10 +76,12 @@ export default function ProjectCard(props) {
               {t("live_menu")}
             </a>
           )}
-          <a href="javascript:void(0);" onClick={() => setOpenLightBox(true)}>
-            <FontAwesomeIcon icon={faImage} />
-            {t("Screens")}
-          </a>
+          {props.screens && (
+            <a href="javascript:void(0);" onClick={() => setOpenLightBox(true)}>
+              <FontAwesomeIcon icon={faImage} />
+              {t("Screens")}
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -75,9 +75,7 @@ const index = (props) => {
           type={t("type.professional")}
           live="https://www.docta.io/"
           classes="docta"
-          description={t(
-            "Docta is a digital system that provides a clever healthcare experience through A free mobile application that enables patients to book appointments with doctors."
-          )}
+          description={t("docta.description")}
           logo={docta}
           tech={[
             { name: "Typescript", logo: ts_mini },
@@ -114,9 +112,7 @@ const index = (props) => {
           title="Eenar"
           type={t("type.professional")}
           classes="eenar"
-          description={t(
-            "EENAR is an interactive scientific research platform for academic institutions and researchers. Its goal is to enrich and facilitate scientific research. Share and discuss your projects and ideas. Find potential investors for your scientific projects"
-          )}
+          description={t("eenar.description")}
           logo={eenar}
           tech={[
             { name: "Typescript", logo: ts_mini },
@@ -169,9 +165,7 @@ const index = (props) => {
           title="Pass Vital"
           type={t("type.professional")}
           classes="pass"
-          description={t(
-            "PassVital est un passeport de santé numérique universel, utilisable partout dans le monde. Il permet au citoyen de récupérer et classer immédiatement ses données de santé en toute sécurité."
-          )}
+          description={t("passvital.description")}
           logo={pass}
           tech={[
             { name: "Java Script", logo: js_logo },
