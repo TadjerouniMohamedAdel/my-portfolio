@@ -1867,6 +1867,11 @@ footer{
 }
 .card-project .contentBx .links a{
     transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:85px;
+    margin: auto;
 }
 .card-project:hover .contentBx .links a{
     background-color: #000;
