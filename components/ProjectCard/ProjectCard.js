@@ -3,13 +3,37 @@ import { Chip } from "react-mdl";
 import { react } from "../../Images/Images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faImage, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "next-i18next";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 export default function ProjectCard(props) {
   const { t } = useTranslation("projects");
+  const [openLightBox, setOpenLightBox] = React.useState(false);
+  const [photoIndex, setPhotoIndex] = React.useState(0);
   return (
     <div className={`card-project ${props.classes}`}>
+      {openLightBox && props.screens && (
+        <Lightbox
+          mainSrc={props.screens[photoIndex]}
+          nextSrc={props.screens[(photoIndex + 1) % props.screens.length]}
+          prevSrc={
+            props.screens[
+              (photoIndex + props.screens.length - 1) % props.screens.length
+            ]
+          }
+          onCloseRequest={() => setOpenLightBox(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex(
+              (photoIndex + props.screens.length - 1) % props.screens.length
+            )
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % props.screens.length)
+          }
+        />
+      )}
       <div className="imgBx">
         <img src={props.logo} />
       </div>
@@ -52,6 +76,10 @@ export default function ProjectCard(props) {
               {t("live_menu")}
             </a>
           )}
+          <a href="javascript:void(0);" onClick={() => setOpenLightBox(true)}>
+            <FontAwesomeIcon icon={faImage} />
+            {t("Screens")}
+          </a>
         </div>
       </div>
     </div>

@@ -1864,6 +1864,8 @@ footer{
 }
 .card-project .contentBx .links{
     margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .card-project .contentBx .links a{
     transition: 0.5s;
