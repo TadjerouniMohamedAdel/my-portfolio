@@ -1778,6 +1778,15 @@ footer{
 .card-project.npm-package:hover{
   background-color: #cd0000;
 }
+.card-project.docta:hover{
+  background-color:#2596be;
+}
+.card-project.eenar:hover{
+  background-color:#fbc40c
+}
+.card-project.pass:hover{
+  background-color:#004457;
+}
  .card-project:hover{
     background: rgba(232, 60, 76,1);
     transition: 0.5s;
