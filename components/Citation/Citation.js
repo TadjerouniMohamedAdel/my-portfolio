@@ -1,7 +1,7 @@
 import React from "react";
 import { user, mini_ep, mini_pass, cleverzone_mini } from "../../Images/Images";
 import SocialMenu from "../ProfileCard/SocialMenu";
-import { Link } from "@material-ui/core";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 export default function Citation() {
@@ -26,12 +26,12 @@ export default function Citation() {
             </h3>
           </div>
         </div>
-        <Link to="aboutme" style={{ textDecoration: "none" }}>
+        <Link to="/aboutme" href="/aboutme" style={{ textDecoration: "none" }}>
           <a className="link readmore" href="#">
             {t("learn-more")}
           </a>
         </Link>
-        <a className="link getcv" href="/cv_3.4.pdf" target="_blank">
+        <a key="" className="link getcv" href="/cv_4.pdf" target="_blank">
           {t("get-resume")}
         </a>
 
