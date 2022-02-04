@@ -148,15 +148,59 @@ p,li,b,span,button,ul,table,td{
 }
 
 .skills-block{
-  /* min-height: 600px; */
   padding: 40px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
+.skills-block > div{
+  margin: 20px;
+}
+.skills-block > div:nth-child(1) > div:nth-child(1){
+  margin-bottom: 20px;
+}
+@media(max-width:1155px){
+  .course{
+    width:400px !important;
+  }
+  .skill-item-img{
+    height:50px !important;
+  }
+}
+@media(max-width:930px){
+  .course{
+    width:300px !important;
+  }
+  .skill-item-img{
+    height:35px !important;
+  }
+}
+@media(max-width:780px){
+  .skills-block{
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-block > div{
+    order: 2 !important;
+  }
+  .skills-block > div:nth-child(2){
+    order: 1 !important;
+  }
+  .course{
+    width:400px !important;
+  }
+  .skill-item-img{
+    height:45px !important;
+  }
+}
+@media(max-width:530px){
+  .course{
+    width:280px !important;
+  }
+  .skill-item-img{
+    height:25px !important;
+  }
+}
 .language-item{
   display: flex;
   flex-direction: row;
@@ -652,10 +696,9 @@ footer{
   box-shadow: 0px 10px 10px rgba(0,0,0,.2);
   display: flex;
   max-width:100%;
-  margin: 10px;
+  padding: 20px;
   overflow: hidden;
-  height: 230px;
-  width:470px;
+  width:500px;
   
 }
 .course h6{
@@ -707,9 +750,7 @@ footer{
   flex-wrap: wrap;
 }
 @media(max-width:580px){
-  .course{
-      height: 160px;
-  }
+  
   .course .preview{
       background:#3586ff;
       color:#fff;
@@ -736,7 +777,6 @@ footer{
 }
 @media(max-width:470px){
   .course{
-      height: 220px;
       margin-left:-35px
   }
   .course .preview{
@@ -1892,8 +1932,8 @@ footer{
 /* Skills -> SkillItem.css */
 
 .skill-item-img{
-  width:75px;
-  height:75px;
+  width:auto;
+  height:65px;
 }
 .skill-item-img img{
   position: relative;
@@ -1903,18 +1943,7 @@ footer{
   height: 100%;
   object-fit: contain;
 }
-@media(max-width:584px){
-  .skill-item-img{
-      width:55px;
-      height:55px;
-  }
-}
-@media(max-width:470px){
-  .skill-item-img{
-      width:55px;
-      height:55px;
-  }
-}
+
 
 /* TimeLine.css */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');

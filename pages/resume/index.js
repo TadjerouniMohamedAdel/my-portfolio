@@ -22,7 +22,10 @@ import {
   rn_logo,
   node,
   express,
-  firebase,
+  firebase_complete,
+  cypress,
+  testing_library,
+  react_query_complete,
 } from "../../Images/Images";
 import SkillItem from "../../components/Skills/SkillItem";
 import {} from "react-mdl";
@@ -44,19 +47,6 @@ export default function index() {
   const [activeTab, setActiveTab] = useState(0);
   const { t } = useTranslation("resume");
 
-  const renderMobile = () => {
-    return (
-      <div className="skill-grid">
-        <div className="skill-item" key="rn">
-          <SkillItem skillImage={rn_logo} color="#449ccf" percent="75" />
-        </div>
-        <div className="skill-item" key="fb">
-          <SkillItem skillImage={firebase} color="#449ccf" percent="75" />
-        </div>
-      </div>
-    );
-  };
-
   const renderDevops = () => {
     return (
       <div className="skill-grid" key="devops">
@@ -72,11 +62,15 @@ export default function index() {
         <div className="skill-item" key={5}>
           <SkillItem skillImage={mysql_logo} color="#FD972E" percent="80" />
         </div>
-        <div className="skill-item" key={6}>
-          <SkillItem skillImage={storybook} color="#1694D1" percent="65" />
-        </div>
         <div className="skill-item" key={7}>
           <SkillItem skillImage={arch_logo} color="#1694D1" percent="65" />
+        </div>
+        <div className="skill-item" key="fb">
+          <SkillItem
+            skillImage={firebase_complete}
+            color="#449ccf"
+            percent="75"
+          />
         </div>
       </div>
     );
@@ -115,6 +109,20 @@ export default function index() {
   const renderFrontEnd = () => {
     return (
       <div className="skill-grid" key="fron">
+        <div className="skill-item" key={13}>
+          <SkillItem
+            percent="87"
+            skillName="JS"
+            skillImage={js_logo}
+            color="#cab818"
+          />
+        </div>
+        <div className="skill-item" key={76}>
+          <SkillItem percent="80" skillImage={ts} color="#449ccf" />
+        </div>
+        <div className="skill-item" key={16}>
+          <SkillItem percent="80" skillImage={css_logo} color="#449ccf" />
+        </div>
         <div className="skill-item" key={11}>
           <SkillItem
             skillName="React"
@@ -122,6 +130,9 @@ export default function index() {
             color="#449ccf"
             percent="85"
           />
+        </div>
+        <div className="skill-item" key="rn">
+          <SkillItem skillImage={rn_logo} color="#449ccf" percent="75" />
         </div>
         <div className="skill-item" key={12}>
           <SkillItem
@@ -131,53 +142,35 @@ export default function index() {
             color="#943ab8"
           />
         </div>
-        <div className="skill-item" key={13}>
+        <div className="skill-item" key={92}>
           <SkillItem
-            percent="87"
-            skillName="JS"
-            skillImage={js_logo}
-            color="#cab818"
+            percent="80"
+            skillName="React-query"
+            skillImage={react_query_complete}
+            color="#943ab8"
           />
-        </div>
-        <div className="skill-item" key={14}>
-          <SkillItem percent="70" skillImage={jquery_logo} color="#449ccf" />
-        </div>
-        <div className="skill-item" key={15}>
-          <SkillItem
-            percent="70"
-            skillName="React"
-            skillImage={bootstrap_logo}
-            color="#62478A"
-          />
-        </div>
-        <div className="skill-item" key={16}>
-          <SkillItem percent="80" skillImage={css_logo} color="#449ccf" />
-        </div>
-        <div className="skill-item" key={76}>
-          <SkillItem percent="80" skillImage={ts} color="#449ccf" />
         </div>
         <div className="skill-item" key={18}>
           <SkillItem percent="80" skillImage={next} color="#449ccf" />
         </div>
+        <div className="skill-item" key={14}>
+          <SkillItem percent="70" skillImage={jquery_logo} color="#449ccf" />
+        </div>
+        <div className="skill-item" key={601}>
+          <SkillItem skillImage={storybook} color="#1694D1" percent="65" />
+        </div>
+        <div className="skill-item" key={216}>
+          <SkillItem
+            skillImage={testing_library}
+            color="#1694D1"
+            percent="65"
+          />
+        </div>
+        <div className="skill-item" key={6213}>
+          <SkillItem skillImage={cypress} color="#1694D1" percent="65" />
+        </div>
       </div>
     );
-  };
-
-  const toggleCategories = () => {
-    switch (activeTab) {
-      case 0:
-        return renderFrontEnd();
-        break;
-      case 1:
-        return renderBackEnd();
-        break;
-      case 2:
-        return renderMobile();
-        break;
-      case 3:
-        return renderDevops();
-        break;
-    }
   };
 
   return (
@@ -191,31 +184,11 @@ export default function index() {
           {t("skills.title")}
         </h2>
         <div className="skills-block">
-          <div
-            style={{
-              display: "flex",
-              marginBottom: 100,
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "row",
-              width: "80%",
-              flexWrap: "wrap",
-            }}
-          >
+          <div>
             <Card2
               content={renderBackEnd()}
               icon="fas fa-cogs"
               title="Back End"
-            />
-            <Card2
-              content={renderFrontEnd()}
-              icon="fas fa-desktop"
-              title="Front End"
-            />
-            <Card2
-              content={renderMobile()}
-              icon="fas fa-mobile-alt"
-              title={t("skills.mobile_development")}
             />
             <Card2
               title={t("skills.others")}
@@ -223,6 +196,23 @@ export default function index() {
               content={renderDevops()}
             />
           </div>
+          <div>
+            <Card2
+              content={renderFrontEnd()}
+              icon="fas fa-desktop"
+              title="Front End"
+            />
+          </div>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            margin: "auto",
+            display: "flex",
+            justifyContent: "center",
+            paddingBottom: 40,
+          }}
+        >
           <WaveButton label={t("get_my_resume")} path="/cv_4.pdf" file />
         </div>
       </div>
