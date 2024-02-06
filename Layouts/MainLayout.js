@@ -48,19 +48,6 @@ const MainLayout = ({ children }) => {
   return (
     <div className="demo-big-content">
       <Layout fixedHeader>
-        <div
-          style={{
-            width: '100%',
-            backgroundColor: '#fdd663',
-            padding: 40,
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >
-          Deprecated, please <strong>Adel Mohamed Tadjerouni</strong>'s
-          portfolio on{' '}
-          <a href="https://adeltadjerouni.com">https://adeltadjerouni.com</a>
-        </div>
         <Header
           style={{
             backgroundColor: location.pathname == '/' ? '#3586ff' : '#fff',
@@ -89,6 +76,20 @@ const MainLayout = ({ children }) => {
           }
           scroll
         >
+          <div
+            style={{
+              width: '100%',
+              backgroundColor: '#fdd663',
+              padding: 20,
+              color: '#0f0f0f',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <span style={{ fontWeight: 'bold' }}>Deprecated</span>, please you
+            can check <strong>Adel Mohamed Tadjerouni</strong>'s portfolio on:{' '}
+            <a href="https://adeltadjerouni.com">https://adeltadjerouni.com</a>
+          </div>
           <Navigation className="app-bar-navigation">
             <Link
               style={{
