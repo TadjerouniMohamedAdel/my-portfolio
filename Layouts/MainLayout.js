@@ -76,20 +76,6 @@ const MainLayout = ({ children }) => {
           }
           scroll
         >
-          <div
-            style={{
-              width: '100%',
-              backgroundColor: '#fdd663',
-              padding: 20,
-              color: '#0f0f0f',
-              display: 'flex',
-              alignItems: 'center',
-            }}
-          >
-            <span style={{ fontWeight: 'bold' }}>Deprecated</span>, please you
-            can check <strong>Adel Mohamed Tadjerouni</strong>'s portfolio on:{' '}
-            <a href="https://adeltadjerouni.com">https://adeltadjerouni.com</a>
-          </div>
           <Navigation className="app-bar-navigation">
             <Link
               style={{
@@ -144,6 +130,21 @@ const MainLayout = ({ children }) => {
               {t('navbar.links.about')}
             </Link>
           </Navigation>
+          <div
+            style={{
+              width: '100%',
+              backgroundColor: '#fdd663',
+              padding: 20,
+              color: '#0f0f0f',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <span style={{ fontWeight: 'bold' }}>Deprecated</span>, please you
+            can check <strong> Adel Mohamed Tadjerouni</strong>'s portfolio on:
+            {'  '}
+            <a href="https://adeltadjerouni.com">https://adeltadjerouni.com</a>
+          </div>
         </Header>
         <Drawer
           title={
