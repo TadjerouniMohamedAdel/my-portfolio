@@ -1,3 +1,4 @@
+DEPRECATED
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://nagatodev.netlify.app/src/amt2.png" alt="nagatodev adel mohamed tadjerouni" width="200"></a>
